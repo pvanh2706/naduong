@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payroll_plan_sub_property_tree" model="ir.ui.view">
+        <field name="name">payroll.plan.sub.property.tree</field>
+        <field name="model">payroll.plan.sub.property</field>
+        <field name="arch" type="xml">
+            <tree string="" 
+            default_order="sequence"
+            >
+                <field name="name"/>
+                <field name="level"/>
+                <field name="sequence"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="payroll_plan_property_form" model="ir.ui.view">
+        <field name="name">payroll.plan.property.form</field>
+        <field name="model">payroll.plan.property</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="......"/>
+                        </h1>
+                    </div>
+                    <group col="4">
+                        <field name="unit"/>
+                        <field name="company_id"/>
+                    </group>
+                    <separator string="Danh sách tiêu chí thành phần"/>
+                    <field name="property_ids"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="payroll_plan_property_tree" model="ir.ui.view">
+        <field name="name">payroll.plan.property.tree</field>
+        <field name="model">payroll.plan.property</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+                <field name="unit"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="payroll_plan_property_search" model="ir.ui.view">
+        <field name="name">payroll.plan.property.search</field>
+        <field name="model">payroll.plan.property</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <filter string="Company " name="company_id" context="{'group_by':'company_id'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="payroll_plan_property_action" model="ir.actions.act_window">
+        <field name="name">Tiêu chí</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">payroll.plan.property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_company_id': 1}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+            </p>
+            <p>
+                <!-- More details about what a user can do with this object will be OK -->
+            </p>
+        </field>
+    </record>
+</odoo>

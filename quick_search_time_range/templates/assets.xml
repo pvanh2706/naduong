@@ -1,0 +1,39 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="assets_backend" name="quick_search_time_range" inherit_id="web.assets_backend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/quick_search_time_range/static/src/js/daterangepicker.js"></script>
+            <script type="text/javascript" src="/quick_search_time_range/static/src/js/quick_search_time_range.js"></script>
+            <link rel="stylesheet" href="/quick_search_time_range/static/src/css/daterangepicker.css"/>
+            <link rel="stylesheet" href="/quick_search_time_range/static/src/css/tm723_date_range_picker.css"/>
+        </xpath>
+    </template>
+
+</odoo> -->
+
+<!-- <?xml version='1.0' encoding='utf-8'?> -->
+<odoo>
+    <data noupdate="1">
+        <!-- Add you code here -->
+        <template id="assets_backend" name="quick_search_time_range" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/quick_search_time_range/static/src/js/daterangepicker.js"></script>
+                <script type="text/javascript" src="/quick_search_time_range/static/src/js/quick_search_time_range.js"></script>
+                <link rel="stylesheet" type="text/css" href="/quick_search_time_range/static/src/css/daterangepicker.css"/>
+                <link rel="stylesheet" type="text/css" href="/quick_search_time_range/static/src/css/tm723_date_range_picker.css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="assets_backend" inherit_id="web.assets_backend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/mvb_report_statistic/static/src/js/mvb_report.js"></script>
+            <script type="text/javascript" src="/mvb_report_statistic/static/src/js/pivot_render.js"></script>
+            <link rel="stylesheet" href="/mvb_report_statistic/static/src/scss/custom_views.scss"/>
+        </xpath>
+    </template>
+</odoo> -->

@@ -1,0 +1,3547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="training_rp_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_lahien_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_lahien_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_lahien_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_lahien_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_lahien_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_lahien_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_lahien_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_lahien_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_lahien_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_lahien_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_lahien_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_lahien_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_lahien_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_lahien_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_lahien_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_lahien_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_lahien_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_lahien_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_lahien_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_lahien_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_lahien_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_lahien_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_lahien_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_lahien_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_lahien_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_lahien_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_lahien_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_lahien_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_lahien_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_lahien_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_lahien_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_lahien_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_lahien_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_lahien_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_lahien_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_lahien_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_lahien_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_lahien_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_lahien_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_ttdd_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_ttdd_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_ttdd_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_ttdd_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_ttdd_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_ttdd_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_ttdd_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_ttdd_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_ttdd_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_ttdd_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_ttdd_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_ttdd_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_ttdd_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_ttdd_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_ttdd_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_ttdd_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_ttdd_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_ttdd_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_ttdd_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_ttdd_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_ttdd_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_ttdd_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_ttdd_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_ttdd_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_ttdd_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_ttdd_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_ttdd_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_ttdd_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_ttdd_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_ttdd_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_ttdd_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_ttdd_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_ttdd_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_ttdd_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_ttdd_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_ttdd_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_ttdd_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_ttdd_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_ttdd_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_thannh_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_thannh_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_thannh_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_thannh_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_thannh_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_thannh_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_thannh_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_thannh_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_thannh_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_thannh_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_thannh_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_thannh_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_thannh_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_thannh_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_thannh_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_thannh_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_thannh_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_thannh_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_thannh_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_thannh_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_thannh_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_thannh_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_thannh_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_thannh_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_thannh_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_thannh_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_thannh_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_thannh_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_thannh_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_thannh_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_thannh_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_thannh_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_thannh_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_thannh_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_thannh_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_thannh_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_thannh_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_thannh_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_thannh_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_thannd_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_thannd_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_thannd_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_thannd_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_thannd_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_thannd_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_thannd_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_thannd_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_thannd_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_thannd_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_thannd_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_thannd_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_thannd_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_thannd_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_thannd_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_thannd_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_thannd_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_thannd_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_thannd_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_thannd_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_thannd_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_thannd_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_thannd_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_thannd_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_thannd_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_thannd_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_thannd_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_thannd_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_thannd_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_thannd_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_thannd_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_thannd_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_thannd_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_thannd_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_thannd_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_thannd_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_thannd_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_thannd_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_thannd_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_thankh_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_thankh_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_thankh_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_thankh_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_thankh_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_thankh_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_thankh_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_thankh_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_thankh_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_thankh_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_thankh_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_thankh_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_thankh_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_thankh_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_thankh_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_thankh_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_thankh_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_thankh_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_thankh_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_thankh_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_thankh_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_thankh_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_thankh_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_thankh_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_thankh_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_thankh_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_thankh_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_thankh_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_thankh_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_thankh_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_thankh_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_thankh_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_thankh_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_thankh_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_thankh_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_thankh_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_thankh_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_thankh_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_thankh_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_dautuxd_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_dautuxd_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_dautuxd_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_dautuxd_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_dautuxd_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_dautuxd_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_dautuxd_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_dautuxd_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_dautuxd_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_dautuxd_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_dautuxd_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_dautuxd_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_dautuxd_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_dautuxd_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_dautuxd_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_dautuxd_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_dautuxd_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_dautuxd_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_dautuxd_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_dautuxd_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_dautuxd_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_dautuxd_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_dautuxd_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_dautuxd_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_dautuxd_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_dautuxd_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_dautuxd_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_dautuxd_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_dautuxd_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_dautuxd_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_dautuxd_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_dautuxd_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_dautuxd_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_dautuxd_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_dautuxd_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_dautuxd_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_dautuxd_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_dautuxd_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_dautuxd_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_tanquang_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_tanquang_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_tanquang_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_tanquang_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_tanquang_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_tanquang_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_tanquang_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_tanquang_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_tanquang_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_tanquang_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_tanquang_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_tanquang_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_tanquang_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_tanquang_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_tanquang_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_tanquang_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_tanquang_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_tanquang_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_tanquang_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_tanquang_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_tanquang_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_tanquang_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_tanquang_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_tanquang_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_tanquang_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_tanquang_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_tanquang_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_tanquang_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_tanquang_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_tanquang_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_tanquang_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_tanquang_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_tanquang_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_tanquang_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_tanquang_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_tanquang_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_tanquang_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_tanquang_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_tanquang_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_quantrieu_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_quantrieu_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_quantrieu_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_quantrieu_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_quantrieu_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_quantrieu_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_quantrieu_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_quantrieu_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_quantrieu_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_quantrieu_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_quantrieu_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_quantrieu_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_quantrieu_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_quantrieu_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_quantrieu_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_quantrieu_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_quantrieu_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_quantrieu_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_quantrieu_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_quantrieu_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_quantrieu_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_quantrieu_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_quantrieu_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_quantrieu_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_quantrieu_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_quantrieu_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_quantrieu_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_quantrieu_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_quantrieu_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_quantrieu_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_quantrieu_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_quantrieu_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_quantrieu_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_quantrieu_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_quantrieu_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_quantrieu_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_quantrieu_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_quantrieu_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_quantrieu_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_kdth_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_kdth_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_kdth_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_kdth_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_kdth_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_kdth_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_kdth_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_kdth_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_kdth_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_kdth_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_kdth_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_kdth_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_kdth_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_kdth_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_kdth_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_kdth_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_kdth_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_kdth_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_kdth_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_kdth_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_kdth_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_kdth_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_kdth_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_kdth_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_kdth_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_kdth_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_kdth_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_kdth_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_kdth_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_kdth_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_kdth_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_kdth_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_kdth_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_kdth_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_kdth_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_kdth_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_kdth_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_kdth_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_kdth_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_tbal_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_tbal_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_tbal_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_tbal_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_tbal_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_tbal_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_tbal_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_tbal_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_tbal_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_tbal_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_tbal_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_tbal_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_tbal_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_tbal_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_tbal_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_tbal_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_tbal_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_tbal_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_tbal_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_tbal_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_tbal_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_tbal_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_tbal_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_tbal_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_tbal_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_tbal_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_tbal_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_tbal_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_tbal_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_tbal_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_tbal_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_tbal_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_tbal_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_tbal_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_tbal_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_tbal_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_tbal_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_tbal_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_tbal_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_vttb_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_vttb_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_vttb_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_vttb_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_vttb_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_vttb_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_vttb_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_vttb_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_vttb_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_vttb_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_vttb_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_vttb_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_vttb_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_vttb_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_vttb_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_vttb_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_vttb_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_vttb_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_vttb_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_vttb_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_vttb_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_vttb_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_vttb_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_vttb_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_vttb_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_vttb_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_vttb_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_vttb_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_vttb_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_vttb_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_vttb_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_vttb_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_vttb_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_vttb_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_vttb_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_vttb_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_vttb_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_vttb_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_vttb_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_ksthainguyen_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_ksthainguyen_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_ksthainguyen_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_ksthainguyen_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_ksthainguyen_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_ksthainguyen_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_ksthainguyen_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_ksthainguyen_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_ksthainguyen_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_ksthainguyen_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_ksthainguyen_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_ksthainguyen_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_ksthainguyen_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_ksthainguyen_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_ksthainguyen_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_ksthainguyen_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_ksthainguyen_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_ksthainguyen_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_ksthainguyen_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_ksthainguyen_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_ksthainguyen_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_ksthainguyen_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_ksthainguyen_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_ksthainguyen_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_ksthainguyen_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_ksthainguyen_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_ksthainguyen_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_ksthainguyen_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_ksthainguyen_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_ksthainguyen_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_ksthainguyen_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="training_rp_cmk_1" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="training_rp_cmk_2" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_rp_cmk_3" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_rp_cmk_4" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_rp_cmk_5" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_rp_cmk_6" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_3'),ref('training_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="training_rp_cmk_11" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_rp_cmk_12" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_rp_cmk_13" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_13')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_rp_cmk_14" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_rp_cmk_15" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_rp_cmk_16" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_10'),ref('training_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="training_rp_cmk_18" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_rp_cmk_19" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_rp_cmk_20" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_rp_cmk_21" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_rp_cmk_22" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_rp_cmk_23" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_2'),ref('training_17'),ref('training_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="training_rp_cmk_25" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_25')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_rp_cmk_26" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_rp_cmk_27" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_rp_cmk_28" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_rp_cmk_29" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_rp_cmk_30" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="training_rp_cmk_32" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_rp_cmk_33" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_1'),ref('training_24'),ref('training_31'),ref('training_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">33</field>
+        </record>
+
+
+        <record id="training_rp_cmk_37" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_37')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_rp_cmk_38" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_36'),ref('training_38')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_rp_cmk_39" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_39')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="training_rp_cmk_41" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_41')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_rp_cmk_42" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_40'),ref('training_42')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_rp_cmk_43" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_43')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_rp_cmk_44" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_44')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_rp_cmk_45" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_45')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_rp_cmk_46" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_35'),ref('training_46')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="training_rp_cmk_48" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_48')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_rp_cmk_49" model="train.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_49')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">49</field>
+        </record>
+
+        <record id="training_rp_cmk_51" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_51')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_rp_cmk_52" model="train.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('training_34'),ref('training_47'),ref('training_50'),ref('training_52')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">52</field>
+        </record>
+
+    </data>
+</odoo>

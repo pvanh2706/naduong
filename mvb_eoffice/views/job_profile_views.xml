@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mvb_job_assign_form" model="ir.ui.view">
+        <field name="name">mvb.job_assign.form</field>
+        <field name="model">mvb.job_assign</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group col="4">
+                        <field name="user_id"/>
+                        <field name="job_profile_id"/>
+                        <field name="description"/>
+                        <field name="stage"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mvb_job_assign_tree" model="ir.ui.view">
+        <field name="name">mvb.job_assign.tree</field>
+        <field name="model">mvb.job_assign</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="user_id"/>
+                <field name="job_profile_id"/>
+                <field name="description"/>
+                <field name="stage"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mvb_job_assign_search" model="ir.ui.view">
+        <field name="name">mvb.job_assign.search</field>
+        <field name="model">mvb.job_assign</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <filter name="done" string="Hoàn thành" domain="[('state','=','done')]"/>
+                <filter name="undone" string="Chưa hoàn thành" domain="[('state','=','undone')]"/>
+                <group expand="0" string="Group By">
+                    <filter name="profile" string="Hồ sơ" domain="[]" context="{'group_by':'job_profile_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="mvb_job_assign_action" model="ir.actions.act_window">
+        <field name="name">Danh sách công việc</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mvb.job_assign</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_search_id" ref="mvb_job_assign_search"/>
+        <field name="context">{'search_default_profile':1}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+            </p>
+            <p>
+                <!-- More details about what a user can do with this object will be OK -->
+            </p>
+        </field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+<!--    <menuitem id="mvb_job_assign_menu" name="Danh sách công việc" parent="mvb_menu_job_profiles_cate"-->
+<!--              action="mvb_job_assign_action" sequence="5"/>-->
+
+    <record id="mvb_job_profiles_form" model="ir.ui.view">
+        <field name="name">mvb.job.profiles.form</field>
+        <field name="model">mvb.job.profiles</field>
+        <field name="arch" type="xml">
+            <form string="">
+                 <header>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="......"/>
+                        </h1>
+                    </div>
+                    <group col="4">
+                        <field name="incoming_text_id"/>
+                        <field name="description"/>
+                    </group>
+                    <notebook>
+                        <page string="Danh sách công việc">
+                            <field name="job_assign_ids">
+                                <tree editable="bottom">
+                                    <field name="user_id"/>
+                                    <field name="description"/>
+                                    <field name="stage"/>
+                                    <field name="state" readonly="1"/>
+                                    <button string="Hoàn thành" name="to_done" class="oe_highlight" type="object"
+                                            attrs="{'invisible': [('state','=','done')]}"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mvb_job_profiles_tree" model="ir.ui.view">
+        <field name="name">mvb.job.profiles.tree</field>
+        <field name="model">mvb.job.profiles</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="incoming_text_id"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mvb_job_profiles_action" model="ir.actions.act_window">
+        <field name="name">Hồ sơ công việc</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mvb.job.profiles</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+            </p>
+            <p>
+                <!-- More details about what a user can do with this object will be OK -->
+            </p>
+        </field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+<!--    <menuitem id="mvb_job_profiles_menu" name="Hồ sơ công việc" parent="mvb_menu_job_profiles_cate"-->
+<!--              action="mvb_job_profiles_action" sequence="1"/>-->
+
+</odoo>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="mvb_text_leadership_action" model="ir.actions.act_window">
+            <field name="name">Chỉ đạo lãnh đạo</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.leadership.direction</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="mvb_text_member_action" model="ir.actions.act_window">
+            <field name="name">Công việc phân công</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.member.direction</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="mvb_text_storage_action" model="ir.actions.act_window">
+            <field name="name">Lưu trữ văn bản</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document.storage</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <!-- <record id="mvb_text_external_company_action" model="ir.actions.act_window">
+            <field name="name">Công ty ngoài</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.external.company</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Add Text Here
+                </p>
+                <p>
+                    More details about what a user can do with this object will be OK
+                </p>
+            </field>
+        </record> -->
+
+        <record id="mvb_text_come_finish_action" model="ir.actions.act_window">
+            <field name="name">Văn bản đến kết thúc</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.incoming.text</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','finish')]</field>
+            <field name="context">{'tree_view_ref': 'mvb_eoffice.mvb_text_to_come_tree_view', 'form_view_ref':
+                'mvb_eoffice.mvb_text_to_come_form_view'}  </field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+         <record id="mvb_text_come_notification_action" model="ir.actions.act_window">
+            <field name="name">Văn bản thông báo</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.incoming.text</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','notification')]</field>
+            <field name="context">{'tree_view_ref': 'mvb_eoffice.mvb_text_to_come_tree_view', 'form_view_ref':
+                'mvb_eoffice.mvb_text_to_come_form_view'}
+            </field>
+        </record>
+
+
+        <record id="mvb_text_go_finish_action" model="ir.actions.act_window">
+            <field name="name">Văn bản đi kết thúc</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.draft.text.go</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','finish')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="mvb_text_incoming_for_me_action" model="ir.actions.act_window">
+            <field name="name">Văn bản đến chờ xử lý</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.people.processing.text</field>
+            <field name="view_mode">tree</field>
+            <field name="domain">[('check_work','=', False), ('name.id','=',uid)]
+            </field>
+<!--            <field name="view_id" ref="mvb_text_incoming_for_me_tree_view"/>-->
+
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="mvb_text_incoming_for_me_follow" model="ir.actions.act_window">
+            <field name="name">Văn bản đến đang theo dõi</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.people.processing.text</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','theodoi'), ('name.id','=',uid)]</field>
+<!--            <field name="view_id" ref="mvb_text_incoming_for_me_tree_view_2"/>-->
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="mvb_text_go_for_me_action" model="ir.actions.act_window">
+            <field name="name">Văn bản đi chờ xử lý</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.people.processing.textdraft</field>
+            <field name="view_mode">tree</field>
+            <field name="domain">[('state','=','chuaxuly'), ('name.id','=',uid)]</field>
+            <field name="context" eval="{'search_default_group_by_department': 1 }"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

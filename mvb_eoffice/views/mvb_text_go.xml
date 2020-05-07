@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Tree view văn bản đi-->
+        <record id="mvb_text_go_tree_view" model="ir.ui.view">
+            <field name="name">Văn bản đi</field>
+            <field name="model">mvb.text.go</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="text_go_notebook"/>
+                    <field name="id_text_go" string="Số đi" force_save="1"/>
+                    <field name="delivery_date"/>
+                    <field name="name"/>
+                    <field name="promulgate_date"/>
+                    <field name="content_compendium"/>
+                    <field name="company_external" widget="many2many_tags" string="Nơi nhận"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <!--Form văn bản đi-->
+        <record id="mvb_text_go_form_view" model="ir.ui.view">
+            <field name="name">Văn bản đi</field>
+            <field name="model">mvb.text.go</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                        <button name="save_for_document" type="object" string="Lưu trữ"
+                                class="oe_highlight" states='waitting'/>
+                        <field name="state" widget="statusbar" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <!-- <field name="draft_text_id" nolabel="0"/> -->
+                        <group string="Thông tin chung" colspan="2" col="6">
+                            <field name="id_text_go" string="Số đi" readonly="0"/>
+                            <field name="delivery_date"/>
+                            <!-- <field name="text_go_book" attrs="{'invisible': 1}"/> -->
+                            <field name="text_go_notebook" options="{'no_create': True, 'no_create_edit':True}" domain = "[('type_doc', '=', 'đi')]"/>
+                            <field name="text_go_type"/>
+                        </group>
+                        <group colspan="2" col="4" style="width:68%%">
+                            <field name="name" force_save="1"/>
+                            <field name="promulgate_date" string="Ngày phát hành"/>
+                        </group>
+                        <group>
+                            <field name="content_compendium"/>
+                        </group>
+                        <group>
+                            <field name="file_attachment" widget="many2many_binary" class="oe_inline"/>
+                        </group>
+                        <group>
+                        </group>
+                        <notebook>
+                            <page string="Thông tin khác">
+                                <group colspan="2" col="4">
+                                    <field name="date_signed_text"/>
+                                    <field name="urgency"/>
+                                    <field name="name_signed_text"/>
+                                    <field name="security_level"/>
+                                    <field name="job_signed_text" force_save="1"/>
+                                    <field name="page_number"/>
+                                    <field name="language_text"/>
+                                </group>
+                                <group>
+                                    <field name="text_go_notes"/>
+                                </group>
+                                <group colspan="2" col="4">
+                                    <field name="draft_text_id" readonly="1"/>
+                                    <field name="date_create" readonly="1" force_save="1"/>
+                                    <field name="user_create" readonly="1" force_save="1"/>
+                                    <field name="department_create" readonly="1" force_save="1"/>
+                                    <field name="job_create" readonly="1" force_save="1"/>
+                                </group>
+                            </page>
+                            <page string="Nơi nhận">
+                                <group string="Công ty ngoài">
+                                    <field name="company_external" nolabel="1">
+                                        <tree>
+                                            <field name="company_name"/>
+                                            <field name="text_go_type_send"/>
+                                            <field name="number_of_received"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                                <group string="Trong nội bộ công ty">
+                                    <field name="member"
+                                        context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                                        options="{'no_create': True}" nolabel="1">
+                                            <tree>
+                                                <field name="name"/>
+                                                <field name="login" string="Tài khoản"/>
+                                                <field name="mvb_department_name"/>
+                                                <field name="mvb_job_name"/>
+                                                <control>
+                                                    <create string="Thêm người dùng"/>
+                                                </control>
+                                            </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <!--                            <page string="Thông tin lưu trữ">-->
+                            <!--                                <group>-->
+                            <!--                                    <field name="storage_data" nolabel="1">-->
+                            <!--                                        <tree>-->
+                            <!--                                            <field name="name"/>-->
+                            <!--                                            <field name="number_storage"/>-->
+                            <!--                                            <field name="human_resources_saved"/>-->
+                            <!--                                            <field name="date_storage"/>-->
+                            <!--                                        </tree>-->
+                            <!--                                    </field>-->
+                            <!--                                </group>-->
+                            <!--                            </page>-->
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_to_go_action" model="ir.actions.act_window">
+            <field name="name">Văn bản đi</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.text.go</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|',('member.id','=',uid),('create_uid','=',uid)]</field>
+            <field name="inherit_id" ref="mvb_documents.menu_document_private_action"/>
+            <field name="help" type="html">
+
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

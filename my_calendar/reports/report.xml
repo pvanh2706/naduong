@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+            id="report_calendar_report"
+            string="Lịch công tác tuần"
+            model="doimoi.total.calendar"
+            report_type="qweb-pdf"
+            name="my_calendar.report_calendar_week"
+            file="my_calendar.report_calendar_week"
+            paperformat="my_calendar.paperformat_A4_ngang"
+            groups="my_calendar.group_work_calendar_leadership_doctor,my_calendar.group_work_calendar_leads"
+    />
+</odoo>

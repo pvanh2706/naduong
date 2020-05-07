@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!--        <record id="hr_action_doc_dash_board" model="ir.actions.client">-->
+<!--            <field name="name">Trang chủ</field>-->
+<!--            <field name="tag">doc_dash_board</field>-->
+<!--        </record>-->
+        <!-- This Menu Item must have a parent and an action -->
+<!--        <menuitem id="menu_dashboard_action" name="Dashboard" parent="mvb_text_root" action="hr_action_doc_dash_board" sequence="11"/>-->
+    </data>
+<!--    <template id="assets_backend" name="Hr Dashboard assets" inherit_id="web.assets_backend">-->
+<!--        <xpath expr="." position="inside">-->
+<!--            <script type="text/javascript" src="/hrms_dashboard/static/src/js/hrms_dashboard.js"/>-->
+<!--            <link rel="stylesheet" href="/hrms_dashboard/static/src/css/hrms_dashboard.css"/>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>

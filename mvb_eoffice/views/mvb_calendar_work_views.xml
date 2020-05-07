@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="mvb_calendar_work_tree" model="ir.ui.view">
+            <field name="name">mvb.calendar.work.tree</field>
+            <field name="model">mvb.calendar.work</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="work_date_start"/>
+                    <field name="work_date_end"/>
+                    <field name="content"/>
+                </tree>
+            </field>
+        </record>
+        <record id="mvb_calendar_work_calendar" model="ir.ui.view">
+            <field name="name">mvb.calendar.work.calendar</field>
+            <field name="model">mvb.calendar.work</field>
+            <field name="arch" type="xml">
+                <calendar string="Lịch công tác" date_start="work_date_start" date_stop="work_date_end"
+                          color="employee_id" mode="week"
+                          quick_add="False">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="content"/>
+                </calendar>
+            </field>
+        </record>
+        <record id="mvb_calendar_work_form" model="ir.ui.view">
+            <field name="name">mvb.calendar.work.form</field>
+            <field name="model">mvb.calendar.work</field>
+            <field name="arch" type="xml">
+                <form string="Lịch công tác">
+                    <sheet>
+                        <div class="oe_title">
+                            <div class="oe_edit_only">
+                                <label for="name"/>
+                            </div>
+                            <h1>
+                                <field name="name" placeholder="Ví dụ: Hội nghị"/>
+                            </h1>
+                        </div>
+                        <!--                        <group>-->
+                        <!--                        </group>-->
+                        <!--                        <label for="employee_id" string="Nhân viên" class="oe_edit_only"/>-->
+                        <!--                        <field name="employee_id">-->
+                        <!--                            <tree>-->
+                        <!--                                <field name="name"/>-->
+                        <!--                                <field name="mvb_department_name"/>-->
+                        <!--                                <field name="mvb_job_name"/>-->
+                        <!--                            </tree>-->
+                        <!--                        </field>-->
+                        <group colspan="2" col="4">
+                            <field name="employee_id"/>
+                            <field name="work_date_start"/>
+                            <field name="work_date_end"/>
+                            <field name="address"/>
+                        </group>
+                        <label for="content"/>
+                        <field name="content" placeholder="Viết lịch công tác tại đây"/>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_calendar_work_action" model="ir.actions.act_window">
+            <field name="name">Lịch công tác</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.calendar.work</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">calendar,tree,form</field>
+            <field name="context">{'group_by' : 'employee_id'}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Hãy tạo một lịch công tác mới !
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

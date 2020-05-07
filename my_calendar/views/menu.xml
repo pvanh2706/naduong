@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="domoi_work_calendar_root" name="Lịch công tác" sequence="1"
+                  web_icon="my_calendar,static/description/icon.png"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="domoi_work_calendar_categ" name="Lịch công tác cá nhân" parent="domoi_work_calendar_root"
+                  action="doimoi_work_calendar_action"
+                  sequence="1" groups="my_calendar.group_work_calendar_leadership"/>
+        <menuitem id="doimoi_manager_work_calendar_action" name="Tổng hợp lịch công tác"
+                  parent="domoi_work_calendar_root"
+                  action="doimoi_work_calendar_action_leads"
+                  sequence="5" groups="my_calendar.group_work_calendar_leads"/>
+        <!--         <menuitem id="doimoi_total_calendar_wizards_categ" name="Tổng hợp lịch" parent="domoi_work_calendar_root"-->
+        <!--                  action="doimoi_total_calendar_wizards_action"-->
+        <!--                  sequence="10" groups="my_calendar.group_work_calendar_leads"/>-->
+        <menuitem id="doimoi_total_calendar_edit_categ" name="Lịch công tác cần sửa lại"
+                  parent="domoi_work_calendar_root"
+                  action="doimoi_total_calendar_action_edit"
+                  sequence="13" groups="my_calendar.group_work_calendar_leads"/>
+        <menuitem id="doimoi_total_calendar_categ" name="Lịch công tác chờ duyệt" parent="domoi_work_calendar_root"
+                  action="doimoi_total_calendar_action"
+                  sequence="15" groups="my_calendar.group_work_calendar_leadership_doctor"/>
+        <menuitem id="doimoi_total_calendar_wizards_public_categ" name="Lịch công tác tuần Ban Lãnh Đạo"
+                  parent="domoi_work_calendar_root"
+                  action="doimoi_total_calendar_action_public"
+                  sequence="20" groups="my_calendar.group_work_calendar_employee"/>
+        <menuitem id="document_guide_wizards_categ" name="Hướng dẫn sử dụng" parent="domoi_work_calendar_root"
+                  action="document_guide_view_action"
+                  sequence="25"
+                  groups="my_calendar.group_work_calendar_leadership,my_calendar.group_work_calendar_leads"/>
+    </data>
+</odoo>

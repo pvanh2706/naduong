@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="menu_document_bidding_state_search_view" model="ir.ui.view">
+        <field name="name">menu_document_bidding_state_search_view</field>
+        <field name="model">mvb.document.bidding.package</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <group expand="0" string="Group By">
+                    <filter name="group_by_project_name" string="Dự án" domain="[]"
+                            context="{'group_by':'project_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="mvb_project_bidding_package_tree_view" model="ir.ui.view">
+        <field name="name">mvb_project_bidding_package_tree_view</field>
+        <field name="model">mvb.document.bidding.package</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="project_id"></field>
+                <field name="name"/>
+                <field name="type_bidding"></field>
+                <field name="method_bidding"></field>
+                <field name="time_to_start"/>
+                <field name="type_contract"/>
+                <field name="duration_of_contract"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mvb_project_bidding_package_form_view" model="ir.ui.view">
+        <field name="name">mvb_project_bidding_package_form_view</field>
+        <field name="model">mvb.document.bidding.package</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group colspan="2" col="4">
+                        <field name="bidding_code"/>
+                        <field name="name"/>
+                        <field name="cost_bidding"/>
+                        <field name="capital_source"/>
+                        <field name="type_bidding"/>
+                        <field name="method_bidding"/>
+                        <field name="field_bidding"/>
+                        <field name="time_to_start"/>
+                        <field name="type_contract"/>
+                        <field name="duration_of_contract"/>
+                        <field name="project_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

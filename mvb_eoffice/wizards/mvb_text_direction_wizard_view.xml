@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mvb_text_direction_wizard_form_solution" model="ir.ui.view">
+            <field name="name">mvb_text_direction_wizard_form</field>
+            <field name="model">mvb.text.direction.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Chuyển xử lý VB">
+                    <group>
+                        <field name="content_direction"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="deadline"/>
+                        </group>
+                    </group>
+                    <div>
+                        <field name="document_position" widget="radio" options="{'horizontal': true}" readonly="0"
+                               groups="mvb_eoffice.group_incoming_text_leadership" invisible="1"/>
+                        <field name="lead_position" widget="radio" options="{'horizontal': true}" readonly="0"
+                               groups="mvb_eoffice.group_incoming_text_leadership" invisible="1"/>
+                        <field name="add_multi_user" widget="radio" options="{'horizontal': true}"/>
+                        <field name="check" invisible="1"/>
+                    </div>
+                    <!--                    <group colspan="2" col="6">-->
+                    <field name="person_receiver_ids" attrs="{'invisible': ['!',('add_multi_user','=','receiver')]}"
+                           context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                           options="{'no_create': True, 'no_edit': True }" nolabel="1">
+                        <tree>
+
+                            <field name="name" string="Tên người dùng"/>
+                            <field name="login" string="Tài khoản"/>
+                            <field name="mvb_department_name"/>
+                            <field name="mvb_job_name"/>
+                            <control>
+                                <create string="Thêm người dùng"/>
+                            </control>
+                        </tree>
+                    </field>
+
+
+                    <!--                    </group>-->
+                    <!--                    <group>-->
+                    <field name="person_coordinator_handles_ids"
+                           attrs="{'invisible': ['!',('add_multi_user','=','coordinator')], 'readonly': [('check', '=', False)]}"
+                           context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                           options="{'no_create': True, 'no_edit': True }" nolabel="1">
+                        <tree>
+                            <field name="name" string="Tên người dùng"/>
+                            <field name="login" string="Tài khoản"/>
+                            <field name="mvb_department_name"/>
+                            <field name="mvb_job_name"/>
+                            <control>
+                                <create string="Thêm người dùng"/>
+                            </control>
+                        </tree>
+                    </field>
+                    <!--                    </group>-->
+                    <!--                    <group>-->
+                    <field name="person_follow_ids" attrs="{'invisible': ['!',('add_multi_user','=','follow')]}"
+                           context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                           options="{'no_create': True, 'no_edit': True }" nolabel="1">
+                        <tree>
+                            <field name="name" string="Tên người dùng"/>
+                            <field name="login" string="Tài khoản"/>
+                            <field name="mvb_department_name"/>
+                            <field name="mvb_job_name"/>
+                            <control>
+                                <create string="Thêm người dùng"/>
+                            </control>
+                        </tree>
+                    </field>
+                    <!--                    </group>-->
+                    <footer>
+                        <button name="action_solution_direction" string="Gửi" type="object" class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_direction_wizard_form_solution_2" model="ir.ui.view">
+            <field name="name">mvb_text_direction_wizard_form</field>
+            <field name="model">mvb.text.direction.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Xin ý kiến chỉ đạo">
+                    <group>
+                        <field name="content_direction"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="deadline"/>
+                        </group>
+                    </group>
+                    <div>
+                        <field name="doctor_position" widget="radio" options="{'horizontal': true}" invisible="1"/>
+                        <field name="lead_position" widget="radio" options="{'horizontal': true}" invisible="1"/>
+                    </div>
+                    <group invisible="0">
+                        <field name="person_receiver_ids" nolabel="0">
+                            <tree>
+                                <field name="name" string="Tên người dùng"/>
+                                <field name="login" string="Tài khoản"/>
+                                <field name="mvb_department_name"/>
+                                <field name="mvb_job_name"/>
+                                <control>
+                                    <create string="Thêm người dùng"/>
+                                </control>
+                            </tree>
+                        </field>
+                        <field name="person_follow_ids" string="Trường hành chính" nolabel="0" invisible="0" >
+                            <tree>
+                                <field name="name" string="Tên người dùng"/>
+                                <field name="login" string="Tài khoản"/>
+                                <field name="mvb_department_name"/>
+                                <field name="mvb_job_name"/>
+                                <control>
+                                    <create string="Thêm người dùng"/>
+                                </control>
+                            </tree>
+                        </field>
+                    </group>
+                    <footer>
+                        <button name="action_solution_direction" string="Gửi" type="object" class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_direction_wizard_form_reply_3" model="ir.ui.view">
+            <field name="name">mvb_text_direction_wizard_form</field>
+            <field name="model">mvb.text.direction.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Trả lời văn bản">
+                    <group>
+                        <field name="content_direction"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="deadline"/>
+                        </group>
+                    </group>
+                    <div>
+                        <field name="person_feedback" widget="radio" options="{'horizontal': true}" invisible="1"/>
+                    </div>
+                    <group invisible="0" string="Người nhận">
+                        <div>
+                            <field name="person_receiver_ids" nolabel="0" readonly="0"
+                                   options="{'no_create': True, 'no_edit': True, 'no_open': True }">
+                                <tree>
+                                    <field name="name" width="30"/>
+                                    <field name="login" width="30" string="Tài khoản"/>
+                                    <field name="mvb_department_name"/>
+                                    <field name="mvb_job_name" width="30"/>
+                                    <control>
+                                        <create string="Thêm người dùng"/>
+                                    </control>
+                                </tree>
+                                <form>
+                                    <field name="name" width="30"/>
+                                </form>
+                            </field>
+                        </div>
+                    </group>
+                    <footer>
+                        <button name="action_solution_direction" string="Gửi" type="object"
+                                class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_direction_wizard_action" model="ir.actions.act_window">
+            <field name="name">Xin ý kiến chỉ đạo</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.text.direction.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="mvb_text_direction_wizard_form_solution_2"/>
+            <field name="target">new</field>
+        </record>
+
+
+        <record id="mvb_text_direction_wizard_reply" model="ir.actions.act_window">    
+            <field name="name">Phần phản hồi lại</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.text.direction.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="mvb_text_direction_wizard_form_reply_3"/>
+            <field name="target">new</field>
+        </record>
+
+
+        <record id="mvb_text_direction_wizard" model="ir.actions.act_window">
+            <field name="name">Chuyển xử lý văn bản</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.text.direction.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="mvb_text_direction_wizard_form_solution"/>
+            <field name="target">new</field>
+        </record>
+
+
+    </data>
+</odoo>

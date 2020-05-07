@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data noupdate="1">
+    <record model="ethnic.group" id="dt01">
+        <field name="name">Kinh</field>
+    </record>
+    <record model="ethnic.group" id="dt02">
+        <field name="name">Tày</field>
+    </record>
+    <record model="ethnic.group" id="dt03">
+        <field name="name">Thái</field>
+    </record>
+    <record model="ethnic.group" id="dt04">
+        <field name="name">Mường</field>
+    </record>
+    <record model="ethnic.group" id="dt05">
+        <field name="name">Khmer</field>
+    </record>
+    <record model="ethnic.group" id="dt06">
+        <field name="name">H'Mông</field>
+    </record>
+    <record model="ethnic.group" id="dt07">
+        <field name="name">Nùng</field>
+    </record>
+    <record model="ethnic.group" id="dt08">
+        <field name="name">Hoa</field>
+    </record>
+    <record model="ethnic.group" id="dt09">
+        <field name="name">Dao</field>
+    </record>
+    <record model="ethnic.group" id="dt10">
+        <field name="name">Gia Rai</field>
+    </record>
+    <record model="ethnic.group" id="dt11">
+        <field name="name">Ê Đê</field>
+    </record>
+    <record model="ethnic.group" id="dt12">
+        <field name="name">Ba Na</field>
+    </record>
+    <record model="ethnic.group" id="dt13">
+        <field name="name">Xơ Đăng</field>
+    </record>
+    <record model="ethnic.group" id="dt14">
+        <field name="name">Sán Chay</field>
+    </record>
+    <record model="ethnic.group" id="dt15">
+        <field name="name">Cơ Ho</field>
+    </record>
+    <record model="ethnic.group" id="dt16">
+        <field name="name">Chăm</field>
+    </record>
+    <record model="ethnic.group" id="dt17">
+        <field name="name">Sán Dìu</field>
+    </record>
+    <record model="ethnic.group" id="dt18">
+        <field name="name">Hrê</field>
+    </record>
+    <record model="ethnic.group" id="dt19">
+        <field name="name">Ra Glai</field>
+    </record>
+    <record model="ethnic.group" id="dt20">
+        <field name="name">M'Nông</field>
+    </record>
+    <record model="ethnic.group" id="dt21">
+        <field name="name">X’Tiêng</field>
+    </record>
+    <record model="ethnic.group" id="dt22">
+        <field name="name">Bru-Vân Kiều</field>
+    </record>
+    <record model="ethnic.group" id="dt23">
+        <field name="name">Thổ</field>
+    </record>
+    <record model="ethnic.group" id="dt24">
+        <field name="name">Khơ Mú</field>
+    </record>
+    <record model="ethnic.group" id="dt25">
+        <field name="name">Cơ Tu</field>
+    </record>
+    <record model="ethnic.group" id="dt26">
+        <field name="name">Giáy</field>
+    </record>
+    <record model="ethnic.group" id="dt27">
+        <field name="name">Giẻ Triêng</field>
+    </record>
+    <record model="ethnic.group" id="dt28">
+        <field name="name">Tà Ôi</field>
+    </record>
+    <record model="ethnic.group" id="dt29">
+        <field name="name">Mạ</field>
+    </record>
+    <record model="ethnic.group" id="dt30">
+        <field name="name">Co</field>
+    </record>
+    <record model="ethnic.group" id="dt31">
+        <field name="name">Chơ Ro</field>
+    </record>
+    <record model="ethnic.group" id="dt32">
+        <field name="name">Xinh Mun</field>
+    </record>
+    <record model="ethnic.group" id="dt33">
+        <field name="name">Hà Nhì</field>
+    </record>
+    <record model="ethnic.group" id="dt34">
+        <field name="name">Chu Ru</field>
+    </record>
+    <record model="ethnic.group" id="dt35">
+        <field name="name">Lào</field>
+    </record>
+    <record model="ethnic.group" id="dt36">
+        <field name="name">Kháng</field>
+    </record>
+    <record model="ethnic.group" id="dt37">
+        <field name="name">La Chí</field>
+    </record>
+    <record model="ethnic.group" id="dt38">
+        <field name="name">Phù Lá</field>
+    </record>
+    <record model="ethnic.group" id="dt39">
+        <field name="name">La Hủ</field>
+    </record>
+    <record model="ethnic.group" id="dt40">
+        <field name="name">La Ha</field>
+    </record>
+    <record model="ethnic.group" id="dt41">
+        <field name="name">Pà Thẻn</field>
+    </record>
+    <record model="ethnic.group" id="dt42">
+        <field name="name">Chứt</field>
+    </record>
+    <record model="ethnic.group" id="dt43">
+        <field name="name">Lự</field>
+    </record>
+    <record model="ethnic.group" id="dt44">
+        <field name="name">Lô Lô</field>
+    </record>
+    <record model="ethnic.group" id="dt45">
+        <field name="name">Mảng</field>
+    </record>
+    <record model="ethnic.group" id="dt46">
+        <field name="name">Cờ Lao</field>
+    </record>
+    <record model="ethnic.group" id="dt47">
+        <field name="name">Bố Y</field>
+    </record>
+    <record model="ethnic.group" id="dt48">
+        <field name="name">Cống</field>
+    </record>
+    <record model="ethnic.group" id="dt49">
+        <field name="name">Ngái</field>
+    </record>
+    <record model="ethnic.group" id="dt50">
+        <field name="name">Si La</field>
+    </record>
+    <record model="ethnic.group" id="dt51">
+        <field name="name">Pu Péo</field>
+    </record>
+    <record model="ethnic.group" id="dt52">
+        <field name="name">Rơ măm</field>
+    </record>
+    <record model="ethnic.group" id="dt53">
+        <field name="name">Brâu</field>
+    </record>
+    <record model="ethnic.group" id="dt54">
+        <field name="name">Ơ Đu</field>
+    </record>
+</data>

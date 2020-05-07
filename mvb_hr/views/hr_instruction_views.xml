@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_instruction_form" model="ir.ui.view">
+        <field name="name">hr.instruction.form</field>
+        <field name="model">hr.instruction</field>
+        <field name="arch" type="xml">
+            <form string="" create="0" edit="0">
+                <sheet>
+                <div>
+                    <p><strong>Hướng dẫn sử dụng chức năng “Hồ sơ nhân sự” của module Quản lý nhân sự</strong></p>
+<ol>
+<li><strong>Mục tiêu ứng dụng</strong></li>
+</ol>
+<ul>
+<li>Xây dựng cơ sở dữ liệu nhân sự của Tổng Công ty và các đơn vị thành viên trong Tổng Công ty</li>
+<li>Cung cấp các công cụ giúp thực hiện các nghiệp vụ liên quan một cách nhanh chóng, dễ dàng</li>
+</ul>
+<ol start="2">
+<li><strong>Chức năng chính</strong></li>
+</ol>
+<ul>
+<li>Hồ sơ nhân sự</li>
+<li>Chấm công và tính lương</li>
+<li>Đào tạo</li>
+<li>Báo cáo nhân sự</li>
+</ul>
+<ol start="3">
+<li><strong>Hướng dẫn sử dụng chức năng “Hồ sơ nhân sự”<br /><br /></strong>3.1. Tạo Hồ sơ nhân sự</li>
+</ol>
+<p><strong>Bước 1.</strong> Đăng nhập vào hệ thống và chọn Module Quản lý nhân sự</p>
+<img src="/mvb_hr/static/img/1.png" style="width:1000px;"/>
+<p><strong>Bước 2.</strong> Trong Module Quản lý nhân sự chọn click vào nút “Tạo”</p>
+<img src="/mvb_hr/static/img/2.png" style="width:1000px;"/>
+<p><strong>Bước 3.</strong> Nhập các trường thông tin cơ bản về nhân sự tại các menu <strong>“Thông tin chung nhân viên”</strong>, <strong>“Thông tin cá nhân khác”</strong>,<strong> “Quan hệ gia đình”</strong></p>
+<img src="/mvb_hr/static/img/3.png" style="width:1000px;"/>
+<ul>
+<li>Tại menu Hồ sơ đính kèm, click vào <strong>"Tải lên tập tin của bạn"</strong> rồi chọn tập tin tương ứng với từng hồ sơ bắt buộc cần lưu trữ
+</li>
+<img src="/mvb_hr/static/img/4.png" style="width:1000px;"/>
+</ul>
+<p>Trong trường hợp nhân sự có những hồ sơ khác cần lưu trữ ngoài những hồ sơ bắt buộc, người dùng click vào <strong>“Thêm một dòng”</strong> ở mục <strong>“Hồ sơ khác” </strong>để tải lên</p>
+<ul>
+<li>Tại menu “Tài khoản”, lựa chọn tài khoản được cấp cho nhân sự đó theo tên người dùng</li>
+<img src="/mvb_hr/static/img/5.png" style="width:1000px;"/>
+</ul>
+<p><strong>Bước 4:</strong> Sau khi đã nhập hết thông tin cần thiết, bấm nút “Lưu” để lưu trữ hồ sơ nhân sự<br /><br />3.2. Tìm kiếm hồ sơ nhân sự</p>
+<p><strong>Bước 1.</strong> Đăng nhập vào hệ thống và chọn Module <strong>“Quản lý nhân sự”</strong></p>
+<img src="/mvb_hr/static/img/6.png" style="width:1000px;"/>
+<p><strong>Bước 2</strong>. Trong màn hình hiển thị giao diện hồ sơ nhân sự, click vào ô “Tìm kiếm” và đánh tên nhân sự cần tìm kiếm và nhấn nút <strong>“enter”</strong> trên bàn phím<br /><br /></p>
+<img src="/mvb_hr/static/img/7.png" style="width:1000px;"/>
+<p>Bước 3. Hệ thống trả về thông tin của nhân sự cần tìm kiếm</p>
+<img src="/mvb_hr/static/img/8.png" style="width:1000px;"/>
+<p>3.3 Xóa hồ sơ nhân sự</p>
+<p><strong>Bước 1.</strong> Đăng nhập vào hệ thống và chọn Module <strong>“Quản lý nhân sự”</strong></p>
+<img src="/mvb_hr/static/img/9.png" style="width:1000px;"/>
+<p><strong>Bước 2</strong>. Trong màn hình hiển thị giao diện hồ sơ nhân sự, lựa chọn Công ty có nhân sự cần xóa</p>
+<img src="/mvb_hr/static/img/10.png" style="width:1000px;"/>
+<p><strong>Bước 3</strong>. Người dùng lựa chọn phòng ban và nhân sự cần xóa, sau đó click vào <strong>“Hành động”</strong> và lựa chọn xóa</p>
+<img src="/mvb_hr/static/img/11.png" style="width:1000px;"/>
+<p><strong>4. Hướng dẫn sử dụng chức năng “Hợp đồng lao động”</strong></p>
+<p>4.1 Tạo Hợp đồng lao động</p>
+<p><strong>Bước 1.</strong> Đăng nhập vào hệ thống và chọn Module <strong>“Quản lý nhân sự”</strong></p>
+<img src="/mvb_hr/static/img/12.png" style="width:1000px;"/>
+<p><strong>Bước 2</strong>. Trong màn hình hiển thị giao diện hồ sơ nhân sự, lựa chọn chuyên mục “Nhân sự” và chọn chức năng “Hợp đồng”</p>
+<img src="/mvb_hr/static/img/13.png" style="width:1000px;"/>
+<p>Trên màn hình hiển thị, ấn nút <strong>“Tạo”</strong></p>
+<p><strong>Bước 3</strong>. Người dùng nhập các thông tin về hợp đồng tương ứng với các trường dữ liệu.</p>
+<p>Lưu ý: Khi chọn Tên người lao động xong,trường dữ liệu <strong>“Phòng ban”</strong> và <strong>“Chức vụ”</strong> sẽ tự động cập nhật dữ liệu tương ứng với người lao động đó. </p>
+<img src="/mvb_hr/static/img/14.png" style="width:1000px;"/>
+<p><strong>Bước 4</strong>. Sau khi đã nhập hết thông tin cần thiết, bấm nút <strong>“Lưu”</strong></p>
+
+<p><strong>5. Hướng dẫn sử dụng chức năng “Quá trình làm việc”</strong></p>
+<p>5.1. Chuyên mục “Khen thưởng”</p>
+<p><strong>Bước 1.</strong> Đăng nhập vào hệ thống và chọn Module <strong>“Quản lý nhân sự”</strong></p>
+<img src="/mvb_hr/static/img/15.png" style="width:1000px;"/>
+<p><strong>Bước 2</strong>. Trong màn hình hiển thị giao diện hồ sơ nhân sự, lựa chọn chuyên mục “Nhân sự” và chọn chuyên mục <strong>“Khen thưởng”</strong> và nhấn nút <strong>“Tạo”</strong></p>
+<img src="/mvb_hr/static/img/16.png" style="width:1000px;"/>
+<p><strong>Bước 3</strong>. Trên màn hình hiển thị giao diện “Khen thưởng” người dùng lựa chọn nút <strong>“Tạo”</strong> và nhập các thông tin về kỷ luật tương ứng với các trường dữ liệu.</p>
+
+<p>Lưu ý: Khi chọn nhân viên xong, 2 trường phòng ban và chức vụ sẽ tự động cập nhật dữ liệu tương ứng với nhân viên đó, người dùng không cần nhập nữa</p>
+<img src="/mvb_hr/static/img/17.png" style="width:1000px;"/>
+<p><strong>Bước 4.</strong> Sau khi đã nhập hết thông tin cần thiết, bấm nút Lưu</p>
+<p>5.2 Chuyên mục “Kỷ luật”</p>
+<p><strong>Bước 1.</strong> Đăng nhập vào hệ thống và chọn Module <strong>“Quản lý nhân sự”</strong></p>
+<img src="/mvb_hr/static/img/18.png" style="width:1000px;"/>
+<p><strong>Bước 2</strong>. Trong màn hình hiển thị giao diện hồ sơ nhân sự, lựa chọn chuyên mục “Nhân sự” và chọn chuyên mục <strong>“Kỷ luật”</strong></p>
+<img src="/mvb_hr/static/img/19.png" style="width:1000px;"/>
+<p><strong>Bước 3</strong>. Trên màn hình hiển thị giao diện “Kỷ luật” người dùng lựa chọn nút <strong>“Tạo”</strong> và nhập các thông tin về kỷ luật tương ứng với các trường dữ liệu.</p>
+<p>Lưu ý: Khi chọn nhân viên xong, 2 trường phòng ban và chức vụ sẽ tự động cập nhật dữ liệu tương ứng với nhân viên đó, người dùng không cần nhập nữa</p>
+<img src="/mvb_hr/static/img/20.png" style="width:1000px;"/>
+<p><strong>Bước 4.</strong> Sau khi đã nhập hết thông tin cần thiết, bấm nút Lưu</p>
+<p>5.3. Chuyên mục “Quá trình công tác”</p>
+<p><strong>Bước 1.</strong> Đăng nhập vào hệ thống và chọn Module <strong>“Quản lý nhân sự”</strong></p>
+<img src="/mvb_hr/static/img/21.png" style="width:1000px;"/>
+<p><strong>Bước 2</strong>. Trong màn hình hiển thị giao diện hồ sơ nhân sự, lựa chọn chuyên mục “Nhân sự” và chọn chuyên mục <strong>“Quá trình công tác”</strong> và nhấn nút <strong>“Tạo”</strong></p>
+<img src="/mvb_hr/static/img/22.png" style="width:1000px;"/>
+<p><strong>Bước 3</strong>. Trên màn hình hiển thị giao diện “Quá trình công tác” người dùng lựa chọn nút <strong>“Tạo”</strong> và nhập các thông tin về kỷ luật tương ứng với các trường dữ liệu.</p>
+<img src="/mvb_hr/static/img/23.png" style="width:1000px;"/>
+<p>Lưu ý: Khi chọn nhân viên xong, 2 trường phòng ban và chức vụ sẽ tự động cập nhật dữ liệu tương ứng với nhân viên đó, người dùng không cần nhập nữa</p>
+<p> </p>
+<p><strong>Bước 4.</strong> Sau khi đã nhập hết thông tin cần thiết, bấm nút Lưu</p>
+</div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_instruction_action" model="ir.actions.act_window">
+        <field name="name">Hướng dẫn sử dụng Quản lý và báo cáo nhân sự</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.instruction</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+            </p>
+            <p>
+                <!-- More details about what a user can do with this object will be OK -->
+            </p>
+        </field>
+    </record>
+</odoo>

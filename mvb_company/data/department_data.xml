@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="hr_department_2" model="hr.department">
+            <field name="name">Ban Kiểm soát</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_3" model="hr.department">
+            <field name="name">Ban Lãnh đạo điều hành</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_4" model="hr.department">
+            <field name="name">Công ty liên kết - tòa 33 Tràng Thi</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_5" model="hr.department">
+            <field name="name">Công đoàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_6" model="hr.department">
+            <field name="name">Hội đồng quản trị</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_7" model="hr.department">
+            <field name="name">Phòng An toàn vệ sinh lao động</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_8" model="hr.department">
+            <field name="name">Phòng Cơ điện - Vật liệu xây dựng</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_9" model="hr.department">
+            <field name="name">Phòng Kinh tế kế hoạch</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_10" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_11" model="hr.department">
+            <field name="name">Phòng Kỹ thuật Mỏ</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_12" model="hr.department">
+            <field name="name">Phòng Quản lý vốn - Kiểm soát nội bộ</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_13" model="hr.department">
+            <field name="name">Phòng Thanh tra an toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_14" model="hr.department">
+            <field name="name">Phòng Thị trường vật tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_15" model="hr.department">
+            <field name="name">Phòng Tổ chức nhân sự</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_16" model="hr.department">
+            <field name="name">Phòng Đầu tư xây dựng</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_17" model="hr.department">
+            <field name="name">Văn phòng</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_18" model="hr.department">
+            <field name="name">Văn phòng công đoàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_19" model="hr.department">
+            <field name="name">Đảng ủy</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_20" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_21" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Tài chính kế toán</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_22" model="hr.department">
+            <field name="name">Phòng Tổ chức - Hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_23" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_24" model="hr.department">
+            <field name="name">Khách sạn Mỏ Việt Bắc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_25" model="hr.department">
+            <field name="name">Phân xưởng bao bì</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_26" model="hr.department">
+            <field name="name">Phân xưởng băng tải</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_27" model="hr.department">
+            <field name="name">Phân xưởng cơ điện - đường sắt</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_28" model="hr.department">
+            <field name="name">Phân xưởng khai thác</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_29" model="hr.department">
+            <field name="name">Phân xưởng sản xuất đá</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_30" model="hr.department">
+            <field name="name">Phòng Bảo vệ tuần tra</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_31" model="hr.department">
+            <field name="name">Phòng Cơ điện - An toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_32" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Tiêu thụ</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_33" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_34" model="hr.department">
+            <field name="name">Phòng Kỹ thuật</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_35" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_36" model="hr.department">
+            <field name="name">Phòng Vật tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_37" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_38" model="hr.department">
+            <field name="name">Phân xưởng cơ điện - sàng tuyển</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_39" model="hr.department">
+            <field name="name">Phân xưởng khai thác</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_40" model="hr.department">
+            <field name="name">Phân xưởng vận tải</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_41" model="hr.department">
+            <field name="name">Phòng Cơ điện - An toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_42" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Tiêu thụ</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_43" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_44" model="hr.department">
+            <field name="name">Phòng Kỹ thuật - KCS</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_45" model="hr.department">
+            <field name="name">Phòng Tổ chức - Hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_46" model="hr.department">
+            <field name="name">Phòng Vật tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_47" model="hr.department">
+            <field name="name">Phòng Điều độ sản xuất</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_48" model="hr.department">
+            <field name="name">Phòng Đầu tư xây dựng</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_49" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_50" model="hr.department">
+            <field name="name">Phân xưởng cơ điện</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_51" model="hr.department">
+            <field name="name">Phân xưởng khai thác hầm lò</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_52" model="hr.department">
+            <field name="name">Phân xưởng khai thác lộ thiên</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_53" model="hr.department">
+            <field name="name">Phân xưởng sàng tuyển</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_54" model="hr.department">
+            <field name="name">Phân xưởng vận tải</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_55" model="hr.department">
+            <field name="name">Phòng Cơ điện - An toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_56" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Tiêu thụ</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_57" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_58" model="hr.department">
+            <field name="name">Phòng Kỹ thuật sản xuất</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_59" model="hr.department">
+            <field name="name">Phòng Thanh tra - Bảo vệ - Quân sự</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_60" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_61" model="hr.department">
+            <field name="name">Phòng Vật tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_62" model="hr.department">
+            <field name="name">Phòng Điều khiển sản xuất</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_63" model="hr.department">
+            <field name="name">Phòng Đầu tư xây dựng</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_64" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_65" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Vật tư - Thị trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_66" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_67" model="hr.department">
+            <field name="name">Phòng Kỹ thuật - An toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_68" model="hr.department">
+            <field name="name">Phòng Tổ chức nhân sự</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_69" model="hr.department">
+            <field name="name">Đội xây dựng 1</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_70" model="hr.department">
+            <field name="name">Đội xây dựng 2</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_71" model="hr.department">
+            <field name="name">Đội xây dựng 3</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_72" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_73" model="hr.department">
+            <field name="name">Phân xưởng clinker</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_74" model="hr.department">
+            <field name="name">Phân xưởng cơ điện</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_75" model="hr.department">
+            <field name="name">Phân xưởng thành phẩm</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_76" model="hr.department">
+            <field name="name">Phòng Công nghệ</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_77" model="hr.department">
+            <field name="name">Phòng Cơ điện</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_78" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Vật tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_79" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_80" model="hr.department">
+            <field name="name">Phòng Thị trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_81" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_82" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_83" model="hr.department">
+            <field name="name">Phân xưởng sản xuất clinker</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_84" model="hr.department">
+            <field name="name">Phân xưởng sửa chữa cơ điện</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_85" model="hr.department">
+            <field name="name">Phân xưởng thành phẩm</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_86" model="hr.department">
+            <field name="name">Phòng Cơ điện - An toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_87" model="hr.department">
+            <field name="name">Phòng Kế hoạch đầu tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_88" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_89" model="hr.department">
+            <field name="name">Phòng Kỹ thuật</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_90" model="hr.department">
+            <field name="name">Phòng Thị trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_91" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_92" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_93" model="hr.department">
+            <field name="name">Phân xưởng clinker 1</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_94" model="hr.department">
+            <field name="name">Phân xưởng clinker 2</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_95" model="hr.department">
+            <field name="name">Phân xưởng cơ điện</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_96" model="hr.department">
+            <field name="name">Phân xưởng khai thác đá, sét</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_97" model="hr.department">
+            <field name="name">Phân xưởng thành phẩm</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_98" model="hr.department">
+            <field name="name">Phòng Cơ điện - An toàn môi trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_99" model="hr.department">
+            <field name="name">Phòng Kinh doanh thị trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_100" model="hr.department">
+            <field name="name">Phòng Kế hoạch vật tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_101" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_102" model="hr.department">
+            <field name="name">Phòng Kỹ thuật</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_103" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_104" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_105" model="hr.department">
+            <field name="name">Phân xưởng Khai thác</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_106" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Kinh doanh</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_107" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_108" model="hr.department">
+            <field name="name">Phòng Kỹ thuật An toàn Cơ điện</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_109" model="hr.department">
+            <field name="name">Phòng Tổ chức - Hành chính - Bảo vệ</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_110" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_111" model="hr.department">
+            <field name="name">Phân xưởng cơ khí - phụ kiện hầm lò</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_112" model="hr.department">
+            <field name="name">Phân xưởng sửa chữa</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_113" model="hr.department">
+            <field name="name">Phòng Kinh doanh I</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_114" model="hr.department">
+            <field name="name">Phòng Kinh doanh II</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_115" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Vật tư - Thị trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_116" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_117" model="hr.department">
+            <field name="name">Phòng Kỹ thuật - Cơ điện - An toàn - Môi trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_118" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_119" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_120" model="hr.department">
+            <field name="name">Phòng Kinh doanh I</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_121" model="hr.department">
+            <field name="name">Phòng Kinh doanh II</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_122" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Vật tư - Thị trường</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_123" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_124" model="hr.department">
+            <field name="name">Phòng Kỹ thuật - Cơ điện - An toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_125" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_126" model="hr.department">
+            <field name="name">Xưởng sản xuất bao bì</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_127" model="hr.department">
+            <field name="name">Xưởng sản xuất lưới thép</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_128" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_129" model="hr.department">
+            <field name="name">Phòng Kế toán - Kế hoạch</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_130" model="hr.department">
+            <field name="name">Phòng Tổ chức hành chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="color" eval="9"/>
+        </record>
+
+        <record id="hr_department_131" model="hr.department">
+            <field name="name">Ban Giám đốc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_132" model="hr.department">
+            <field name="name">Phân xưởng Cơ khí - Đúc</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_133" model="hr.department">
+            <field name="name">Phân xưởng Sửa chữa</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_134" model="hr.department">
+            <field name="name">Phòng Hành chính - Nhân sự</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_135" model="hr.department">
+            <field name="name">Phòng Kế hoạch - Vật tư</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_136" model="hr.department">
+            <field name="name">Phòng Kế toán - Thống kê - Tài chính</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="color" eval="9"/>
+        </record>
+        <record id="hr_department_137" model="hr.department">
+            <field name="name">Phòng Kỹ thuật - Cơ điện - An toàn</field>
+            <field name="parent_id" ref=""/>
+            <field name="active">true</field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="color" eval="9"/>
+        </record>
+
+
+    </data>
+</odoo>

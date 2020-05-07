@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="mvb_documents_root" name="Quản lý tài liệu"
+                  web_icon="mvb_documents,static/description/icon.png"
+                  groups="group_mvb_settings_document_access,group_mvb_document_access"  sequence="1" />
+
+        <!-- This Menu Item must have a parent and an action -->
+        <!--<menuitem id="mvb_document_menu_bidding_state" name="Tài liệu đầu tư" parent="mvb_documents_root"-->
+                  <!--action="menu_document_bidding_state_action" sequence="40"/>-->
+
+        <!-- This Menu Item must have a parent and an action -->
+        <!--<menuitem id="mvb_document_menu_directory" name="Phân loại tài liệu" parent="mvb_documents_root"-->
+                  <!--action="menu_document_group_action" sequence="45"/>-->
+
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="mvb_document_menu_public_document" name="Tài liệu dùng chung" parent="mvb_documents_root"
+                  sequence="30"
+                  action="menu_document_public_action"/>
+
+        <menuitem id="mvb_document_menu_private_document" name="Tài liệu cá nhân" parent="mvb_documents_root"
+                  sequence="35"
+                  action="menu_document_private_action"/>
+
+        <menuitem id="mvb_document_menu_config_document" name="Thiết lập" parent="mvb_documents_root"
+                  sequence="60"
+                  action="mvb_project_action" groups="base.user_admin,group_mvb_settings_document_access"/>
+
+        <menuitem id="mvb_document_menu_type_document" name="Loại tài liệu" parent="mvb_document_menu_config_document"
+                  sequence="40"
+                  action="menu_document_type_action"/>
+
+        <menuitem id="mvb_document_menu_type_contract_document" name="Loại hợp đồng"
+                  parent="mvb_document_menu_config_document"
+                  sequence="45"
+                  action="mvb_contract_type_action"/>
+
+        <menuitem id="mvb_document_menu_project_document" name="Dự án/Phương án"
+                  parent="mvb_document_menu_config_document"
+                  sequence="50"
+                  action="mvb_project_action"/>
+
+        <menuitem id="mvb_document_menu_bidding_document" name="Gói thầu" parent="mvb_document_menu_config_document"
+                  sequence="55"
+                  action="mvb_project_package"/>
+
+        <menuitem id="mvb_document_menu_storage_document" name="Mã lưu kho" parent="mvb_document_menu_config_document"
+                  sequence="60"
+                  action="menu_document_code_storage_action"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="mvb_document_publisher_menu" name="Đơn vị phát hành" parent="mvb_document_menu_config_document"
+                  action="mvb_document_publisher_action" sequence="65"/>
+        <menuitem id="mvb_document_notebook_menu" name="Sổ văn bản" parent="mvb_document_menu_config_document"
+                  action="mvb_document_notebook_action" sequence="70"/>
+    </data>
+</odoo>

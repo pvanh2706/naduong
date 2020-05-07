@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <template id="create_record" inherit_id="web.assets_backend">
+        <xpath expr="." position="before">
+            <script type="text/javascript" src="/one_signal_notification_connector/static/src/js/create_notify.js"></script>
+        </xpath>
+    </template> -->
+    <data>
+        <record id="one_signal_notification_message_form_view" model="ir.ui.view">
+            <field name="name">Messages</field>
+            <field name="model">one.signal.notification.messages</field>
+            <field name="arch" type="xml">
+                <form string="Messages">
+                    <header>
+					    <button name="send_message" type="object" class="oe_highlight" string="Send" attrs="{'invisible': [('status','!=','draft')]}"/>
+					    <button name="send_message" type="object" class="oe_highlight" string="ReSend" attrs="{'invisible': [('status','!=','sent')]}"/>
+					    <button name="action_retry" type="object" class="oe_highlight" string="Retry" attrs="{'invisible': [('status','!=','fail')]}"/>
+                        <field name="status" widget="statusbar"/>
+                        <button string="Click" custom="click"/>
+				    </header>
+                    <sheet>
+                        <group>
+                            <field name="company_id" required="1" groups="base.group_multi_company"/>
+                            <field name="app_id" required="1" domain="[('company_id','=', company_id)]"/>
+                            <field name="included_segments" placeholder="['All', 'Active Users', 'Inactive Users']"/>
+                            <field name="excluded_segments" placeholder="['All', 'Active Users', 'Inactive Users']"/>
+                            <field name="filter" placeholder='[{"field": "tag", "key": "level", "relation": "=", "value": "10"}, {"operator": "OR"}, {"field": "amount_spent", "relation": ">", "value": "0"}]'/>
+                            <field name="specific_devices"/>
+                            <field name="user_ids" widget="many2many_tags" options="{'no_create_edit': True}" attrs="{'invisible': [('specific_devices','=',False)], 'required': [('specific_devices','!=',False)]}"/>
+                            <field name="target_parameters" attrs="{'invisible': [('specific_devices','=',False)], 'required': [('specific_devices','!=',False)]}"
+                                   placeholder='["b3909b81-8357-4dfd-a205-38efbb0e923c"]'/>
+                            <field name="contents" required="1" placeholder='{"en": "English Message"}'/>
+                            <field name="headings" placeholder='{"en": "English Title"}'/>
+                            <field name="data"/>
+                            <field name="reason" readonly="1" attrs="{'invisible': [('status','=','draft')]}"/>
+                            <field name="external_id" readonly="1" attrs="{'invisible': [('status','in',['draft', 'fail'])]}"/>
+                            <field name="one_signal_notification_id" readonly="1" attrs="{'invisible': [('status','in',['draft', 'fail'])]}"/>
+                            <field name="recipients_count" readonly="1" attrs="{'invisible': [('status','in',['draft', 'fail'])]}"/>
+                            <field name="is_read"/>
+                            <field name="web_url"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="one_signal_notification_message_tree_view" model="ir.ui.view">
+            <field name="name">Messages</field>
+            <field name="model">one.signal.notification.messages</field>
+            <field name="arch" type="xml">
+                <tree string="Messages" decoration-muted="status in ('sent')" decoration-info="status=='draft'" decoration-danger="status=='fail'">
+                    <field name="company_id" groups="base.group_multi_company"/>
+                    <field name="app_id"/>
+                    <field name="included_segments"/>
+                    <field name="is_read"/>
+                    <field name="specific_devices"/>
+                    <field name="contents"/>
+                    <field name="headings"/>
+                    <field name="data"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+        <record id="one_signal_notification_message_action" model="ir.actions.act_window">
+            <field name="name">Messages</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">one.signal.notification.messages</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+    </data>
+</odoo>

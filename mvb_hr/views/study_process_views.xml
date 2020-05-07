@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_study_process_tree" model="ir.ui.view">
+            <field name="name">Quá trình đào tạo</field>
+            <field name="model">hr.study.process</field>
+            <field name="arch" type="xml">
+                <tree string="Quá trình đào tạo">
+                    <field name="employee_id"/>
+                    <field name="name_school"/>
+                    <field name="major"/>
+                    <field name="date"/>
+                    <field name="formality"/>
+                    <field name="certificate"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_study_process_from" model="ir.ui.view">
+            <field name="name">Quá trình đào tạo</field>
+            <field name="model">hr.study.process</field>
+            <field name="arch" type="xml">
+                <form string="Quá trình đào tạo">
+                    <sheet>
+                        <group colspan="2" col="4">
+                            <field name="employee_id"/>
+                            <field name="name_school"/>
+                        </group>
+                        <group colspan="2" col="4">
+                            <field name="major"/>
+                            <field name="date"/>
+                        </group>
+                        <group colspan="2" col="4">
+                            <field name="formality"/>
+                            <field name="certificate"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_study_process_search" model="ir.ui.view">
+            <field name="name">Quá trình đào tạo</field>
+            <field name="model">hr.study.process</field>
+            <field name="arch" type="xml">
+                <search string="Quá trình đào tạo">
+                    <field name="employee_id"/>
+                    <field name="name_school"/>
+                    <field name="major"/>
+                    <field name="date"/>
+                    <field name="formality"/>
+                    <field name="certificate"/>
+<!--                    <group expand='0' string='Group By'>-->
+<!--                        <filter string='Nhân viên' name="employee_id" context="{'group_by' : 'employee_id'}"/>-->
+<!--                    </group>-->
+                </search>
+            </field>
+        </record>
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="action_study_process">
+            <field name="name">Quá trình đào tạo</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.study.process</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'group_by' : 'employee_id'}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Tạo một bản ghi mới !
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

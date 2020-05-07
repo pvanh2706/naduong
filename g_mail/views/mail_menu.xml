@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="crm_lead_mail_box_root" name="Tích hợp Eoffice" web_icon="g_mail,static/description/icon.png"
+                  groups="g_mail.group_g_mail_manager,g_mail.group_g_mail_archivist" sequence="1"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="mail_sever_incoming_and_outgoing_categ" name="Hộp thư đến" parent="crm_lead_mail_box_root"
+                  action="g_mail_mailbox_gmail_action" sequence="1"/>
+        <menuitem id="g_mail_document_categ" name="Soạn thư" parent="crm_lead_mail_box_root"
+                  action="g_mail_sent_mail_action_v1" sequence="5"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="g_mail_mailbox_gmail_categ" name="Hộp thư đi" parent="crm_lead_mail_box_root"
+                  action="g_mail_sent_mail_action" sequence="10"/>
+
+    </data>
+</odoo>

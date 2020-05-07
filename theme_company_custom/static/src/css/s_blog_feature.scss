@@ -1,0 +1,71 @@
+.s_blog_post_feature {
+    .s_latest_posts_post {
+        position: relative;
+        height: 250px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 300ms;
+
+        &.js-loading {
+            background: gray('200') !important;
+        }
+
+        .thumb {
+            //position: relative;
+            display: block;
+            width: 100%;
+            max-width: 100% !important;
+            height: 100%;
+            padding: 0;
+            opacity: 0.8;
+            overflow: hidden;
+
+            > .o_blog_cover_component {
+                @include o-position-absolute(0, 0, 0, 0);
+            }
+            > .o_blog_cover_image {
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        > div:not(.o_blog_cover_container):not(.js-loading) {
+            &, & > a {
+                @include o-position-absolute(0, $grid-gutter-width/2, 0, $grid-gutter-width/2);
+                padding: 2em;
+                color: $white;
+                text-transform: uppercase;
+                font-size: 1.25em;
+                backface-visibility: hidden;
+                &::after, &::before {
+                    pointer-events: none;
+                }
+            }
+
+            > a {
+                z-index: 1000;
+                text-indent: 200%;
+                white-space: nowrap;
+                font-size: 0;
+                opacity: 0;
+            }
+            h2 {
+                margin: 0;
+                font-size: 1.5em;
+                font-weight: 300;
+                span {
+                    font-weight: 800;
+                }
+            }
+            p {
+                margin: 1em 0 0;
+                letter-spacing: 1px;
+                font-size: 68.5%;
+            }
+        }
+        @include s-latest-posts-figure-hook;
+    }
+
+    .js_get_posts {
+        @include s-latest-posts-js-get-posts-hook;
+    }
+}

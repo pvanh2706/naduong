@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_company_form_action" model="ir.actions.act_window">
+        <field name="name">Quản lý công ty</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.company</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+            </p>
+            <p>
+                <!-- More details about what a user can do with this object will be OK -->
+            </p>
+        </field>
+    </record>
+
+    <!-- Inherit Form View to Modify it -->
+    <record id="view_company_form_inherit" model="ir.ui.view">
+        <field name="name">res.company.form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <!--Thanhnd ẩn bớt field-->
+            <xpath expr="//field[@name='state_id']" position="attributes">
+                <attribute name="attrs">{'invisible':1}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='zip']" position="attributes">
+                <attribute name="attrs">{'invisible':1}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='country_id']" position="attributes">
+                <attribute name="attrs">{'invisible':1}</attribute>
+            </xpath>
+
+            <!--<xpath expr="//field[@name='nomenclature']" position="attributes">-->
+            <!--<attribute name="attrs">{'invisible':1}</attribute>-->
+            <!--</xpath>-->
+
+            <xpath expr="//field[@name='website']" position="before">
+                <field name="is_corporation" />
+                <field name="code"/>
+            </xpath>
+            <xpath expr="//notebook[last()]" position="inside">
+                <page string="Danh sách Công ty con" attrs="{'invisible': [('is_corporation','=', False)]}">
+                    <field name="child_ids">
+                        <tree>
+                            <field name="name"/>
+                            <field name="code"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_company_tree_inherit" model="ir.ui.view">
+        <field name="name">res.company.tree</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="code"/>
+            </xpath>
+
+            <xpath expr="//field[@name='partner_id']" position="attributes">
+                <attribute name="attrs">{'column_invisible':1}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+    <menuitem id="company_root" name="Công ty" sequence="1" web_icon="mvb_company,static/description/icon.png" groups="base.user_admin"/>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="company_management_categ" name="Công ty" parent="company_root" action="res_company_form_action" sequence="1"/>
+</odoo>

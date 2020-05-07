@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_multi_image_gallery" name="Multi Image Gallery">
+        <section class="o_multi_gallery o_spc-medium o_slideshow s_multi_image_gallery" data-columns="3"
+                 style="height: 500px; overflow: hidden;">
+            <div class="container">
+                <div class="alert alert-info css_editable_mode_display text-center" role="status">
+                    <span class="o_multi_add_images" style="cursor: pointer;">
+                        <i class="fa fa-plus-circle"/>
+                        Add Images
+                    </span>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="multi_image_gallery_options" name="Multi Image Gallery Options"
+              inherit_id="website.snippet_options">
+        <xpath expr="//div" position="after">
+            <div data-js="gallery_multi" data-selector=".o_multi_gallery">
+                <a href="#" class="dropdown-item" data-add-images="true" data-no-preview="true"><i
+                        class="fa fa-plus-circle"/>Add images
+                </a>
+                <a href="#" class="dropdown-item" data-remove-all-images="true" data-no-preview="true"><i
+                        class="fa fa-trash"/>Remove all images
+                </a>
+                <div class="dropdown-divider"/>
+<!--                <div class="dropdown-submenu">-->
+<!--                    <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-magic"/>Mode-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" role="menu">-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-mode="nomode">Float</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-mode="masonry">Masonry</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-mode="grid">Grid</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-mode="slideshow">Slideshow</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="dropdown-submenu">-->
+<!--                    <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-clock-o"/>Slideshow speed-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" role="menu">-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-interval="1000">1s</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-interval="2000">2s</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-interval="3000">3s</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-interval="5000">5s</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-interval="10000">10s</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-interval="0">Disable autoplay</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="dropdown-submenu">-->
+<!--                    <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-th"/>Columns-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" role="menu">-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-columns="1">1</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-columns="2">2</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-columns="3">3</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-columns="4">4</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-columns="6">6</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-columns="12">12</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="dropdown-submenu">-->
+<!--                    <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-arrows-h"/>Images spacing-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" role="menu">-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-select-class="o_spc-none">None</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-select-class="o_spc-small">Small</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-select-class="o_spc-medium">Medium</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-select-class="o_spc-big">Big</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="dropdown-submenu">-->
+<!--                    <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-paint-brush"/>Styling-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" role="menu">-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-styling="">Square</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-styling="rounded">Rounded corners</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-styling="img-thumbnail">Thumbnails</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-styling="rounded-circle">Circle</a>-->
+<!--                        <a href="#" class="dropdown-item" role="menuitem" data-styling="shadow">Shadows</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div data-js="gallery_multi_img" data-selector=".o_multi_gallery img">
+        <div class="dropdown-submenu">
+            <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-refresh"/>Re-order</a>
+            <div class="dropdown-menu" role="menu" data-no-preview="true">
+                <a href="#" class="dropdown-item" role="menuitem" data-position="first">Move to first</a>
+                <a href="#" class="dropdown-item" role="menuitem" data-position="prev">Move to previous</a>
+                <a href="#" class="dropdown-item" role="menuitem" data-position="next">Move to next</a>
+                <a href="#" class="dropdown-item" role="menuitem" data-position="last">Move to last</a>
+            </div>
+        </div>
+    </div>
+        </xpath>
+    </template>
+</odoo>

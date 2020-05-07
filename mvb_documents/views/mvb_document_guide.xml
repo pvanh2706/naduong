@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mvb_document_guide_form" model="ir.ui.view">
+            <field name="name">mvb_document_guide_form</field>
+            <field name="model">mvb.document.guide</field>
+            <field name="arch" type="xml">
+                <form string="" create="0" edit="0">
+                    <sheet>
+                        <div style="font-size: 12.0pt; line-height: 107%;">
+                            <h1 style="text-align: center;">Hướng dẫn sử dụng ứng dụng Quản lý tài liệu</h1>
+                            <h2>1. Mục tiêu của ứng dụng</h2>
+                            <ul>
+                                <li>Xây dựng cơ sở dữ liệu dùng chung cho Công ty.</li>
+                                <li>Thuận tiện cho công tác tra cứu tài liệu, giảm bớt thời gian tìm tài liệu khi cần
+                                    thiết.
+                                </li>
+                            </ul>
+                            <h2>2. Chức năng chính: bao gồm 03 chức năng</h2>
+                            <ul>
+                                <li>Tài liệu dùng chung: Là các tài liệu được người dùng tạo và chia sẻ cho
+                                    người dùng khác trong hệ thống hoặc tài liệu được người khác chia sẻ
+                                </li>
+                                <li>
+                                    Tài liệu cá nhân: Là các loại tài liệu được người dùng tạo và không chia sẻ cho bất
+                                    kì người dùng nào trong hệ thống
+                                </li>
+                                <li>
+                                    Thiết lập: Danh mục các thông tin thiết lập dành cho người quản trị như Danh mục
+                                    loại tài liệu, Danh mục mã lưu kho ...
+                                </li>
+                            </ul>
+                            <h2>3. Hướng dẫn sử dụng</h2>
+                            <h3>3.1. Tài liệu cá nhân</h3>
+                            <h3>a. Tạo tài liệu</h3>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>Người dùng click vào biểu tượng ứng dụng
+                                    <strong>“Quản lý tài liệu”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img1.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 2:</strong>Người dùng click vào menu
+                                    <strong>“Tài liệu cá nhân”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img2_1.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 3:</strong>
+                                    Người dùng click vào nút
+                                    <strong>“Tạo”</strong>
+                                    <p>
+                                        Người dùng thực hiện nhập các thông tin cơ bản về tài liệu,
+                                        sau khi thực hiện xong thực hiện click vào nút
+                                        <strong>“Lưu”</strong>
+                                    </p>
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img3.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 4:</strong>
+                                    Người dùng click vào nút
+                                    <strong>“Sửa”</strong>
+                                    <p>Người dùng click vào nút “Đính kèm”, lựa chọn thư mục lưu trữ
+                                        tài liệu trên máy tính cá nhân và tải tài liệu đính kèm lên hệ thống,
+                                        sau khi thực hiện xong thực hiện click vào nút
+                                        <strong>“Lưu”</strong>
+                                    </p>
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img4.png" style="width:1000px;"/>
+                                <br/>
+                            </ul>
+                            <h3>b. Sửa tài liệu</h3>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình hiển thị danh sách các tài liệu cá nhân.
+                                    Người dùng xác định tài liệu cần sửa và thực hiện click vào tài liệu đó
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img5.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 2:</strong>Sau khi màn hình chi tiết hiện lên, người dùng click vào nút
+                                    Sửa,
+                                    khi đó người dùng tiến hành thực hiện sửa thông tin tài liệu
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img6.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 3:</strong>
+                                    Sau khi đã cập nhật lại các thông tin, người dùng thực hiện click nút
+                                    <strong>“Lưu”</strong>.
+                                    Dữ liệu sẽ tự động cập nhật và hiển thị bên ngoài màn hình danh sách
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img7.png" style="width:1000px;"/>
+                                <br/>
+                            </ul>
+                            <h3>c. Xóa tài liệu</h3>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>Trên màn hình hiển thị danh sách tài liệu cá nhân người dùng
+                                    xác định tài
+                                    liệu cần xóa và tích vào đánh ô vuông để đánh dấu tài liệu cần xóa
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img8.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 2:</strong>Người dùng click vào nút <strong>“Hành động”</strong> và
+                                    lựa chọn <strong>“Xóa”</strong> để xóa tài liệu
+                                </li>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img9.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                            </ul>
+                            <h3>
+                                <strong>d. </strong>
+                                <strong>Tìm kiếm tài liệu</strong>
+                            </h3>
+                            <ul>
+                                <p style="padding-left: 30px;">-  <strong>Bước 1:</strong> Trên màn hình hiển thị tài
+                                    liệu cá nhân, người dùng
+                                    click
+                                    vào ô <strong>“Tìm”</strong> và gõ từ khóa của tài liệu muốn tìm. Hệ thống cho phép
+                                    người dùng có thể tìm theo <strong>“Số hiệu văn bản”</strong>; <strong>“Tên tài
+                                        liệu”
+                                    </strong> hoặc <strong>“Tên gói thầu”</strong>. Người dùng lựa chọn tiêu chí cần tìm
+                                    kiếm và nhấn nút <strong>“Enter”</strong> trên bàn phím máy tính.
+                                </p>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img10.png" style="width:1000px;"/>
+                                <br/>
+                                <br/>
+                                <p style="padding-left: 30px;">- <strong>Bước 2:</strong> Sau khi nhấn nút <strong>
+                                    “Enter”,</strong>hệ thống sẽ trả về các giá trị tìm kiếm theo tiêu chí mà người
+                                    dùng cần.
+                                </p>
+                                <br/>
+                                <br/>
+                                <img src="/mvb_documents/static/img/img11.png" style="width:1000px;"/>
+                                <br/>
+                            </ul>
+
+                            <h3>3.2. Tài liệu dùng chung</h3>
+                            <ol style="list-style-type: lower-alpha;">
+                                <li><strong>Tạo tài liệu:</strong>Người dùng không được phép tạo tài liệu dùng chung mà
+                                    phải thực hiện tạo tài liệu cá nhân sau đó thêm những người được xem.
+                                </li>
+                            </ol>
+                            <p style="padding-left: 60px;">- <strong>Bước 1</strong>: Người dùng click vào biểu tượng
+                                ứng dụng
+                                <strong>“Quản lý tài liệu”</strong>
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img1.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;"><strong>- Bước 2: </strong>Người dùng truy cập vào
+                                menu <strong>“Tài liệu cá nhân”</strong>click chọn tài liệu cần chia sẻ thành tài liệu
+                                dùng chung
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img8.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">- <strong>Bước 3:</strong>Người dùng click nút “<strong>
+                                Sửa”</strong>, trên màn hình giao diện sửa tài liệu, người dùng thực hiện click vào
+                                tab “
+                                <strong>Chia sẻ tài liệu”</strong>
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img12.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;"><strong>- Bước 4: </strong>Trong <strong>“Danh sách chia sẻ
+                                tài liệu”</strong>hiển thị danh sách người dùng được xem tài liệu. Người dùng thực hiện
+                                click “<strong>Thêm một dòng”</strong> và tích vào ô lựa chọn tài khoản. Sau khi lựa
+                                chọn xong, người dùng click vào nút <strong>“Chọn”</strong> 
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img13.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">- <strong>Bước 5: </strong>Sau khi đã thêm người được chia
+                                sẻ, người dùng thực hiện click nút  
+                                <strong>Lưu.</strong>
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img14.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 30px;">
+                                <strong>b.Sửa tài liệu</strong>
+                            </p>
+                            <p style="padding-left: 60px;">
+                                <strong>- </strong>
+                                <strong>Bước 1:</strong>Trên màn hình hiển thị danh sách các tài liệu dùng chung. Người
+                                dùng xác định tài liệu cần sửa và thực hiện click vào tài liệu đó
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img8.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">- <strong>Bước 2:</strong> Sau khi màn hình chi tiết hiện
+                                lên, người dùng click vào nút “<strong>Sửa”</strong>, khi đó người dùng tiến hành thực
+                                hiện sửa thông tin tài liệu
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img6.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">- <strong>Bước 3:</strong> Sau khi đã cập nhật lại các thông
+                                tin, người dùng thực hiện click nút “<strong>Lưu</strong>”. Dữ liệu sẽ tự động cập nhật
+                                và hiển thị bên ngoài màn hình danh sách
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img7.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 30px;">
+                                <strong>c. Xóa tài liệu: </strong>
+                                <strong> </strong>Người dùng không thể xóa được tài liệu dùng chung mà phải chuyển về
+                                tài liệu cá nhân để thực hiện xóa. Chỉ áp dụng cho những tài liệu mà được tạo bởi người
+                                dùng đó.
+                            </p>
+                            <p style="padding-left: 60px;"><strong>- Bước 1:</strong>Trên màn hình hiển thị danh sách
+                                các tài liệu dùng chung. Người dùng xác định tài liệu cần xóa và thực hiện click vào tài
+                                liệu đó
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img8.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">- <strong>Bước 2:</strong> Sau khi màn hình chi tiết hiện
+                                lên, người dùng click vào nút “<strong>Sửa”</strong>, khi đó người dùng tiến hành thực
+                                hiện sửa thông tin tài liệu
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img6.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">- <strong>Bước 3:</strong> Trong <strong>“Danh sách chia sẻ
+                                tài liệu”
+                            </strong> hiển thị danh sách người dùng được quyền truy cập tài liệu. Người dùng thực hiện
+                                click  dấu “<strong>X”</strong>vào tài khoản để xóa người dùng được quyền truy cập tài
+                                liệu. Sau khi thực hiện xóa tất cả các tài khoản xong, người dùng click vào nút <strong>
+                                    “Lưu”</strong>để chuyển về
+                                <strong>“Tài liệu cá nhân”</strong>
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img15.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">
+                                <strong>- Bước 4:</strong>
+                                Trong menu “Tài liệu cá nhân” người dùng lựa chọn tích vào tài liệu cần xóa và thực hiện
+                                hành động “Xóa” tài liệu
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img9.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 30px;">
+                                <strong>d. Tìm kiếm tài liệu</strong>
+                            </p>
+                            <p style="padding-left: 60px;"><strong>- Bước 1:</strong>Trên màn hình hiển thị tài liệu
+                                dùng chung, người dùng click vào ô <strong>“Tìm”</strong> và gõ từ khóa của tài liệu
+                                muốn tìm. Hệ thống cho phép người dùng có thể tìm theo <strong>“Số hiệu văn
+                                    bản”</strong>; <strong>“Tên tài liệu”</strong> hoặc <strong>“Tên gói thầu”</strong>.
+                                Người dùng lựa chọn tiêu chí cần tìm kiếm và nhấn nút <strong>“Enter”</strong> trên bàn
+                                phím máy tính
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img16.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;">- <strong>Bước 2:</strong> Sau khi nhấn nút <strong>
+                                “Enter”,</strong>hệ thống sẽ trả về các giá trị tìm kiếm theo tiêu chí mà người dùng
+                                cần.
+                            </p>
+                            <br/>
+                            <img src="/mvb_documents/static/img/img17.png" style="width:1000px;"/>
+                            <br/>
+                            <br/>
+                            <p style="padding-left: 60px;"> </p>
+                            <p style="padding-left: 60px;"> </p>
+                            <p style="padding-left: 60px;"> </p>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="mvb_guide_document_action" model="ir.actions.act_window">
+            <field name="name">Hướng dẫn sử dụng module QL tài liệu</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document.guide</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+        <menuitem id="mvb_document_menu_guide_document" name="Hướng dẫn sử dụng" parent="mvb_documents_root"
+                  sequence="55"
+                  action="mvb_guide_document_action"
+        />
+    </data>
+</odoo>

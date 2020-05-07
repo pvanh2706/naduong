@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Inherit Form View to Modify it -->
+    <record id="hr_contract_view_form" model="ir.ui.view">
+        <field name="name">hr_contract_view_form</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='reported_to_secretariat']" position="attributes">
+                <attribute name="attrs">{'invisible':1}</attribute>
+            </xpath>
+            <xpath expr="//page[@name='information']" position="after">
+                <page string="Hồ sơ hợp đồng" name="contract_document">
+                    <group string="Tài liệu">
+                        <field name="contract_document_ids" nolabel="1"/>
+                    </group>
+                </page>
+            </xpath>
+
+            <xpath expr="//field[@name='type_id']" position="attributes">
+                <attribute name="attrs">{'invisible':1}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='employee_id']" position="attributes">
+                <attribute name="options">{'no_create': True, 'no_open': True}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='department_id']" position="attributes">
+                <attribute name="options">{'no_create': True, 'no_open': True}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='job_id']" position="attributes">
+                <attribute name="options">{'no_create': True, 'no_open': True}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='struct_id']" position="attributes">
+                <attribute name="options">{'no_create': True, 'no_open': True}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='resource_calendar_id']" position="attributes">
+                <attribute name="options">{'no_create': True, 'no_open': True}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record model="ir.ui.menu" id="hr_contract.hr_menu_contract">
+            <field name="groups_id" eval="[(6,0,[ref('mvb_hr.group_mvb_hr_employee_create'),
+            ref('mvb_hr.group_mvb_hr_employee_view'), ref('mvb_hr.group_mvb_hr_employee_edit'),
+            ref('mvb_hr.group_mvb_hr_employee_delete')])]"/>
+        </record>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="assets_backend" name="tools assets" inherit_id="web.assets_backend">
+    <xpath expr=".">
+           <!-- <script type="text/javascript" src="/mvb_eoffice/static/src/js/user_menu.js"></script> -->
+<!--            <script type="text/javascript" src="/mvb_eoffice/static/src/js/update_dash_board.js"></script>-->
+<!--            <script type="text/javascript" src="/mvb_eoffice/static/src/js/listview_button.js"></script>-->
+            <link href="/mvb_eoffice/static/src/css/style.css" rel="stylesheet" type="text/css"/>
+        </xpath>
+    </template>
+</odoo>

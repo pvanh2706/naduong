@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.menu" id="hr.menu_hr_root">
+            <field name="groups_id" eval="[(6,0,[ref('group_mvb_hr_employee_create'),
+            ref('group_mvb_hr_employee_view'),
+            ref('group_mvb_hr_employee_edit'),
+            ref('group_mvb_hr_employee_delete'),
+            ref('group_mvb_hr_employee_payroll_create'),
+            ref('group_mvb_hr_employee_payroll_view'),
+            ref('group_mvb_hr_employee_payroll_edit'),
+            ref('group_mvb_hr_employee_payroll_delete'),
+            ref('group_mvb_hr_employee_education_create'),
+            ref('group_mvb_hr_employee_education_view'),
+            ref('group_mvb_hr_employee_education_edit'),
+            ref('group_mvb_hr_employee_education_delete'),
+            ref('group_mvb_hr_employee_report_create'),
+            ref('group_mvb_hr_employee_report_view'),
+            ref('group_mvb_hr_employee_report_edit'),
+            ref('group_mvb_hr_employee_report_delete')])]"/>
+        </record>
+
+        <record id="hr_full_employee_view_employee_tree" model="ir.ui.view">
+            <field name="name">hr.employee.inherit.view.tree</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='company_id']" position="replace">
+                    <!-- Add new fields here -->
+                </xpath>
+                <xpath expr="//field[@name='parent_id']" position="replace">
+                    <!-- Add new fields here -->
+                </xpath>
+                <xpath expr="//field[@name='department_id']" position="replace">
+                    <!-- Add new fields here -->
+                </xpath>
+                <xpath expr="//field[@name='job_id']" position="replace">
+                    <!-- Add new fields here -->
+                </xpath>
+                <xpath expr="//field[@name='work_phone']" position="replace">
+                    <!-- Add new fields here -->
+                </xpath>
+                <xpath expr="//field[@name='work_email']" position="replace">
+                    <!-- Add new fields here -->
+                </xpath>
+                <!--<xpath expr="//field[@name='name']" position="before">-->
+
+                    <!--<field name="employee_code"/>-->
+                <!--</xpath>-->
+
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="gender"/>
+                    <field name="birthday"/>
+                    <field name="job_id"/>
+<!--                    <field name="major_qualification"/>-->
+                    <field name="login_id"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="hr_full_employee_view_employee_form" model="ir.ui.view">
+            <field name="name">hr.employee.inherit.view.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+<!-- 			 <xpath expr="//sheet/div/button[1]" position="attributes">-->
+<!--                    <attribute name="invisible">True</attribute>-->
+<!--                </xpath>-->
+                <xpath expr="//sheet/div/button[2]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+                <xpath expr="//sheet/div/button[3]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+				
+				<xpath expr="//sheet/div/button[1]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+
+
+                <xpath expr="//form/sheet/div[@name='button_box']/button[@name='toggle_active']" position="attributes">
+                    <attribute name="groups">
+                        mvb_hr.group_mvb_hr_employee_create,
+                        mvb_hr.group_mvb_hr_employee_edit,
+                        mvb_hr.group_mvb_hr_employee_delete
+                    </attribute>
+                </xpath>
+                <xpath expr="//form/sheet/div[@name='button_box']/button[1]" position="attributes">
+                    <attribute name="groups">
+                        mvb_hr.group_mvb_hr_employee_view,
+                        mvb_hr.group_mvb_hr_employee_create,
+                        mvb_hr.group_mvb_hr_employee_edit,
+                        mvb_hr.group_mvb_hr_employee_delete
+                    </attribute>
+                </xpath>
+                <xpath expr="//form/sheet/div[@name='button_box']/button[3]" position="attributes">
+                    <attribute name="groups">
+                        mvb_hr.group_mvb_hr_employee_view,
+                        mvb_hr.group_mvb_hr_employee_create,
+                        mvb_hr.group_mvb_hr_employee_edit,
+                        mvb_hr.group_mvb_hr_employee_delete
+                    </attribute>
+                </xpath>
+                <xpath expr="//field[@name='category_ids']" position="attributes">
+                    <attribute name="attrs">{'invisible':1}</attribute>
+                </xpath>
+                <!-- <xpath expr="//form/sheet[1]" position="before">
+                    <header>
+                        <button name="%(action_view_employee_code_edit)d" type="action" string="Sửa mã nhân viên" class="oe_highlight" groups="mvb_hr.group_mvb_hr_employee_code_edit"/>
+                        <field name="document_status" widget="statusbar" options="{'clickable': '0', 'fold_field': 'fold'}"/>
+                    </header>
+                </xpath> -->
+
+
+                <xpath expr="//notebook" position="replace">
+
+                    <notebook>
+                        <page string="Thông tin chung nhân viên">
+                            <group string="Thông tin cá nhân" col="4">
+                                <field name="level_id" string="Cấp độ hiển thị ưu tiên"/>
+                                <field name="employee_code" string="Mã nhân viên"/>
+                                <field name="other_name" string="Tên gọi khác"/>
+                                <field name="gender"/>
+                                <field name="job_id" string="Chức vụ" attrs="{'required': True}"
+                                       options="{'no_create': True, 'no_open': True}"/>
+                                <field name="company_id" string="Công ty" invisible="1"/>
+                                <field name="department_id" string="Phòng ban" invisible="0"/>
+                                <field name="concurrent_positions" string="Chức vụ kiêm nhiệm"/>
+                                <field name="mobile_phone" string="Số điện thoại"/>
+                                <field name="email" string="Email"/>
+                                <field name="birthday" string="Ngày sinh"/>
+                                <field name="age" string="Tuổi"/>
+                                <field name="birth_place" string="Nơi sinh"/>
+                                <field name="hometown_state_id" string="Quê quán"/>
+                                <field name="current_address" string="Nơi ở hiện nay"/>
+                                <field name="ethnic" string="Dân tộc" options="{'no_create': True, 'no_open': True}"/>
+                                <field name="religion" string="Tôn giáo"/>
+                                <field name="family_composition_comes_from"/>
+                                <field name="job_before_recruitment"/>
+                                <field name="day_recruitment"/>
+                                <field name="first_work_day"/>
+                                <field name="job_import" invisible="1"/>
+                                <field name="day_join_revolution"/>
+                            </group>
+                            <group col="4" string="Tham gia các tổ chức chính trị, xã hội ">
+                                <field name="day_join_DCSVN"/>
+                                <field name="day_officer"/>
+                                <field name="day_join_social_and_political_organizations" nolabel="1" colspan="4">
+                                    <tree editable="bottom">
+                                        <field name="date"/>
+                                        <field name="name"/>
+                                    </tree>
+                                    <form>
+                                        <group string="Thông tin tham gia tổ chức chính trị xã hội" col="4">
+                                            <field name="date"/>
+                                            <field name="name"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </group>
+                            <group col="4">
+                                <field name="date_of_enlistment"/>
+                                <field name="demobilization_day"/>
+                                <field name="rank"/>
+                            </group>
+                            <group string="Trình độ học vấn" col="4">
+                                <field name="major_qualification"/>
+                                <field name="general_education"/>
+                                <field name="highest_position_education"/>
+                                <field name="political_theory"/>
+                                <field name="foreign_language"/>
+
+                            </group>
+                            <group string="Thông tin công tác" col="4">
+                                <field name="main_work_is_doing" string="Công tác chính đang làm"/>
+                                <field name="current_salary" string="Lương hiện hưởng"/>
+                            </group>
+                            <group string="Danh hiệu được phong">
+                                <field name="label" nolabel="1" col="4">
+                                    <tree editable="bottom">
+                                        <field name="year"/>
+                                        <field name="label"/>
+                                    </tree>
+                                    <form>
+                                        <group string="Thông tin danh hiệu được phong" col="4">
+                                            <field name="year"/>
+                                            <field name="label"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </group>
+                            <group col="4">
+                                <field name="forte" string="Sở trường công tác"/>
+                                <field name="work_longest" string="Công việc đã làm lâu nhất"/>
+                            </group>
+                            <group string="Khen thưởng">
+                                <field name="bonus" nolabel="1" col="4">
+                                    <tree editable="bottom">
+                                        <field name="year"/>
+                                        <field name="medal"/>
+                                        <field name="attach_reward_record" widget="many2many_binary" class="oe_inline"/>
+                                    </tree>
+                                    <form>
+                                        <group string="Thông tin khen thưởng" col="4">
+                                            <field name="year"/>
+                                            <field name="medal"/>
+                                            <field name="attach_reward_record" widget="many2many_binary"
+                                                   class="oe_inline"/>
+                                        </group>
+
+                                    </form>
+                                </field>
+                            </group>
+                            <group string="Kỷ luật">
+                                <field name="discipline" nolabel="1" col="4">
+                                    <tree>
+                                        <field name="year"/>
+                                        <field name="reason"/>
+                                        <field name="rules"/>
+                                        <field name="method"/>
+                                        <field name="attach_discipline_record" widget="many2many_binary"
+                                               class="oe_inline"/>
+                                    </tree>
+                                    <form>
+                                        <group string="Thông tin kỷ luật" col="4">
+                                            <field name="year"/>
+                                            <field name="reason"/>
+                                            <field name="rules"/>
+                                            <field name="method"/>
+                                            <field name="attach_discipline_record" widget="many2many_binary"
+                                                   class="oe_inline"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </group>
+                            <group string="Định danh" col="4">
+                                <field name="identification_id" string="Số CMND"/>
+                                <field name="release_date_CMND"/>
+                                <field name="personal_tax_code"/>
+                                <field name="bhxh_code"/>
+                                <field name="veteran_type"/>
+                                <field name="is_family_of_martyrs"/>
+                            </group>
+                            <group string="Tình trạng sức khỏe" col="4">
+                                <field name="health_status"/>
+                                <field name="height"/>
+                                <field name="weight"/>
+                                <field name="blood_group"/>
+                            </group>
+
+                        </page>
+                        <page string="Thông tin cá nhân khác">
+                            <group string="Đào tạo, bồi dưỡng về chuyên môn, nghiệp vụ, lý luận chính trị, ngoại ngữ">
+                                <field name="study_process_id" nolabel="1" colspan="4">
+                                    <tree string="Quá trình học tập" editable="bottom">
+                                        <field name="name_school"/>
+                                        <field name="major"/>
+                                        <field name="date"/>
+                                        <field name="formality"/>
+                                        <field name="certificate"/>
+                                    </tree>
+                                    <form>
+                                        <group string="Quá trình học tập" col="4">
+                                            <field name="name_school"/>
+                                            <field name="major"/>
+                                            <field name="date"/>
+                                            <field name="formality"/>
+                                            <field name="certificate"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </group>
+                            <group string="Tóm tắt quá trình công tác">
+                                <field name="position_history_ids" nolabel="1" colspan="4">
+                                    <tree string="Quá trình làm việc">
+                                        <field name="date"/>
+                                        <field name="date_to"/>
+                                        <field name="position_id"/>
+                                        <field name="description"/>
+                                    </tree>
+                                    <form string="Tóm tắt quá trình công tác">
+                                        <group col="4">
+                                            <field name="date"/>
+                                            <field name="date_to"/>
+                                            <field name="position_id"/>
+                                            <field name="description"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </group>
+                            <group col="3" colspan="2" string="Đặc điểm lịch sử của bản thân">
+                                <field name="is_to_jail"
+                                       string="Khai rõ: bị bắt, bị tù (từ ngày, tháng, năm nào đến ngày, tháng, năm nào, ở đâu), đã khai báo cho ai, những vấn đề gì: "/>
+                                <field name="info_to_jail" attrs="{'invisible': [('is_to_jail','=',False)]}"/>
+                                <field name="is_work_old_regime"
+                                       string="Bản thân có làm việc trong chế độ cũ (cơ quan, đơn vị nào, địa điểm, chức danh, chức vụ, thời gian làm việc...):"/>
+                                <field name="info_old_regime" attrs="{'invisible':[('is_work_old_regime','=',False)]}"/>
+                            </group>
+                            <group col="3" colspan="2" string="Quan hệ với nước ngoài">
+                                <field name="is_join_foreign_organization"/>
+                                <field name="info_foreigin_organization"
+                                       attrs="{'invisible': [('is_join_foreign_organization','=',False)]}"/>
+                                <field name="is_relatives_foreiger"/>
+                                <field name="info_relatives_foreiger"
+                                       attrs="{'invisible': [('is_relatives_foreiger','=',False)]}"/>
+                            </group>
+                        </page>
+                        <page string="Quan hệ gia đình">
+                            <sheet string="Quan hệ trong gia đình">
+                                <group string="Về bản thân: Bố mẹ, vợ (chồng) , các con, anh chị em ruột">
+                                    <field name="family_relationship_of_me_id" nolabel="1" colspan="4">
+                                        <tree editable="bottom">
+                                            <field name="relationer"/>
+                                            <field name="full_name"/>
+                                            <field name="year"/>
+                                            <field name="infomation"/>
+                                        </tree>
+                                        <form>
+                                            <group col="4">
+                                                <field name="relationer"/>
+                                                <field name="full_name"/>
+                                                <field name="year"/>
+                                                <field name="infomation"/>
+                                            </group>
+                                        </form>
+                                    </field>
+                                </group>
+                                <group string="Về bên vợ (chồng): Bố mẹ, vợ (chồng) , các con, anh chị em ruột">
+                                    <field name="family_relationship_of_partner_id" nolabel="1" colspan="4">
+                                        <tree editable="bottom">
+                                            <field name="relationer"/>
+                                            <field name="full_name"/>
+                                            <field name="year"/>
+                                            <field name="infomation"/>
+                                        </tree>
+                                        <form>
+                                            <group col="4">
+                                                <field name="relationer"/>
+                                                <field name="full_name"/>
+                                                <field name="year"/>
+                                                <field name="infomation"/>
+                                            </group>
+                                        </form>
+                                    </field>
+                                </group>
+                            </sheet>
+                            <sheet string="Hoàn cảnh kinh tế gia đình">
+                                <group string="Quá trình lương của bản thân">
+                                    <field name="salary_process_id" nolabel="1" col="4">
+                                        <tree editable="bottom">
+                                            <field name="time"/>
+                                            <field name="level"/>
+                                            <field name="coefficients_salary"/>
+                                        </tree>
+                                        <form>
+                                            <group string="Lương bản thân">
+                                                <field name="time"/>
+                                                <field name="level"/>
+                                                <field name="coefficients_salary"/>
+                                            </group>
+                                        </form>
+                                    </field>
+                                </group>
+                                <group string="Nguồn thu nhập chính của gia đình (hằng năm)">
+                                    <field name="total_salary_family"/>
+                                    <field name="salary_husband"/>
+                                    <field name="salary_wife"/>
+                                    <field name="other_money"/>
+                                </group>
+                                <group string="Nhà ở" col="3" colspan="2">
+                                    <field name="house_area"/>
+                                    <field name="house_type"/>
+                                </group>
+                                <group string="Đất ở" col="4">
+                                    <field name="land_granted"/>
+                                    <field name="land_purchased"/>
+                                </group>
+                                <group string="Đất sản xuất, kinh doanh">
+                                    <field name="land_production_business"/>
+                                </group>
+                            </sheet>
+                        </page>
+                        <page string="Hồ sơ đính kèm" groups="mvb_hr.group_mvb_hr_employee_user_main_company">
+                            <group string="Đính kèm hồ sơ nhân sự bắt buộc">
+                                <field name="attach_passport_peopleId" filename="attach_passport_peopleId_name"/>
+                                <field name="attach_passport_peopleId_name" invisible="1"/>
+                                <field name="attach_degree" filename="attach_degree_name"/>
+                                <field name="attach_degree_name" invisible="1"/>
+                                <field name="attach_cv" filename="attach_cv_name"/>
+                                <field name="attach_cv_name" invisible="1"/>
+                                <field name="attach_health_certification" filename="attach_health_certification_name"/>
+                                <field name="attach_health_certification_name" invisible="1"/>
+                                <field name="attach_birth_certificate" filename="attach_birth_certificate_name"/>
+                                <field name="attach_birth_certificate_name" invisible="1"/>
+                                <field name="attach_registration_book" filename="attach_registration_book_name"/>
+                                <field name="attach_registration_book_name" invisible="1"/>
+                            </group>
+
+                            <group string="Hồ sơ khác" col="4">
+                                <div>
+                                    <label for="other_files" string="Danh sách tài liệu hồ sơ khác" colspan="2"/>
+                                </div>
+                                <field name="other_files" widget="many2many_binary" nolabel="1" class="oe_inline"
+                                       colspan="2"/>
+                            </group>
+                        </page>
+                        <page string="Tài khoản">
+                            <group>
+                                <field name="user_id" domain="[('is_choose', '=', False)]"
+                                       options="{'no_create': True, 'no_open': True}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </xpath>
+                <xpath expr="//form/sheet[1]/div[2]/div[1]/div[1]" position="inside">
+                    <div class="oe_title">
+                        <field name="employee_code" readonly="1"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="employee_view_search" model="ir.ui.view">
+            <field name="name">employee.search.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='department_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='category_ids']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="string">Họ và Tên</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="medal"/>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="major" string="Lớp đào tạo"/>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="major_qualification"/>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="age"/>
+                </xpath>
+                <xpath expr="//field[@name='age']" position="attributes">
+                    <attribute name="string">Tuổi</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="study_process_id" string="Văn bằng, chứng chỉ, trình độ"
+                           filter_domain="[('study_process_id.certificate','ilike',self)]"
+                    />
+                </xpath>
+
+                <xpath expr="//filter[1]" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//filter[2]" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//filter[@name='activities_overdue']" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <xpath expr="//filter[@name='message_needaction']" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <xpath expr="//filter[@name='activities_today']" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <xpath expr="//filter[@name='activities_upcoming_all']" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <xpath expr="//filter[@name='group_coach']" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <xpath expr="//filter[@name='group_manager']" position="attributes">
+                    <!-- Add your fields or attributes here -->
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <xpath expr="//filter[@name='group_company']" position="replace">
+                    <!-- Add your fields or attributes here -->
+                </xpath>
+
+                <xpath expr="//filter[@name='group_department']" position="before">
+                    <!-- Add your fields or attributes here -->
+                    <filter name="group_company" string="Công ty" domain="[]" context="{'group_by':'company_id'}"
+                            groups="base.group_multi_company"/>
+                </xpath>
+
+                <xpath expr="//filter[@name='group_job']" position="after">
+                    <!-- Add your fields or attributes here -->
+                    <filter name="group_total_employees" string="Tổng nhân sự" domain="[]"
+                            context="{'group_by':'total_employees'}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr.open_view_employee_list_my" model="ir.actions.act_window">
+            <field name="name">Employees</field>
+            <field name="res_model">hr.employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,activity</field>
+            <field name="domain">[]</field>
+            <field name="context">{'group_by': ['company_id','department_id']}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="hr.view_employee_filter"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new employee
+                </p>
+                <p>
+                    With just a quick glance on the Odoo employee screen, you
+                    can easily find all the information you need for each person;
+                    contact data, job position, availability, etc.
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

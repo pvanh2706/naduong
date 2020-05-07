@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="website_test" inherit_id="website.snippets" name="Snippet Test">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_three_columns_circle" t-thumbnail="/theme_common/static/src/img/snippets/s_three_columns_circle.png"/>
+            <t t-snippet="theme_common.s_images_carousel" t-thumbnail="/theme_common/static/src/img/snippets/s_images_carousel.png"/>
+            <t t-snippet="theme_common.s_images_row" t-thumbnail="/theme_common/static/src/img/snippets/s_images_row.png"/>
+            <t t-snippet="theme_company_custom.s_blog_post_feature" t-thumbnail="/theme_common/static/src/img/snippets/s_images_carousel.png"/>
+            <t t-snippet="theme_company_custom.s_blog_post_feature_image_3" t-thumbnail="/theme_common/static/src/img/snippets/s_images_carousel.png"/>
+            <t t-snippet="theme_company_custom.s_blog_post_news_event" t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.png"/>
+            <t t-snippet="theme_company_custom.s_blog_post_vina_news" t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.png"/>
+            <t t-snippet="theme_company_custom.s_multi_image_gallery" t-thumbnail="/website/static/src/img/snippets_thumbs/s_images_carousel.png"/>
+        </xpath>
+    </template>
+</odoo>

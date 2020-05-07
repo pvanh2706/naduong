@@ -1,0 +1,1865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!--sub property-->
+        <record id="payroll_1" model="payroll.plan.sub.property">
+            <field name="name">Doanh thu (GTSX) tính lương</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_2" model="payroll.plan.sub.property">
+            <field name="name">SX than</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_3" model="payroll.plan.sub.property">
+            <field name="name">SX khác</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="payroll_4" model="payroll.plan.sub.property">
+            <field name="name">Quỹ lương tính theo đơn giá</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="payroll_5" model="payroll.plan.sub.property">
+            <field name="name">SX than</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_6" model="payroll.plan.sub.property">
+            <field name="name">SX khác</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="payroll_7" model="payroll.plan.sub.property">
+            <field name="name">Nguồn khác (nếu có)</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="payroll_8" model="payroll.plan.sub.property">
+            <field name="name">Quỹ lương thực trả</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="payroll_9" model="payroll.plan.sub.property">
+            <field name="name">Lao động danh sách</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="payroll_10" model="payroll.plan.sub.property">
+            <field name="name">Số đầu kỳ</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_12" model="payroll.plan.sub.property">
+            <field name="name">CN làm việc trong lò</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_13" model="payroll.plan.sub.property">
+            <field name="name">Tăng trong kỳ</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_15" model="payroll.plan.sub.property">
+            <field name="name">CN làm việc trong lò</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_16" model="payroll.plan.sub.property">
+            <field name="name">Giảm trong kỳ</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_18" model="payroll.plan.sub.property">
+            <field name="name">CN làm việc trong lò</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_19" model="payroll.plan.sub.property">
+            <field name="name">Số cuối kỳ</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="payroll_21" model="payroll.plan.sub.property">
+            <field name="name">CN làm việc trong lò</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_22" model="payroll.plan.sub.property">
+            <field name="name">Lao động nữ</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="payroll_23" model="payroll.plan.sub.property">
+            <field name="name">HĐ không XĐTH</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_24" model="payroll.plan.sub.property">
+            <field name="name">+ HĐ từ 1-3 năm</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="payroll_25" model="payroll.plan.sub.property">
+            <field name="name">Lao động mùa vụ, thử việc, HSTT</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="payroll_26" model="payroll.plan.sub.property">
+            <field name="name">Học sinh thực tập</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_27" model="payroll.plan.sub.property">
+            <field name="name">Lao động bình quân</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="payroll_28" model="payroll.plan.sub.property">
+            <field name="name">Lao động SX than</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_29" model="payroll.plan.sub.property">
+            <field name="name">Tiền lương bình quân</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="payroll_30" model="payroll.plan.sub.property">
+            <field name="name">Theo đơn giá</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_31" model="payroll.plan.sub.property">
+            <field name="name">SX than</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="payroll_32" model="payroll.plan.sub.property">
+            <field name="name">Theo số thực trả</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">2</field>
+        </record>
+
+        <!--        property-->
+        <!--Thông số của La Hiên-->
+        <record id="payroll_pro_1" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_2" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_3" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_4" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_5" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_6" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_7" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_8" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_9" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_10" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_11" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_12" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_13" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_14" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_15" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_16" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_17" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--Phần tiêu chí cho Quán Triều-->
+        <!--Thông số của La Hiên-->
+        <record id="payroll_pro_18" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_19" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_20" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_21" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_22" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_23" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_24" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_25" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_26" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_27" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_28" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_29" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_30" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_31" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_32" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_33" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_34" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--Tân Quang-->
+<!--Thông số của La Hiên-->
+        <record id="payroll_pro_35" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_36" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_37" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_38" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_39" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_40" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_41" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_42" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_43" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_44" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_45" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_46" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_47" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_48" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_49" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_50" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_51" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--KSThaiNguyen-->
+        <record id="payroll_pro_52" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_53" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_54" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_55" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_56" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_57" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_58" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_59" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_60" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_61" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_62" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_63" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_64" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_65" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_66" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_67" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_68" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--TBAL-->
+        <record id="payroll_pro_69" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_70" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_71" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_72" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_73" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_74" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_75" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_76" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_77" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_78" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_79" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_80" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_81" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_82" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_83" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_84" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_85" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--VTTB-->
+        <record id="payroll_pro_86" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_87" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_88" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_89" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_90" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_91" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_92" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_93" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_94" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_95" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_96" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_97" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_98" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_99" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_100" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_101" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_102" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--DautuXD-->
+        <!--Thông số của La Hiên-->
+        <record id="payroll_pro_103" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_104" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_105" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_106" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_107" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_108" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_109" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_110" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_111" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_112" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_113" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_114" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_115" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_116" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_117" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_118" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_119" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--KDTH-->
+        <!--Thông số của La Hiên-->
+        <record id="payroll_pro_120" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_121" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_122" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_123" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_124" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_125" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_126" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_127" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_128" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_129" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_130" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_131" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_132" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_133" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_134" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_135" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_136" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--CMK-->
+        <record id="payroll_pro_137" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_138" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_139" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_140" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_141" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_142" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_143" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_144" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_145" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_146" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_147" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_148" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_149" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_150" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_151" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_152" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_153" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--Than_KH-->
+
+        <record id="payroll_pro_154" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_155" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_156" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_157" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_158" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_159" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_160" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_161" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_162" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_163" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_164" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_165" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_166" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_167" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_168" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_169" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_170" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--Than_ND-->
+
+        <record id="payroll_pro_171" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_172" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_173" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_174" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_175" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_176" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_177" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_178" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_179" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_180" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_181" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_182" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_183" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_184" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_185" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_186" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_187" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--Than_NH-->
+
+        <record id="payroll_pro_188" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_189" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_190" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_191" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_192" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_193" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_194" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_195" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_196" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_197" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_198" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_199" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_200" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_201" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_202" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_203" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_204" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--TTDD-->
+
+        <record id="payroll_pro_205" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_206" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_207" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_208" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_209" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_210" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_211" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_212" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_213" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_214" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_215" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_216" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_217" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_218" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_219" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_220" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_221" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <!--MVB-->
+        <record id="payroll_pro_222" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_2')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="payroll_pro_223" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_1'), ref('payroll_3')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Tr đ</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="payroll_pro_224" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_5')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="payroll_pro_225" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_6')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="payroll_pro_226" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_4'), ref('payroll_7')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="payroll_pro_227" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_8')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">1000 đ</field>
+            <field name="sequence">6</field>
+        </record>
+
+        <record id="payroll_pro_228" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_10'), ref('payroll_12')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">7</field>
+        </record>
+
+        <record id="payroll_pro_229" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_13'), ref('payroll_15')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">8</field>
+        </record>
+
+        <record id="payroll_pro_230" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_16'), ref('payroll_18')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">9</field>
+        </record>
+
+        <record id="payroll_pro_231" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_21')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="payroll_pro_232" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_23')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="payroll_pro_233" model="payroll.plan.property">
+            <field name="property_ids"
+                   eval="[(6, 0,[ref('payroll_9'), ref('payroll_19'), ref('payroll_22'), ref('payroll_24')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="payroll_pro_234" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_25'), ref('payroll_26')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="payroll_pro_235" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_27'), ref('payroll_28')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">Người</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="payroll_pro_236" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="payroll_pro_237" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_30'), ref('payroll_31')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="payroll_pro_238" model="payroll.plan.property">
+            <field name="property_ids" eval="[(6, 0,[ref('payroll_29'), ref('payroll_32')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="unit">1000đ/ng-th</field>
+            <field name="sequence">17</field>
+        </record>
+    </data>
+</odoo>

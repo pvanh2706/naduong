@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <record id="mvb_document_publisher_form" model="ir.ui.view">
+           <field name="name">mvb.document.publisher.form</field>
+           <field name="model">mvb.document.publisher</field>
+           <field name="arch" type="xml">
+               <form string="">
+                   <sheet>
+                       <group col="4">
+                            <field name="name"/>
+                            <field name="note"/>
+                            <!-- <field name="representative"/> -->
+                       </group>
+                   </sheet>
+               </form>
+           </field>
+       </record>
+
+        <record id="mvb_document_publisher_tree" model="ir.ui.view">
+            <field name="name">mvb.document.publisher.tree</field>
+            <field name="model">mvb.document.publisher</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                    <field name="note"/>
+                    <!-- <field name="representative"/> -->
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="mvb_document_publisher_action" model="ir.actions.act_window">
+            <field name="name">Đơn vị phát hành</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document.publisher</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

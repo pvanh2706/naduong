@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Tree view văn bản đến-->
+        <record id="mvb_text_to_come_tree_view" model="ir.ui.view">
+            <field name="name">Văn bản đến</field>
+            <field name="model">mvb.incoming.text</field>
+            <field name="arch" type="xml">
+                <tree decoration-danger="has_attachment==False" string="">
+                    <field name="document_notebook"/>
+                    <field name="number_incoming" string="Số đến"/>
+                    <field name="received_date"/>
+                    <field name="promulgate_authority"/>
+                    <field name="name"/>
+                    <field name="promulgate_date"/>
+                    <field name="content_compendium"/>
+                    <field name="has_attachment"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form view văn bản đến-->
+        <record id="mvb_text_to_come_form_view" model="ir.ui.view">
+            <field name="name">Văn bản đến</field>
+            <field name="model">mvb.incoming.text</field>
+            <field name="arch" type="xml">
+                <form string="" attrs="{'edit': [('state', 'in', ('pending'))]}">
+                    <header>
+                        <button name="solution_for_direction" type="object" string="Chuyển xử lý" states="draft,pending"
+                                class="oe_highlight" clickable="True"
+                                groups="mvb_eoffice.group_incoming_text_archivist,mvb_eoffice.group_incoming_text_leadership,mvb_eoffice.group_incoming_text_office_leadership,mvb_eoffice.group_incoming_text_member_leads"/>
+                        <button name="%(mvb_eoffice.mvb_text_direction_wizard_reply)d" type="action" string="Trả lời"
+                                states="pending"
+                                class="oe_highlight" clickable="True"
+                                groups="mvb_eoffice.group_incoming_text_archivist,mvb_eoffice.group_incoming_text_leadership,mvb_eoffice.group_incoming_text_office_leadership"/>
+                        <button name="%(mvb_eoffice.mvb_text_direction_wizard_action)d" string="Xin ý kiến"
+                                states="draft,pending"
+                                type="action"
+                                class="oe_highlight" groups="mvb_eoffice.group_incoming_text_archivist"/>
+                        <button name="notification" type="object" string="Gửi thông báo" states="pending"
+                                class="oe_highlight"
+                                groups="mvb_eoffice.group_incoming_text_archivist"/>
+                        <button name="finished" type="object" string="Kết thúc" states="pending"
+                                class="oe_highlight"
+                                groups="mvb_eoffice.group_incoming_text_archivist"/>
+                        <button name="confirm_document_incoming" type="object" string="Đã hoàn thành" states="pending"
+                                class="oe_highlight" groups="mvb_eoffice.group_incoming_text_member"/>
+                        <button name="push_data_for_document" type="object" string="Lưu trữ"
+                                states="finish,notification"
+                                class="oe_highlight" groups="mvb_eoffice.group_incoming_text_archivist"/>
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,pending,finish" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <group string="Thông tin chung" colspan="2" col="4">
+                            <field name="document_notebook" options="{'no_create': True, 'no_create_edit':True}"
+                                   attrs="{'readonly': [('active_lock', '=', False)]}"
+                                   domain="[('type_doc', '=', 'đến')]"/>
+                            <field name="number_incoming" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                            <field name="name" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                            <field name="promulgate_authority" attrs="{'readonly': [('active_lock', '=', False)]}"
+                                   options="{'no_open': True}"/>
+                            <field name="received_date" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                            <field name="promulgate_date" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                            <field name="active_lock" invisible="True"/>
+                        </group>
+                        <group>
+                            <field name="content_compendium" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                        </group>
+                        <group colspan="2" col="4">
+                            <field name="from_document_id" attrs="{'readonly': [('active_lock', '=', False)]}"
+                                   options="{'no_open': True}"/>
+                            <field name="type_send_incoming" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="deadline_text" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                            </group>
+                            <group>
+
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Thông tin khác">
+                                <group colspan="2" col="4">
+                                    <field name="name_signed_text" attrs="{'readonly': [('active_lock', '=', False)]} "
+                                           options="{'no_create': True, 'no_create_edit':True}"
+                                           domain="[('company_extend_name','ilike', promulgate_authority)]"/>
+                                    <field name="job_signed_text" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                </group>
+
+                                <group colspan="2" col="6">
+                                    <field name="type_document" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                    <field name="urgency" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                    <field name="security_level" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                </group>
+
+                                <group colspan="2" col="6">
+                                    <field name="number_of_received"
+                                           attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                    <field name="page_number" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                    <field name="language_text" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                </group>
+
+                                <group>
+                                    <field name="note_document" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                                </group>
+                            </page>
+
+                            <page string="Thông tin lưu trữ"
+                                  attrs="{'invisible': ['|',('state', '=', 'saved'),('state', '!=', 'finish')]}">
+                                <group string="Thông tin lưu trữ">
+                                    <field name="save_data" nolabel="1"
+                                           attrs="{'readonly': [('active_lock', '=', False)]}">
+                                        <tree>
+                                            <field name="human_resources_save"/>
+                                            <field name="department"/>
+                                            <field name="job_name"/>
+                                            <field name="number_save"/>
+                                            <field name="date_save"/>
+                                            <field name="type_document_save"/>
+                                        </tree>
+                                        <form>
+                                            <group col="4">
+                                                <field name="human_resources_save"/>
+                                                <!--                                                <field name="department"/>-->
+                                                <!--                                                <field name="job_name"/>-->
+                                                <field name="number_save"/>
+                                                <field name="date_save"/>
+                                                <field name="type_document_save"/>
+                                            </group>
+                                        </form>
+                                    </field>
+                                </group>
+                            </page>
+
+                        </notebook>
+                        <notebook
+                                groups="mvb_eoffice.group_incoming_text_archivist,mvb_eoffice.group_incoming_text_leadership,mvb_eoffice.group_incoming_text_office_leadership,mvb_eoffice.group_incoming_text_member_leads,mvb_eoffice.group_incoming_text_member_leads,mvb_eoffice.group_incoming_text_member">
+                            <page string="Theo dõi văn bản">
+                                <div>
+                                    <field name="solution_data">
+                                        <tree>
+                                            <field name="person_ship"/>
+                                            <field name="date_start_ship"/>
+                                            <field style="width: 40%" name="content_solution"/>
+                                            <field name="date_deadline"/>
+                                            <field name="display_name"/>
+                                            <field name="person_receiver_ids" widget="many2many_tags"/>
+                                            <field name="person_coordinator_handles_ids" widget="many2many_tags"/>
+                                            <field name="person_follow_ids" widget="many2many_tags"/>
+                                        </tree>
+                                        <form>
+                                            <sheet>
+                                                <group>
+                                                    <field name="person_ship"/>
+                                                    <field name="date_start_ship"/>
+                                                    <field name="content_solution"/>
+                                                    <field name="date_deadline"/>
+                                                    <field name="person_receiver_ids">
+                                                        <tree>
+                                                            <field name="name"/>
+                                                            <field name="login"/>
+                                                            <field name="mvb_department_name"/>
+                                                            <field name="mvb_job_name"/>
+                                                        </tree>
+                                                    </field>
+                                                    <field name="person_coordinator_handles_ids">
+                                                        <tree>
+                                                            <field name="name"/>
+                                                            <field name="login"/>
+                                                            <field name="mvb_department_name"/>
+                                                            <field name="mvb_job_name"/>
+                                                        </tree>
+                                                    </field>
+                                                    <field name="person_follow_ids">
+                                                        <tree>
+                                                            <field name="name"/>
+                                                            <field name="login"/>
+                                                            <field name="mvb_department_name"/>
+                                                            <field name="mvb_job_name"/>
+                                                        </tree>
+                                                    </field>
+                                                </group>
+                                            </sheet>
+                                        </form>
+                                    </field>
+                                </div>
+                            </page>
+                        </notebook>
+
+                        <notebook
+                                groups="mvb_eoffice.group_incoming_text_archivist,mvb_eoffice.group_incoming_text_leadership,mvb_eoffice.group_incoming_text_office_leadership,mvb_eoffice.group_incoming_text_member_leads,mvb_eoffice.group_incoming_text_member_leads,mvb_eoffice.group_incoming_text_member">
+                            <page string="Tình trạng công việc">
+                                <div>
+                                    <field name="status_text"
+                                           options="{'no_create': True, 'no_edit': True, 'no_open': True }">
+                                        <tree>
+                                            <!--                                    <field name="person_send_id"/>-->
+
+                                            <field name="name"/>
+                                            <field name="state"/>
+                                            <field name="text_ids"/>
+                                            <field name="check_time_view"/>
+                                            <field name="deadline"/>
+                                        </tree>
+                                        <form>
+                                            <sheet>
+                                                <group>
+                                                    <field name="name" options="{'no_open': True }"/>
+                                                    <field name="state"/>
+                                                    <field name="text_ids" options="{'no_open': True }"/>
+                                                    <field name="check_time_view"/>
+                                                    <field name="check_view"/>
+                                                    <field name="check_work"/>
+                                                </group>
+                                            </sheet>
+                                        </form>
+                                    </field>
+                                </div>
+                            </page>
+                        </notebook>
+                        <field name="has_attachment" invisible="1"/>
+                    </sheet>
+
+                    <div class="o_attachment_preview"
+                         options="{types: ['image', 'pdf'], 'order': 'desc'}"
+                    />
+                    <div class="oe_chatter">
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!--      Search Document-->
+        <record id="mvb_incoming_text_search" model="ir.ui.view">
+            <field name="name">xmvb.incoming.tet.search</field>
+            <field name="model">mvb.incoming.text</field>
+            <field name="arch" type="xml">
+                <search string="Search Document">
+                    <field name="document_notebook"/>
+                    <field name="number_incoming"/>
+                    <field name="received_date"/>
+                    <field name="promulgate_authority"/>
+                    <field name="name"/>
+                    <separator/>
+                    <!--                    <filter string="Bản ghi ẩn" name="active" domain="[('active', '=' , False)]"/>-->
+                    <group expand='0' string='Group By'>
+                        <filter string='Trạng thái' name="state" context="{'group_by' : 'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="mvb_text_to_come_action" model="ir.actions.act_window">
+            <field name="name">Văn bản đến</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.incoming.text</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','!=','finish')]</field>
+            <field name="context">{'tree_view_ref': 'mvb_eoffice.mvb_text_to_come_tree_view', 'form_view_ref':
+                'mvb_eoffice.mvb_text_to_come_form_view'}
+            </field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+        <!--       Tổng hợp văn bản đến -->
+        <record id="mvb_text_to_come_action_all" model="ir.actions.act_window">
+            <field name="name">Văn bản đến</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.incoming.text</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|',('create_uid','=',uid),('status_text.name.id','=',uid)]</field>
+            <field name="context">{}
+            </field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+            </field>
+        </record>
+
+        <!-- inherit form publisher -->
+        <record id="mvb_document_publisher_inherit_form" model="ir.ui.view">
+            <field name="name">mvb.document.publisher.inherit.view.form</field>
+            <field name="model">mvb.document.publisher</field>
+            <field name="inherit_id" ref="mvb_documents.mvb_document_publisher_form"/>
+
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='note']" position="after">
+                    <field name="representative">
+                        <tree>
+                            <field name="name_job"/>
+                            <field name="position_id"/>
+                        </tree>
+                    </field>
+                </xpath>
+
+            </field>
+        </record>
+
+
+        <!-- Action and form 'mvb.representative' -->
+        <!-- Action mvb.representative -->
+        <record id="mvb_representative_action" model="ir.actions.act_window">
+            <field name="name">mvb.representative.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.representative</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <!-- mvb.representative form view -->
+        <record id="mvb_representative_view_form" model="ir.ui.view">
+            <field name="name">mvb.representative.view.form</field>
+            <field name="model">mvb.representative</field>
+            <field name="arch" type="xml">
+                <form string="Tạo danh sách người ký">
+                    <sheet>
+                        <group>
+                            <field name="name_job"/>
+                            <field name="position_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

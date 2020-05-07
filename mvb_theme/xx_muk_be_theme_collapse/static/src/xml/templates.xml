@@ -1,0 +1,9 @@
+<templates id="template" xml:space="preserve">
+
+    <!-- Default hide left menu -->
+	<t t-extend="Menu">
+        <t t-jquery=".mk_apps_sidebar_panel" t-operation="attributes">
+            <attribute name="style">display: none</attribute>
+        </t>
+    </t>
+</templates>

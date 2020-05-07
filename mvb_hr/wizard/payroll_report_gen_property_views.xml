@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payroll_report_gen_property_form" model="ir.ui.view">
+        <field name="name">payroll.report.gen_property.form</field>
+        <field name="model">payroll.report.gen_property</field>
+        <field name="arch" type="xml">
+            <form string="" create="false">
+                <group>
+                    <h3 colspan="4">
+                        Chọn tiêu chí để tạo các dòng báo cáo
+                    </h3>
+                </group>
+                <group colspan="4">
+                    <separator string="Tiêu chí" colspan="4"/>
+                    <field name="property_ids" nolabel="1"/>
+                </group>
+                <footer>
+                    <button string="Tạo danh sách" name="generate" type="object" class="oe_highlight"/>
+                    <button string="Hủy" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="payroll_report_gen_property_action" model="ir.actions.act_window">
+        <field name="name">Chọn danh sách tiêu chí</field>
+        <field name="res_model">payroll.report.gen_property</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="payroll_report_gen_property_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

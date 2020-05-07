@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="doimoi_total_calendar_edit_wizards_view_form" model="ir.ui.view">
+            <field name="name">Tổng hợp lịch công tác cho các lãnh đạo theo tuần</field>
+            <field name="model">doimoi.content.calendar.edit.wizards</field>
+            <field name="arch" type="xml">
+                <form string="Ý kiến điều chỉnh">
+                    <group>
+                        <field name="note" />
+                    </group>
+                    <footer>
+                        <button name="send_content" string="Gửi" type="object"
+                                class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <!--        <record model="ir.actions.act_window" id="doimoi_total_calendar_edit_wizards_action">-->
+        <!--            <field name="name">Nội dung điều chỉnh lịch công tác</field>-->
+        <!--            <field name="res_model">doimoi.content.calendar.edit.wizards</field>-->
+        <!--            <field name="type">ir.actions.act_window</field>-->
+        <!--            <field name="view_type">form</field>-->
+        <!--            <field name="view_id" ref="doimoi_total_calendar_edit_wizards_view_form"/>-->
+        <!--            &lt;!&ndash;            <field name="target">inline</field>&ndash;&gt;-->
+        <!--            <field name="target">new</field>-->
+        <!--        </record>-->
+    </data>
+</odoo>

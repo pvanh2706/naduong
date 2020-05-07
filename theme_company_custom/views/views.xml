@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="layout_remove_logo" inherit_id="website.layout" name="Remove Logo">
+        <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace"/>
+        <xpath expr="//header//div[hasclass('container')]" position="attributes">
+            <attribute name="t-attf-class" remove="#{'container'}" add="#{'container-fluid container-responsive'}"
+                       separator=" "/>
+        </xpath>
+        <xpath expr="//header" position="attributes">
+            <attribute name="t-attf-class" add="#{'container container-responsive'}"
+                       separator=" "/>
+        </xpath>
+        <xpath expr="//header" position="before">
+            <div class="container container-responsive" style="position: relative;">
+                <img class="logo_top" src="/theme_company_custom/static/description/banner/logo.png"/>
+                <img class="banner_top" src="/theme_company_custom/static/description/banner/banner.jpg"/>
+                <h5 class="company_name_h5">Tổng công ty công nghiệp mỏ Việt Bắc</h5>
+                <h1 class="company_name_h1">Công ty than núi hồng - VVMI</h1>
+            </div>
+        </xpath>
+        <xpath expr="//header//nav//div" position="inside">
+            <marquee>
+                <div class="row s_col_no_bgcolor js_get_posts active"
+                     data-loading="true"
+                     data-template="theme_company_custom.s_feature_post_only_1"/>
+            </marquee>
+            <div id="date-time">
+                <p/>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="website_blog_replace" inherit_id="website_blog.blog_post_complete" name="Rearrange Blog Detail">
+        <xpath expr="//div[@id='title']" position="replace">
+            <div id="title" class="blog_header" t-ignore="True">
+                <div class="o_blog_cover_container cover container cover_narrow">
+                    <div class="blog_title">
+                        <h1 t-field="blog_post.name" id="blog_post_name" t-att-data-blog-id="blog_post.id"
+                            placeholder="Blog Post Title"/>
+                        <h2 t-field="blog_post.subtitle" placeholder="Subtitle"/>
+                        <p class="post-meta text-muted text-center" name="blog_post_data"/>
+                        <p class="post-meta text-muted text-center" t-if="len(blog_post.tag_ids)">
+                            <span class="fa fa-tags" role="img" aria-label="Tags" title="Tags"/>
+                            <t t-foreach="blog_post.tag_ids" t-as="one_tag">
+                                <a class="badge badge-primary mr8" t-attf-href="#{blog_url(tag=slug(one_tag))}"
+                                   t-esc="one_tag.name"/>
+                            </t>
+                        </p>
+                        <div t-if="'cover_full' in blog_post_cover_properties.get('resize_class', '')"
+                             id="blog_angle_down">
+                            <strong>
+                                <a href="#blog_content" class="fa fa-angle-down fa-3x fa-inverse mt4"
+                                   aria-label="To blog content" title="To blog content"/>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <t t-call="website_blog.blog_cover">
+                    <t t-set="cover_properties" t-value="blog_post_cover_properties"/>
+                    <p>Change cover.....</p>
+                </t>
+            </div>
+        </xpath>
+    </template>
+
+    <data noupdate="1">
+        <record id="theme_company_image_01" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 01</field>
+            <field name="datas_fname">company-image-01.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Banner.jpg</field>
+        </record>
+        <record id="theme_company_image_02" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 02</field>
+            <field name="datas_fname">company-image-02.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_02.jpg</field>
+        </record>
+        <record id="theme_company_image_03" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 03</field>
+            <field name="datas_fname">company-image-03.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_3.jpg</field>
+        </record>
+        <record id="theme_company_image_04" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 04</field>
+            <field name="datas_fname">company-image-04.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_5.jpg</field>
+        </record>
+        <record id="theme_company_image_05" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 05</field>
+            <field name="datas_fname">company-image-05.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_7.jpg</field>
+        </record>
+        <record id="theme_company_image_06" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 06</field>
+            <field name="datas_fname">company-image-06.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_9.jpg</field>
+        </record>
+        <record id="theme_company_image_07" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 07</field>
+            <field name="datas_fname">company-image-07.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_11.jpg</field>
+        </record>
+        <record id="theme_company_image_08" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 08</field>
+            <field name="datas_fname">company-image-08.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_12.jpg</field>
+        </record>
+        <record id="theme_company_image_09" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 09</field>
+            <field name="datas_fname">company-image-09.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_13.jpg</field>
+        </record>
+        <record id="theme_company_image_10" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 10</field>
+            <field name="datas_fname">company-image-10.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_17.jpg</field>
+        </record>
+        <record id="theme_company_image_11" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 11</field>
+            <field name="datas_fname">company-image-11.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_21.jpg</field>
+        </record>
+        <record id="theme_company_image_12" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 12</field>
+            <field name="datas_fname">company-image-12.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_23.jpg</field>
+        </record>
+        <record id="theme_company_image_13" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 13</field>
+            <field name="datas_fname">company-image-13.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_25.jpg</field>
+        </record>
+        <record id="theme_company_image_14" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 14</field>
+            <field name="datas_fname">company-image-14.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_27.jpg</field>
+        </record>
+        <record id="theme_company_image_15" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 15</field>
+            <field name="datas_fname">company-image-15.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_29.jpg</field>
+        </record>
+        <record id="theme_company_image_16" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Theme Company Image 16</field>
+            <field name="datas_fname">company-image-16.jpg</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_36.jpg</field>
+        </record>
+    </data>
+</odoo>

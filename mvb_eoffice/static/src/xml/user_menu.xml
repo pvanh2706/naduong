@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="my_menus_template_id" xml:space="preserve">
+    <t t-name="UserMenu.Actions" class= "o_user_menu" >
+        <li class="shortcuts"><a href="#" data-menu="shortcuts">Phím tắt</a></li>
+        <li class="settings"><a href="#" data-menu="settings">Tùy chỉnh cá nhân</a></li>
+        <li class="logout"><a href="#" data-menu="logout">Đăng xuất</a></li>
+    </t>
+</templates>

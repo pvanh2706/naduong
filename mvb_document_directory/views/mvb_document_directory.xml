@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mvb_view_dms_file_tree" model="ir.ui.view">
+            <field name="name">mvb_view_dms_file_tree</field>
+            <field name="model">muk_dms.file</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="mvb_view_dms_file_form" model="ir.ui.view">
+            <field name="name">muk_dms_file.form</field>
+            <field name="model">muk_dms.file</field>
+            <field name="arch" type="xml">
+                <form string="Files" js_class="file_form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="path_json" widget="path_json" options="{'prefix': True, 'suffix': False}"/>
+                        </group>
+                        <group name="settings">
+                            <group>
+                                <field name="directory"
+                                       options="{'no_quick_create': True, 'no_create': True, 'no_open': True}"/>
+                                <field name="storage" options="{'no_open': True}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Danh sách tài liệu">
+                                <group>
+                                    <field name="list_document_of_groups" nolabel="1">
+                                        <tree>
+                                            <field name="document_type"/>
+                                            <field name="name"/>
+                                            <field name="name_document"/>
+                                            <field name="date_document"/>
+                                            <field name="document_arrival_date"/>
+                                            <field name="create_uid" string="Người tạo"/>
+                                            <button string="Xem chi tiết" name="open_line" class="oe_highlight"
+                                                    type="object"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="mvb_action_dms_file" model="ir.actions.act_window">
+            <field name="name">Thư mục tài liệu</field>
+            <field name="res_model">muk_dms.file</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'tree_view_ref':
+                'mvb_document_directory.mvb_view_dms_file_tree', 'form_view_ref':
+                'mvb_document_directory.mvb_view_dms_file_form'}
+            </field>
+            <field name="domain">[("is_hidden", "=", False)]</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new File.
+                </p>
+                <p>
+                    Files are used to save content directly in Odoo.
+                </p>
+            </field>
+        </record>
+
+        <record id="ir_action_group_folder_download_attachment" model="ir.actions.server">
+            <field name="name">Tải xuống file đính kèm</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_muk_dms_file"/>
+            <field name="state">code</field>
+            <field name="code">
+                if records:
+                action = records.action_groups_folder_download_attachment()
+            </field>
+            <field name="binding_model_id" ref="model_muk_dms_file"/>
+        </record>
+
+        <record id="mvb_file_tree_view" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="mvb_document_directory.mvb_view_dms_file_tree"/>
+            <field name="act_window_id" ref="muk_dms.action_dms_files_all_directory"/>
+        </record>
+        <record id="mvb_file_form_view" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="mvb_document_directory.mvb_view_dms_file_form"/>
+            <field name="act_window_id" ref="muk_dms.action_dms_files_all_directory"/>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="mvb_document_menu_folder_directory" name="Thư mục tài liệu"
+                  parent="mvb_documents.mvb_documents_root"
+                  action="muk_dms_view.action_dms_documents" sequence="43"/>
+
+
+        <!--<menuitem id="mvb_document_menu_directory" name="Phân loại tài liệu"-->
+                  <!--parent="mvb_documents.mvb_documents_root"-->
+                  <!--action="mvb_action_dms_file" sequence="50"/>-->
+
+
+        <menuitem id="mvb_document_menu_config_folder_tree_document" name="Thiết lập cây thư mục"
+                  parent="mvb_documents.mvb_documents_root"
+                  sequence="90" groups="base.user_admin,mvb_documents.group_mvb_settings_document_access"/>
+
+        <menuitem id="mvb_document_menu_directory_folder" name="Thiết lập thư mục"
+                  parent="mvb_document_menu_config_folder_tree_document"
+                  action="muk_dms.action_dms_directory" sequence="1"/>
+
+        <menuitem id="mvb_document_menu_directory_db" name="Thiết lập Database"
+                  parent="mvb_document_menu_config_folder_tree_document"
+                  action="muk_dms.action_dms_storage" sequence="20"/>
+
+
+        <menuitem id="mvb_document_menu_directory_acess" name="Thiết lập quyền thư mục"
+                  parent="mvb_document_menu_config_folder_tree_document"
+                  action="muk_dms_access.action_dms_access_groups" sequence="25"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!--        <record id="waiting_solution_tree_new" model="ir.ui.view">-->
+<!--            <field name="name">Công việc cần xử lý</field>-->
+<!--            <field name="model">mvb.waiting.solution</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <tree string="" create="false" edit="false" delete="false">-->
+<!--                    <button name="open_patient_appointments"-->
+<!--                            class="oe_highlight"-->
+<!--                            string='Văn bản đến chờ xử lý'-->
+<!--                            type="object">-->
+
+<!--                    </button>-->
+<!--                    <field name="document_incoming_count" nolabel="1"/>-->
+<!--                    <button name="document_incoming_count"-->
+<!--                            class="oe_highlight"-->
+<!--                             string='Văn bản đi chờ xử lý'-->
+<!--                            type="object">-->
+<!--                    </button>-->
+<!--                    <field name="document_incoming_count" nolabel="1"/>-->
+
+<!--                    <button name="open_patient_appointments"-->
+<!--                            class="oe_highlight"-->
+<!--                            string='Văn bản đi chờ xử lý'-->
+<!--                            type="object">-->
+<!--                    </button>-->
+<!--                    <field name="document_incoming_count" nolabel="1"/>-->
+<!--                </tree>-->
+<!--            </field>-->
+<!--        </record>-->
+<!--        <record id="waiting_solution_form_new" model="ir.ui.view">-->
+<!--            <field name="name">Công việc cần xử lý</field>-->
+<!--            <field name="model">mvb.waiting.solution</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <form string="">-->
+<!--                    <sheet>-->
+<!--                        <group>-->
+<!--                            <group>-->
+<!--                                <div class="oe_button_box" name="button_box">-->
+<!--                                    <button name="open_patient_appointments"-->
+<!--                                            class="oe_stat_button"-->
+<!--                                            icon="fa-calendar"-->
+<!--                                            type="object">-->
+<!--                                        <field name="document_incoming_count" string='Văn bản đến chờ xử lý'-->
+<!--                                               widget="statinfo"/>-->
+<!--                                    </button>-->
+<!--                                    <button name="open_patient_appointments"-->
+<!--                                            class="oe_stat_button"-->
+<!--                                            icon="fa-suitcase"-->
+<!--                                            type="object">-->
+<!--                                    </button>-->
+<!--                                    <button name="open_patient_appointments"-->
+<!--                                            class="oe_stat_button"-->
+<!--                                            icon="fa-tasks"-->
+<!--                                            type="object">-->
+<!--                                    </button>-->
+<!--                                </div>-->
+<!--                            </group>-->
+<!--                        </group>-->
+<!--                        <group>-->
+<!--                            <field name="name"/>-->
+<!--                        </group>-->
+<!--                    </sheet>-->
+<!--                </form>-->
+<!--            </field>-->
+<!--        </record>-->
+<!--        <record id="waiting_solution_act" model="ir.actions.act_window">-->
+<!--            <field name="name">Công việc cần xử lý</field>-->
+<!--            <field name="type">ir.actions.act_window</field>-->
+<!--            <field name="res_model">mvb.waiting.solution</field>-->
+<!--            <field name="view_type">form</field>-->
+<!--            <field name="view_mode">form</field>-->
+<!--            <field name="context">{}</field>-->
+<!--            <field name="help" type="html">-->
+<!--                <p class="o_view_nocontent_smiling_face">-->
+<!--                    Create your First waiting document !-->
+<!--                </p>-->
+<!--            </field>-->
+<!--    </record>-->
+    <record id="waiting_solution_form" model="ir.ui.view">
+        <field name="name">Công việc chờ sử lý</field>
+        <field name="model">mvb.waiting.solution</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <group>
+                            <div class="oe_button_box" name="button_box">
+                                <button name="open_patient_appointments"
+                                        class="oe_stat_button"
+                                        icon="fa-calendar"
+                                        type="object">
+                                    <field name="document_incoming_count" string='Văn bản đến chờ xử lý'
+                                           widget="statinfo"/>
+                                </button>
+                                <button name="open_patient_appointments"
+                                        class="oe_stat_button"
+                                        icon="fa-suitcase"
+                                        type="object">
+                                </button>
+                                <button name="open_patient_appointments"
+                                        class="oe_stat_button"
+                                        icon="fa-tasks"
+                                        type="object">
+                                </button>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="waiting_solution_action" model="ir.actions.act_window">
+                    <field name="name">Công việc chờ xử lý</field>
+                    <field name="type">ir.actions.act_window</field>
+                    <field name="res_model">mvb.waiting.solution</field>
+                    <field name="view_mode">tree,form</field>
+                    <field name="target">inline</field>
+                    <field name="help" type="html">
+                        <p class="oe_view_nocontent_create">
+                            <!-- Add Text Here -->
+                        </p>
+                        <p>
+                            <!-- More details about what a user can do with this object will be OK -->
+                        </p>
+                    </field>
+                </record>
+
+    </data>
+</odoo>

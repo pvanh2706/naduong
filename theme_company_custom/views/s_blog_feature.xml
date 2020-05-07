@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_feature_post_only">
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="row s_latest_posts_post" style="width:100%">
+                <div class="col-xl-6">
+                    <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                        <t t-call="website_blog.blog_cover">
+                            <t t-set="cover_properties" t-value="properties"/>
+                            <t t-set="additionnal_classes" t-value="'loading_container thumb primary_image'"/>
+                        </t>
+                    </a>
+                </div>
+                <div class="media-body col-xl-6">
+                    <div class="col-12">
+                        <h3 style="font-size: 40px" t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a class="btn btn-sm btn-secondary" t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Xem thêm
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="s_latest_posts_3_picture_template">
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="col-xl-12 loading_container s_latest_posts_post" style="margin-bottom:15px">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                            <t t-call="website_blog.blog_cover">
+                                <t t-set="cover_properties" t-value="properties"/>
+                                <t t-set="additionnal_classes" t-value="'thumb primary_block_image'"/>
+                            </t>
+                        </a>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="col-xl-12">
+                            <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="title-custom-position">
+                                <h3 style="font-size:1.4rem;" t-field="p.name"/>
+                                <!--                                <p t-field="p.subtitle" style="font-size: 0.875rem;"/>-->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="template_product_and_service">
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="col-xl-3 loading_container s_latest_posts_post" style="margin-bottom:15px">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                            <t t-call="website_blog.blog_cover">
+                                <t t-set="cover_properties" t-value="properties"/>
+                                <t t-set="additionnal_classes" t-value="'thumb service_block_image'"/>
+                            </t>
+                        </a>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="col-xl-12">
+                            <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                                <h3 style="position: absolute;bottom:0;color: #fff !important;font-size: 1.4rem;left: 30px;max-width: 90%;"
+                                    t-field="p.name"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="marquee_blogs">
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="s_latest_posts_post">
+                <!--                <div class="row">-->
+                <!--                    <div class="col-xl-12" style="display: hidden;">-->
+                <!--                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">-->
+                <t t-call="website_blog.blog_cover">
+                    <t t-set="cover_properties" t-value="properties"/>
+                    <t t-set="additionnal_classes" t-value="'thumb service_block_image'"/>
+                </t>
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                    <h3 style="font-size: 40px" t-field="p.name"/>
+                </a>
+                <!--                </div>-->
+            </div>
+        </t>
+    </template>
+
+    <template id="s_feature_post_only_1">
+        <t t-foreach="posts" t-as="p">
+            <!--            <div class="s_latest_posts_post r-5">-->
+            <!--                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">-->
+            <!--                    <h3 style="font-size: 40px" t-field="p.name"/>-->
+            <!--                </a>-->
+            <!--            </div>-->
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="s_latest_posts_post r-5">
+                <div style="display:none;">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb service_block_image'"/>
+                    </t>
+                </div>
+                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                    <h3 style="font-size: 40px;" t-field="p.name"/>
+                </a>
+            </div>
+        </t>
+    </template>
+
+    <template id="s_blog_post_feature" name="Feature Post">
+        <section class="s_blog_post_feature pt16 pb16">
+            <div class="container">
+                <div class="row s_col_no_bgcolor js_get_posts"
+                     data-loading="true"
+                     data-template="theme_company_custom.s_feature_post_only"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_blog_post_feature_image_3" name="Feature 3 Post Images">
+        <section class="s_blog_post_feature_image_3 pt16 pb16">
+            <div class="container">
+                <div class="row s_col_no_bgcolor js_get_posts"
+                     data-loading="true"
+                     data-template="theme_company_custom.s_latest_posts_3_picture_template"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_blog_post_videos_slide_template">
+        <t t-foreach="posts" t-as="p">
+            <div t-if="p.video_embed" class="s_latest_posts_post" style="width:100%">
+                <div class="container-video">
+                    <iframe class="video" t-attf-src="#{p.video_embed}"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            frameborder="0" height="315" width="420"/>
+                </div>
+                <!--                <div class="container-video">-->
+                <!--                    <iframe t-attf-src="#{p.video_embed}"-->
+                <!--                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+                <!--                            frameborder="0" height="315" width="420"/>-->
+                <!--                </div>-->
+            </div>
+        </t>
+    </template>
+
+    <template id="s_blog_post_videos_slide" name="Videos Slide">
+        <section class="s_blog_post_videos_slide pt16 pb16">
+            <div class="row s_col_no_bgcolor js_get_posts videos-slide"
+                 data-loading="true"
+                 data-template="theme_company_custom.s_blog_post_videos_slide_template"/>
+        </section>
+    </template>
+</odoo>

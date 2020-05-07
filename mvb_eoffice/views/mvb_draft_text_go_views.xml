@@ -1,0 +1,133 @@
+<odoo>
+
+    <record id="draft_text_view_search" model="ir.ui.view">
+        <field name="name">mvb.draft.text.go.view.search</field>
+        <field name="model">mvb.draft.text.go</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="user_create"/>
+                <field name="user_create"/>
+                <field name="department_create"/>
+                <field name="date_create"/>
+                <field name="name_seq"/>
+                <field name="content_compendium"/>
+                <field name="attachment_ids" widget="many2many_tags"/>
+                <field name="incoming_text_id" widget="many2many_tags"/>
+                <!-- <filter name="user_create_ids" string="Văn bản dự thảo cá nhân"
+                        domain="[('user_create','=',res.users.active_id)]"/> -->
+                <filter name="state" string="Chờ phê duyệt" domain="[('state','=','pending_leader')]"/>
+                <filter name="state" string="Đã phê duyệt" domain="[('state','=','confirm')]"/>
+                <filter name="state" string="Văn thư chuyển văn bản" domain="[('state','=','sending')]"/>
+                <filter name="state" string="Văn bản dự thảo kết thúc" domain="[('state','=','finish')]"/>
+                <filter string='Phòng ban' name="group_by_department" domain="[]"
+                        context="{'group_by' : 'department_create'}"/>
+                <filter string='Người tạo văn bản' name="group_by_user_create" domain="[]"
+                        context="{'group_by' : 'user_create'}"/>
+            </search>
+        </field>
+    </record>
+    <!-- tree văn bản dự thảo -->
+    <record id="mvb_draft_text_go_view_tree" model="ir.ui.view">
+        <field name="name">mvb.draft.text.go.view.tree</field>
+        <field name="model">mvb.draft.text.go</field>
+        <field name="arch" type="xml">
+            <tree string="Tree Văn bản dự thảo">
+                <field name="user_create"/>
+                <field name="date_create"/>
+                <field name="name_seq"/>
+                <field name="content_compendium"/>
+                <field name="incoming_text_id" widget="many2many_tags"/>
+                <field name="state" string="Tình trạng văn bản"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- form văn bản dự thảo -->
+    <record id="mvb_draft_text_go_view_form" model="ir.ui.view">
+        <field name="name">mvb.draft.text.go.view.form</field>
+        <field name="model">mvb.draft.text.go</field>
+        <field name="arch" type="xml">
+            <form string="Form Văn bản dự thảo">
+                <header>
+                    <button name="comfirm_text" type="object" string="Duyệt11" state="draft"
+                            class="oe_highlight" groups="mvb_eoffice.group_incoming_text_leadership"/>
+                    <button name="reject_text" type="object" string="Không Duyệt11" state="draft"
+                            class="oe_highlight" groups="mvb_eoffice.group_incoming_text_leadership"/>
+                    <button name="waitting_send_draft_text" type="object" string="Xử lý văn bản" state="draft"
+                            class="oe_highlight" groups="mvb_eoffice.group_incoming_text_employee, mvb_eoffice.group_incoming_text_member, mvb_eoffice.group_incoming_text_office_leadership"/>
+                    <button name="create_text_go" type="object" string="Phát hành văn bản" state="draft"
+                            class="oe_highlight" groups="mvb_eoffice.group_incoming_text_archivist"/>
+                    <button name="%(mvb_eoffice.mvb_text_direction_draft_text_go)d" string="Xin ý kiến"
+                            states=""
+                            type="action"
+                            class="oe_highlight"/>
+                    <field name="state" widget="statusbar" nolabel="1"/>
+                    
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <field name="name_seq"/>
+                    </div>
+                    <group>
+                        <field name="number_text_go"/>
+                        <field name="content_compendium"/>
+                        <field name="attachment_ids" widget="many2many_binary" class="oe_inline"/>
+                        <field name="incoming_text_id" widget="many2many_tags"/>
+                        <!-- <field name="user_create" readonly="1"/> -->
+                    </group>
+<!--                    <group string="Soạn văn bản">-->
+<!--                        <div>-->
+<!--                            <field name="document_draft"/>-->
+<!--                        </div>-->
+<!--                    </group>-->
+
+                    <notebook>
+                        <page name="name_processing" string="Theo dõi văn bản">
+                            <group>
+                                <field name="status_line" nolabel="1" readonly="1">
+                                    <tree>
+                                        <field name="textdraft_ids"/>
+                                        <field name="user_send"/>
+                                        <field name="user_received" widget="many2many_tags"/>
+                                        <field name="date"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                    </notebook>
+                    <notebook>
+                        <page name="name_processing_text" string="Tình trạng công việc" >
+                            <group>
+                                <field name="status_text" readonly="1" nolabel= "1">
+                                    <tree>
+                                        <field name="dead_line"/>
+                                        <field name="name"/>
+                                        <field name="state"/>
+                                        <field name="notes"/>
+                                        <field name="date_received"/>
+                                        <field name="date_view"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                    </notebook>
+    
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mvb_draft_text_go_action" model="ir.actions.act_window">
+        <field name="name">Văn bản dự thảo</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mvb.draft.text.go</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">['|',('create_uid','=',uid),('status_text.name.id','=',uid)]</field>
+        <field name="context" eval="{'search_default_group_by_department': 1 }"/>
+        <!-- <field name="help" type="html">
+        </field> -->
+    </record>
+
+</odoo>

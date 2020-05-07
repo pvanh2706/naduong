@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="module_category_gmail">
+            <field name="name">Tích hợp E_office</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="group_g_mail_read" model="res.groups">
+            <field name="name">1. Đọc</field>
+            <field name="category_id" ref="module_category_gmail"/>
+        </record>
+        <record id="group_g_mail_write" model="res.groups">
+            <field name="name">2. Sửa</field>
+            <field name="category_id" ref="module_category_gmail"/>
+        </record>
+        <record id="group_g_mail_create" model="res.groups">
+            <field name="name">3. Tạo</field>
+            <field name="category_id" ref="module_category_gmail"/>
+        </record>
+        <record id="group_g_mail_unlink" model="res.groups">
+            <field name="name">4. Xóa</field>
+            <field name="category_id" ref="module_category_gmail"/>
+        </record>
+        <record id="group_g_mail_archivist" model="res.groups">
+            <field name="name">Văn thư</field>
+            <field name="category_id" ref="module_category_gmail"/>
+        </record>
+        <record id="group_g_mail_manager" model="res.groups">
+            <field name="name">Quản lý</field>
+            <field name="category_id" ref="module_category_gmail"/>
+        </record>
+
+    </data>
+</odoo>

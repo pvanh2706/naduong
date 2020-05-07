@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="mvb_text_root" name="Quản lý VB điều hành" web_icon="mvb_eoffice,static/description/icon.png"
+                  groups="mvb_eoffice.group_incoming_text_archivist,mvb_eoffice.group_incoming_text_member,mvb_eoffice.group_incoming_text_leadership,mvb_eoffice.group_incoming_text_office_leadership,mvb_eoffice.group_incoming_text_member_leads"
+                  sequence="0"/>
+
+        <!-- Danh sách văn bản đang chờ xử lý cho từng user-->
+
+        <!--        <menuitem id="mvb_waiting_solution_for_me_cag" name="Công việc chờ" parent="mvb_text_root" action="waiting_solution_action" sequence="25"/>-->
+
+        <!--        <menuitem id="mvb_text_menu_for_me_cag" name="Công việc chờ xử lý" parent="mvb_text_root" sequence="2"/>-->
+        <!--        <menuitem id="document_incoming_categ" name="Văn bản đến" parent="mvb_text_menu_for_me_cag" sequence="1"/>-->
+
+        <!--        <menuitem id="mvb_text_menu_incoming_for_me_act" name="Văn bản đến chờ xử lý"-->
+        <!--                  parent="document_incoming_categ" action="mvb_text_incoming_for_me_action" sequence="1"/>-->
+
+        <!--        <menuitem id="mvb_text_incoming_follow_me_menu" name="Văn bản đến đang theo dõi"-->
+        <!--                  parent="document_incoming_categ" action="mvb_text_incoming_for_me_follow" sequence="5"/>-->
+
+
+        <!--        <menuitem id="document_outgoing_categ" name="Văn bản đi" parent="mvb_text_menu_for_me_cag" sequence="3"/>-->
+
+        <!--        <menuitem id="mvb_text_menu_go_for_me_action" name="Văn bản đi dự thảo chờ xử lý"-->
+        <!--                  parent="document_outgoing_categ" action="mvb_text_go_for_me_action" sequence="1"/>-->
+
+
+        <!--        <menuitem id="mvb_text_menu_incoming_for_me_action" name="Văn bản đến chờ xử lý"-->
+        <!--                  parent="mvb_text_menu_for_me_cag" action="mvb_text_incoming_for_me_action" sequence="1"/>-->
+
+        <!--        <menuitem id="mvb_text_menu_go_for_me_action" name="Văn bản đi chờ xử lý" parent="mvb_text_menu_for_me_cag"-->
+        <!--                  action="mvb_text_go_for_me_action" sequence="5"/>-->
+        <!-- VB đến -->
+        <menuitem id="mvb_text_menu_text_come" name="Quản lý văn bản đến" parent="mvb_text_root" sequence="5"/>
+
+        <menuitem id="mvb_text_come_pending_menu" name="Văn bản đến đang chờ xử lý" parent="mvb_text_menu_text_come"
+                  action="mvb_text_to_come_action" sequence="1" groups="mvb_eoffice.group_incoming_text_archivist"/>
+        <menuitem id="mvb_text_come_finish_menu" name="Văn bản đến kết thúc" parent="mvb_text_menu_text_come"
+                  sequence="3"
+                  action="mvb_text_come_finish_action"/>
+        <menuitem id="mvb_text_come_notification" name="Văn bản thông báo" parent="mvb_text_menu_text_come"
+                  action="mvb_text_come_notification_action" sequence="4"/>
+        <menuitem id="mvb_text_come_follow_menu" name="Tổng hợp văn bản đến" parent="mvb_text_menu_text_come"
+                  action="mvb_text_to_come_action_all" sequence="5"/>
+
+        <!--VB đi-->
+        <menuitem id="mvb_text_menu_text_go" name="Quản lý văn bản đi" parent="mvb_text_root" sequence="10"/>
+        <menuitem id="mvb_draft_text_go_menu" name="Văn bản đi dự thảo" parent="mvb_text_menu_text_go"
+                  action="mvb_draft_text_go_action" sequence="0"/>
+
+        <menuitem id="mvb_text_go_pending_menu" name="Tổng hợp văn bản đi" parent="mvb_text_menu_text_go"
+                  action="mvb_text_to_go_action" sequence="6"/>
+
+        <!-- <menuitem id="mvb_text_go_finish_menu" name="Văn bản dự thảo kết thúc" parent="mvb_text_menu_text_go"
+                  sequence="5" action="mvb_text_go_finish_action"/> -->
+        <!--        Lich cong tac-->
+        <!--        <menuitem id="action_calendar_event_id" name="Lịch công tuần " parent="mvb_text_root"-->
+        <!--                  action="" sequence="18"/>-->
+        <!--hồ sơ cv-->
+        <!--        <menuitem id="mvb_menu_job_profiles_cate" name="Hồ sơ công việc" parent="mvb_text_root" sequence="15"-->
+        <!--                  groups="base.group_no_one"/>-->
+        <!--thiết lập-->
+        <menuitem id="mvb_text_setting_1" name="Thiết lập" parent="mvb_text_root" sequence="30"/>
+
+        <menuitem id="mvb_publisher" name="Cơ quan ban hành" parent="mvb_text_setting_1" sequence="1"
+                  action="mvb_documents.mvb_document_publisher_action"/>
+        <menuitem id="mvb_notebook_document" name="Sổ văn bản" parent="mvb_text_setting_1"
+                  action="mvb_documents.mvb_document_notebook_action" sequence="5"/>
+
+        <!--        <menuitem id="mvb_menu_member_direction" name="Phân công nhân viên" parent="mvb_text_setting"-->
+        <!--                  action="mvb_text_member_action" sequence="5" groups="base.group_no_one"/>-->
+
+        <!--        <menuitem id="mvb_menu_text_storage" name="Lưu trữ" parent="mvb_text_setting" action="mvb_text_storage_action"-->
+        <!--                  sequence="10" groups="base.group_no_one"/>-->
+
+        <!-- <menuitem id="mvb_menu_text_external_company" name="Công ty ngoài" parent="mvb_text_setting"
+                  action="mvb_text_external_company_action" sequence="15" groups="base.group_no_one"/> -->
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="work_waiting_solution_categ" name="Bảng tổng hợp" parent="mvb_text_root"
+                  action="dash_board_action_wizards_action" sequence="1"/>
+    </data>
+</odoo>

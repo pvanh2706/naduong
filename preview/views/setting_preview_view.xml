@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mvb_setting_preview_form" model="ir.ui.view">
+            <field name="name">mvb_setting_preview_form</field>
+            <field name="model">mvb.setting.preview</field>
+            <field name="arch" type="xml">
+                <form string="" create="0" edit="0">
+                    <sheet>
+                    <header>
+                        <button name="setup_preview" string="Cài đặt preview" type="object"
+                                    class="oe_stat_buttonn oe_highlight">
+                        </button>
+                    </header>
+                        <div style="font-size: 12.0pt; line-height: 107%;">
+                            <h1 style="text-align: center;">Hướng dẫn cài đặt preview</h1>
+                            
+                            <br/><br/>
+                            <h2>1. Chọn vào module “Hưỡng dẫn cài đặt preview” ngoài màn hình chính</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\01.png" style="width:80%;"/> </div>
+                            
+                            <br/><br/><br/><br/>
+                            <h2>2. Chọn “Cài đặt preview”</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\02.png" style="width:80%;"/> </div>
+                            
+                            <br/><br/><br/><br/>
+                            <h2>3. Chọn sang cửa sổ mới mở. Chọn “Thêm vào Chrome”</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\03.png" style="width:80%;"/> </div>
+                            
+                            <br/><br/><br/><br/>
+                            <h2>4. Chọn “Thêm tiện ích”</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\04.png" style="width:80%;"/> </div>
+
+                            <br/><br/><br/><br/>
+                            <h2>5. Sau khi ấn thêm tiện ích. Hệ thống sẽ tự tải xuống 1 file, và sẽ tự dộng cài đặt cho người dùng</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\05.png" style="width:80%;"/> </div>
+                            
+                            <br/><br/><br/><br/>
+                            <h2>6. Sau khi cài đặt xong. Chọn dấu “x”  để hoàn thành</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\06.png" style="width:80%;"/> </div>
+                            
+                            <br/><br/><br/><br/>
+                            <h2>7.	File đính kèm sau khi cài đặt xong</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\07.png" style="width:80%;"/> </div>
+                            
+                            <br/><br/><br/><br/>
+                            <h2>8.	Chọn vào biểu tượng <div class='fa fa-file-text-o'></div>để  xem  tệp đính kèm. Sau khi ấn, hệ thống sẽ chuyển qua cửa sổ mới để người dùng có thể xem tệp đính kèm</h2>
+                            <div style="text-align: center;"><img src="\preview\static\src\image\08.png" style="width:80%;"/> </div>
+
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="mvb_setting_preview_action" model="ir.actions.act_window">
+            <field name="name">Hướng dẫn sử dụng module QL tài liệu</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.setting.preview</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+            </field>
+        </record>
+        <menuitem id="mvb_preivew_document" name="Hướng dẫn cài đặt preview" web_icon="preview,static/description/icon.png"/>
+        <menuitem id="mvb_preivew_document_sub" name="Hướng dẫn cài đặt preview" 
+                 parent="mvb_preivew_document" action="mvb_setting_preview_action"
+        />
+    </data>
+</odoo>

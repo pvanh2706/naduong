@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_bonus_1" model="hr.bonus.type">
+            <field name="name">Huân chương lao động hạng I</field>
+        </record>
+        <record id="hr_bonus_2" model="hr.bonus.type">
+            <field name="name">Huân chương lao động hạng II</field>
+        </record>
+        <record id="hr_bonus_3" model="hr.bonus.type">
+            <field name="name">Huân chương lao động hạng III</field>
+        </record>
+        <record id="hr_bonus_4" model="hr.bonus.type">
+            <field name="name">Bằng khen Thủ tướng Chính phủ</field>
+        </record>
+        <record id="hr_bonus_5" model="hr.bonus.type">
+            <field name="name">Bằng khen bộ công thương</field>
+        </record>
+        <record id="hr_bonus_6" model="hr.bonus.type">
+            <field name="name">Bằng khen Ủy ban quản lý vốn Nhà nước</field>
+        </record>
+        <record id="hr_bonus_7" model="hr.bonus.type">
+            <field name="name">Chiến sĩ thi đua Bộ Công thương</field>
+        </record>
+        <record id="hr_bonus_8" model="hr.bonus.type">
+            <field name="name">Chiến sĩ thi đua Ủy ban quản lý vốn nhà nước</field>
+        </record>
+        <record id="hr_bonus_9" model="hr.bonus.type">
+            <field name="name">Chiến sĩ thi đua Tập đoàn TKV</field>
+        </record>
+        <record id="hr_bonus_10" model="hr.bonus.type">
+            <field name="name">Chiến sĩ thi đua Tổng Công ty</field>
+        </record>
+        <record id="hr_bonus_11" model="hr.bonus.type">
+            <field name="name">Thợ mỏ vẻ vang</field>
+        </record>
+        <record id="hr_bonus_12" model="hr.bonus.type">
+            <field name="name">Khác</field>
+        </record>
+
+    </data>
+</odoo>

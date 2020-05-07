@@ -1,0 +1,100 @@
+<odoo>
+    <data>
+        <record id="g_mail_sent_mail_tree" model="ir.ui.view">
+            <field name="name">g_mail.sent_mail.tree</field>
+            <field name="model">g_mail.sent_mail</field>
+            <field name="arch" type="xml">
+                <tree string="" class="size_tree">
+                    <field name="partner_ids" widget="many2many_tags" />
+                    <field name="name" class="width_tree_3b"/>
+                    <field name="outgoing_date" class="width_tree_3"/>
+                </tree>
+            </field>
+        </record>
+        <record id="g_mail_sent_mail_form" model="ir.ui.view">
+            <field name="name">g_mail.sent_mail.form</field>
+            <field name="model">g_mail.sent_mail</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                        <button name="reply" type="object" string="Thu hồi" states="confirm"
+                                class="oe_highlight"/>
+                        <button name="outgoing_send_email" type="object" string="Gửi Email" states="draft"
+                                class="oe_highlight"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+
+                    <sheet>
+                        <notebook>
+                            <page string="Người nhận">
+                                <div>
+                                    <field name="partner_ids" widget="many2many_tags_email"
+                                           placeholder="Chọn địa chỉ nhận mail"/>
+                                </div>
+                            </page>
+                        </notebook>
+                        <label for="name" class="oe_edit_only"/>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <!--                        <notebook>-->
+                        <!--                            <page string="Người nhận">-->
+                        <!--                                <div>-->
+                        <!--                                    <field name="partner_ids">-->
+                        <!--                                        <tree>-->
+                        <!--                                            <field name="name" string=""/>-->
+                        <!--                                            <field name="email"/>-->
+                        <!--                                            <control>-->
+                        <!--                                                <create string="Thêm người muốn gửi"/>-->
+                        <!--                                            </control>-->
+                        <!--                                        </tree>-->
+                        <!--                                        <form>-->
+                        <!--                                            <field name="name" string=""/>-->
+                        <!--                                            <field name="email"/>-->
+                        <!--                                        </form>-->
+                        <!--                                    </field>-->
+                        <!--                                </div>-->
+                        <!--                            </page>-->
+                        <!--                        </notebook>-->
+                        <notebook>
+                            <page string="Nội dung">
+                                <div>
+                                    <field name="content"/>
+                                </div>
+                            </page>
+                        </notebook>
+                        <div class="oe_chatter">
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="g_mail_sent_mail_action" model="ir.actions.act_window">
+            <field name="name">Quản lý Email đi</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">g_mail.sent_mail</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state', '=', 'confirm')]</field>
+            <field name="context" eval="{}"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                </p>
+            </field>
+        </record>
+        <record id="g_mail_sent_mail_action_v1" model="ir.actions.act_window">
+            <field name="name">Quản lý Email đi</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">g_mail.sent_mail</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state', '=', 'draft')]</field>
+            <field name="context" eval="{}"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

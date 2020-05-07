@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--    <data>-->
+<!--        <record model="mail.channel" id="channel_calendar_messenger">-->
+<!--            <field name="name">Thông báo văn bản đến cần xử lý</field>-->
+<!--            <field name="group_ids" eval="[(4, ref('mvb_eoffice.group_work_calendar_leads'))]"/>-->
+<!--            <field name="description">Thông báo chỉnh sửa lịch công tác tuần</field>-->
+<!--        </record>-->
+<!--    </data>-->
+</odoo>

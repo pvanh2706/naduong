@@ -1,0 +1,117 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* mvb_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 08:33+0000\n"
+"PO-Revision-Date: 2019-09-30 08:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mvb_company
+#: model_terms:ir.ui.view,arch_db:mvb_company.view_company_form
+msgid "All Subsidiaries"
+msgstr ""
+
+#. module: mvb_company
+#: model:ir.ui.menu,name:mvb_company.action_hr_job_form_inherit
+msgid "Chức vụ"
+msgstr ""
+
+#. module: mvb_company
+#: model:ir.model,name:mvb_company.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: mvb_company
+#: model:ir.actions.act_window,name:mvb_company.res_company_form_action
+msgid "Company Management"
+msgstr "Quản lý danh sách công ty"
+
+#. module: mvb_company
+#: model:ir.ui.menu,name:mvb_company.company_management_categ
+#: model:ir.ui.menu,name:mvb_company.company_root
+msgid "Công ty"
+msgstr ""
+
+#. module: mvb_company
+#: model:ir.actions.act_window,name:mvb_company.hr_department_view_action
+msgid "Department Management"
+msgstr "Quản lý danh sách phòng ban"
+
+#. module: mvb_company
+#: model:ir.model,name:mvb_company.model_hr_department
+msgid "HR Department"
+msgstr "Bộ phận Nhân sự"
+
+#. module: mvb_company
+#: model:ir.model.fields,field_description:mvb_company.field_res_company__is_corporation
+msgid "Is Corporation?"
+msgstr ""
+
+#. module: mvb_company
+#: model:ir.model.fields,field_description:mvb_company.field_res_company__code
+msgid "Mã công ty"
+msgstr ""
+
+#. module: mvb_company
+#: model:ir.ui.menu,name:mvb_company.department_management_categ
+msgid "Phòng ban"
+msgstr ""
+
+#. module: mvb_company
+#: model_terms:ir.ui.view,arch_db:mvb_company.view_company_form
+msgid "Subsidiaries"
+msgstr ""
+
+#. module: hr_contract
+#: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
+msgid "Contract Details"
+msgstr "Chi tiết hợp đồng"
+
+#. module: hr_contract
+#: model:ir.model.fields,field_description:hr_contract.field_hr_contract__name
+#: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
+msgid "Contract Reference"
+msgstr "Tên hợp đồng"
+
+#. module: hr_contract
+#: selection:hr.contract,state:0
+msgid "Running"
+msgstr "Còn thời hạn"
+
+#. module: hr
+#: model:ir.actions.act_window,name:hr.act_employee_from_department
+#: model:ir.actions.act_window,name:hr.open_view_employee_list
+#: model:ir.actions.act_window,name:hr.open_view_employee_list_my
+#: model:ir.model.fields,field_description:hr.field_hr_employee_category__employee_ids
+#: model:ir.model.fields,field_description:hr.field_hr_job__employee_ids
+#: model:ir.ui.menu,name:hr.menu_hr_root
+#: model:ir.ui.menu,name:hr.menu_open_view_employee_list_my
+#: model_terms:ir.ui.view,arch_db:hr.hr_department_view_kanban
+#: model_terms:ir.ui.view,arch_db:hr.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
+#: model_terms:ir.ui.view,arch_db:hr.view_employee_tree
+#: model_terms:ir.ui.view,arch_db:hr.view_partner_tree2
+msgid "Employees"
+msgstr "Quản lý nhân sự"
+
+#. module: mvb_employee_trainining
+#: model_terms:ir.ui.view,arch_db:mvb_employee_trainining.view_orientation_request_form
+msgid "Send by Email"
+msgstr "Gửi qua email"
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/js/views/pivot/pivot_model.js:622
+#: code:addons/web/static/src/js/views/pivot/pivot_model.js:770
+#, python-format
+msgid "Total"
+msgstr " "

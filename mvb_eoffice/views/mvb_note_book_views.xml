@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mvb_management_document" model="ir.ui.view">
+            <field name="name">mvb.management.document</field>
+            <field name="model">mvb.management.document</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="open_document_go"
+                                    class="oe_stat_button"
+                                    icon="fa-pencil-square-o"
+                                    type="object">
+                                <field name="count_go" widget="statinfo"/>
+                            </button>
+                             <button name="open_document_go"
+                                    class="oe_stat_button"
+                                    icon="fa-pencil-square-o"
+                                    type="object">
+                                <field name="count_incoming" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <group>
+                            <field name="year"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="mvb_management_document_action">
+            <field name="name">Danh Sách các văn Bản</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.management.document</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--            <field name="context">{-->
+            <!--                'search_default_female': 1}-->
+            <!--            </field>-->
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create You First Patient !
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

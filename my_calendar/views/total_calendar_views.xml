@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="doimoi_total_calendar_tree" model="ir.ui.view">
+            <field name="name">doimoi.total.calendar.tree</field>
+            <field name="model">doimoi.total.calendar</field>
+            <field name="arch" type="xml">
+                <tree string="Lịch công tác ban lãnh đạo" create="false" edit="true" delete="false"
+                      decoration-primary="state =='confirm'">
+                    <field name="name"/>
+                    <field name="calendar"/>
+                    <field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="doimoi_total_calendar_calendar" model="ir.ui.view">
+            <field name="name">doimoi.total.calendar.calendar</field>
+            <field name="model">doimoi.total.calendar</field>
+            <field name="arch" type="xml">
+                <calendar string="Lịch công tác" date_start="date_from" date_stop="date_to"
+                          quick_add="False" mode="month">
+                    <field name="name"/>
+                    <!--                    <field name="calendar" widget="html"/>-->
+                </calendar>
+            </field>
+        </record>
+        <record id="doimoi_total_calendar_form" model="ir.ui.view">
+            <field name="name">doimoi.total.calendar.form</field>
+            <field name="model">doimoi.total.calendar</field>
+            <field name="arch" type="xml">
+                <form string="Lịch công tác ban lãnh đạo">
+                    <header>
+                        <button name="confirm" type="object" string="Duyệt" states="draft" class="oe_highlight"
+                                groups="my_calendar.group_work_calendar_leadership"/>
+                        <button name="fix_content_calendar" type="object" string="Ý kiến điều chỉnh" states="draft" class="oe_highlight"
+                                groups="my_calendar.group_work_calendar_leadership"/>
+                        <button name="send_reply" type="object" string="Gửi lại" states="edit" class="oe_highlight"
+                                groups="my_calendar.group_work_calendar_leads"/>
+                        <field name="state" widget="statusbar" statusbar_visible="confirm" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" invisible="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="company_id" invisible="1"/>
+                        </group>
+                        <group colspan="2" col="4">
+                            <label for="date_from" string="Từ ngày"/>
+                            <div class="o_row o_row_readonly o_hr_holidays_dates">
+                                <field name="date_from" class="date_to" readonly="1"/>
+                            </div>
+                            <label for="date_to" string="Đến ngày"/>
+                            <div class="o_row o_row_readonly o_hr_holidays_dates">
+                                <field name="date_to" class="oe_inline" readonly="1"/>
+                            </div>
+                        </group>
+                        <group string="Lịch công tác">
+                            <div>
+                                <field name="calendar" widget="html"/>
+                            </div>
+                        </group>
+                        <notebook groups="my_calendar.group_work_calendar_leads">
+                            <page string="Nội dung cần chỉnh sửa lịch công tác">
+                                <div>
+                                    <field name="note"/>
+                                </div>
+                            </page>
+                        </notebook>
+                        <notebook>
+                            <page string="Ghi chú">
+                                <div>
+                                    <field name="note_2"/>
+                                </div>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="doimoi_total_calendar_action" model="ir.actions.act_window">
+            <field name="name">Lịch công tác</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">doimoi.total.calendar</field>
+            <field name="domain">[('state','=','draft')]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Hiên tại chưa có lịch công tác chờ duyệt vui lòng đợi tổng hợp!
+                </p>
+            </field>
+        </record>
+        <record id="doimoi_total_calendar_action_public" model="ir.actions.act_window">
+            <field name="name">Lịch công tác</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">doimoi.total.calendar</field>
+            <field name="domain">[('state','=','confirm')]</field>
+            <field name="view_mode">calendar,tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Hiên tại chưa có lịch công tác!
+                </p>
+            </field>
+        </record>
+        <record id="doimoi_total_calendar_action_edit" model="ir.actions.act_window">
+            <field name="name">Lịch công tác</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">doimoi.total.calendar</field>
+            <field name="domain">[('state','=','edit')]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Hiên tại chưa có lịch công tác tuần phải sửa lại!
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

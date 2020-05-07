@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <template id="assets_backend_inherit_ninebox" inherit_id="web.assets_backend" name="Get Player ID"> 
+            <xpath expr="script[last()]" position="before">
+                <!-- <link rel="stylesheet" type="text/scss" href="/one_signal_notification_connector/static/src/css/nvabar_icon.scss"/>  -->
+                <link rel="stylesheet" type="text/scss" href="/one_signal_notification_connector/static/src/js/test.scss"/> 
+                <script type="text/javascript" src="/one_signal_notification_connector/static/src/js/getPlayerID.js"></script>
+                <script type="text/javascript" src="/one_signal_notification_connector/static/src/js/nvabar_icon.js"></script>
+                <script type="text/javascript" src="/one_signal_notification_connector/static/src/js/create_notify.js"></script>
+                <script type="text/javascript" src="/one_signal_notification_connector/static/src/js/get_action_notify.js"></script>
+
+            </xpath>
+        </template>
+    </data>
+</odoo>

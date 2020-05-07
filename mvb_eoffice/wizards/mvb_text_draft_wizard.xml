@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mvb_text_draft_wizard_form" model="ir.ui.view">
+            <field name="name">mvb_text_draft_wizard_form</field>
+            <field name="model">mvb.text.draft.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Xử lý văn bản dự thảo">
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="dead_line"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="name_ids"
+                               context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                               options="{'no_create': True}" nolabel="0">
+                            <tree>
+                                <field name="name" width="30"/>
+                                <field name="login" width="30" string="Tài khoản"/>
+                                <field name="mvb_department_name"/>
+                                <field name="mvb_job_name" width="30"/>
+                                <control>
+                                    <create string="Thêm người dùng"/>
+                                </control>
+                            </tree>
+                        </field>
+                    </group>
+                    <footer>
+                        <button name="action_send_draft_text_leader" string="Gửi" type="object"
+                                class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_draft_confirm_wizard_form" model="ir.ui.view">
+            <field name="name_ids">mvb_text_draft_confirm_wizard_form</field>
+            <field name="model">mvb.text.draft.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Phê duyệt và chuyển văn thư phát hành">
+                    <group>
+                        <field name="name_ids"
+                               context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                               options="{'no_create': True}" nolabel="0">
+                            <tree>
+                                <field name="name"/>
+                                <field name="login" string="Tài khoản"/>
+                                <field name="mvb_department_name"/>
+                                <field name="mvb_job_name"/>
+                                <control>
+                                    <create string="Thêm người dùng"/>
+                                </control>
+                            </tree>
+                        </field>
+                    </group>
+                    <group>
+                        <field name="dead_line"/>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                    <footer>
+                        <button name="action_send_draft_text_confirm" string="Gửi" type="object"
+                                class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_draft_confirm_wizard_form1" model="ir.ui.view">
+            <field name="name_ids">mvb_text_draft_confirm_wizard_form</field>
+            <field name="model">mvb.text.draft.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Không phê duyệt">
+                    <group>
+                        <field name="name_ids"
+                               context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                               options="{'no_create': True}" nolabel="0">
+                            <tree>
+                                <field name="name" string="Tên người dùng"/>
+                                <field name="login" string="Tài khoản"/>
+                                <field name="mvb_department_name"/>
+                                <field name="mvb_job_name"/>
+                                <control>
+                                    <create string="Thêm người dùng"/>
+                                </control>
+                            </tree>
+                        </field>
+                    </group>
+                    <group>
+                        <field name="dead_line"/>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                    <footer>
+                        <button name="action_send_draft_text_reject" string="Gửi" type="object"
+                                class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_direction_wizard_form_solution_draft_text_go" model="ir.ui.view">
+            <field name="name">mvb_text_direction_wizard_form</field>
+            <field name="model">mvb.text.draft.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Xin ý kiến chỉ đạo">
+                    <group>
+                        <field name="content_direction"/>
+                    </group>
+                    <group invisible="0">
+                        <field name="person_follow_ids" string="Người nhận" nolabel="0" invisible="0" >
+                            <tree>
+                                <field name="name" string="Tên người dùng"/>
+                                <field name="login" string="Tài khoản"/>
+                                <field name="mvb_department_name"/>
+                                <field name="mvb_job_name"/>
+                                <control>
+                                    <create string="Thêm người dùng"/>
+                                </control>
+                            </tree>
+                        </field>
+                    </group>
+                    <footer>
+                        <button name="action_solution_direction_draft_text_go" string="Gửi" type="object" class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_text_draft_wizard_action" model="ir.actions.act_window">
+            <field name="name">Xin ý kiến chỉ đạo</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.text.draft.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+         <record id="mvb_text_direction_draft_text_go" model="ir.actions.act_window">
+            <field name="name">Xin ý kiến chỉ đạo</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.text.draft.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="mvb_text_direction_wizard_form_solution_draft_text_go"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

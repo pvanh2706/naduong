@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!--        <record id="rule_incoming_text" model="ir.rule">-->
+<!--            <field name="name">Rule Incoming Text</field>-->
+<!--            <field ref="model_mvb_incoming_text" name="model_id"/>-->
+<!--            <field name="domain_force">['|',('status_text','=', False),('status_text.name.id','=', user.id)]</field>-->
+<!--            <field name="perm_write" eval="1"/>-->
+<!--            <field name="perm_create" eval="1"/>-->
+<!--            <field name="perm_read" eval="1"/>-->
+<!--            <field name="perm_unlink" eval="0"/>-->
+<!--        </record>-->
+
+    </data>
+</odoo>

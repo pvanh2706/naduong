@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+            id="report_document_go"
+            string="Văn bản dự thảo"
+            model="mvb.draft.text.go"
+            report_type="qweb-pdf"
+            name="mvb_eoffice.report_document_draft_text_go"
+            file="mvb_eoffice.report_document_draft_text_go"
+            paperformat="mvb_eoffice.paper_format_A4_doc"
+    />
+</odoo>

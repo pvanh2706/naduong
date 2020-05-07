@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="LaHien" model="res.company">
+            <field name="name">Công ty CP Xi măng La Hiên- VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">XMLH</field>
+        </record>
+
+        <record id="QuanTrieu" model="res.company">
+            <field name="name">Công ty CP Xi măng Quán Triều - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">XMQT</field>
+        </record>
+
+        <record id="TanQuang" model="res.company">
+            <field name="name">Công ty CP Xi măng Tân Quang - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">XMTQ</field>
+        </record>
+
+        <record id="KSThaiNguyen" model="res.company">
+            <field name="name">Công ty CP Khách Sạn Thái Nguyên - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">KSTN</field>
+        </record>
+
+        <record id="TBAL" model="res.company">
+            <field name="name">Công ty cổ phần Thiết bị áp lực - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">TBAL</field>
+        </record>
+
+        <record id="VTTB" model="res.company">
+            <field name="name">Công ty cổ phần sản xuất và kinh doanh vật tư thiết bị - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">VTTB</field>
+        </record>
+
+        <record id="DautuXD" model="res.company">
+            <field name="name">Công ty cổ phần Đầu tư và Xây dựng - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">ĐTXD</field>
+        </record>
+
+        <record id="KDTH" model="res.company">
+            <field name="name">Công ty cổ phần Vật liệu xây dựng và Kinh doanh tổng hợp - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">KDTH</field>
+        </record>
+
+        <record id="CMK" model="res.company">
+            <field name="name">Công ty cổ phần cơ khí mỏ Việt Bắc - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">CKM</field>
+        </record>
+
+
+        <record id="Than_KH" model="res.company">
+            <field name="name">Công ty than Khánh Hòa - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">TKH</field>
+        </record>
+
+
+        <record id="Than_ND" model="res.company">
+            <field name="name">Công ty than Na Dương - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">TND</field>
+        </record>
+
+
+        <record id="Than_NH" model="res.company">
+            <field name="name">Công ty than Núi Hồng - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">TNH</field>
+        </record>
+
+        <record id="TTDD" model="res.company">
+            <field name="name">Trung tâm điều dưỡng ngành than - VVMI</field>
+            <field name="parent_id" ref="base.main_company"/>
+            <field name="currency_id" ref="base.VND"/>
+            <field name="sequence" eval="10"/>
+            <field name="email">info@mvb.vn</field>
+            <field name="phone">1800 1780</field>
+            <field name="code">TTĐD</field>
+        </record>
+    </data>
+</odoo>

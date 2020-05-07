@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <report
+            id="report_payroll_report_xlsx"
+            model="payroll.report"
+            string="Xem Báo cáo"
+            report_type="xlsx"
+            name="mvb_hr.payroll_report_xlsx"
+            file="Báo cáo nhanh lao động tiền lương"
+            attachment_use=""
+    />
+
+    <report
+            id="mvb_training_report_xlsx"
+            model="train.report"
+            string="Xem Báo cáo"
+            report_type="xlsx"
+            name="mvb_hr.training_report_xlsx"
+            file="Báo cáo đào tạo"
+            attachment_use=""
+    />
+
+    <report
+            id="mvb_disciplined_report_xlsx"
+            model="discipline.report"
+            string="Xem Báo cáo"
+            report_type="xlsx"
+            name="mvb_hr.disciplined_report_xlsx"
+            file="Báo cáo đào tạo"
+            attachment_use=""
+    />
+
+    <template id="print_hr_employee">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <div class="page" style="padding-left: 20px padding-top: 30px margin:auto;">
+                    <table width="100%" style="margin:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <h4 class="text-uppercase">
+                                        <b>TẬP ĐOÀN CÔNG NGHIỆP</b>
+                                        <br/>
+                                        <b>THAN - KHOÁNG SẢN VIỆT NAM</b>
+                                        <br/>
+                                        <b>TỔNG CÔNG TY CÔNG NGHIỆP</b>
+                                        <br/>
+                                        <b>MỎ VIỆT BẮC TKV - CTCP</b>
+                                        <br/>
+                                    </h4>
+                                </td>
+                                <td>
+                                    <h1 style="margin-left: 50px;margin-right: 50px;">
+                                        <strong>SƠ YẾU LÝ LỊCH</strong>
+                                    </h1>
+                                    <p>
+                                        <strong>&amp;nbsp;</strong>
+                                    </p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <h4>
+                                        <strong>Mẫu: 2C/TCTW-98</strong>
+                                    </h4>
+                                    <p>
+                                        <i>Số hiệu cán bộ, công chức:</i>
+                                    </p>
+                                    <p>..............................</p>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="140" height="250" style="float: left; margin: 30px;border: 1px solid black;">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="center">
+                                    <!--                                    <img t-if="o.image" t-att-src="image_data_uri(o.image)"-->
+<!--                                         width="100%" height="100%" alt="Employee Image"/>-->
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ol>
+                        <li>Họ và tên khai sinh:
+                            <span t-field="o.name"/> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                            ;Giới tính:
+                            <span t-field="o.gender"/>
+                        </li>
+                        <br/>
+                        <li>Các tên gọi khác:
+                            <span t-field="o.other_name"/>
+                        </li>
+                        <br/>
+                        <li>Chức vụ hiện giữ:
+                            <span t-field="o.job_id.name"/>
+                        </li>
+                        <br/>
+                        <li>Sinh ngày:
+                            <span t-field="o.birthday"/>
+                        </li>
+                        <br/>
+                        <li>Nơi sinh:
+                            <span t-field="o.birth_place.name"/>
+                        </li>
+                        <br/>
+                        <li>Quê quán:
+                            <span t-field="o.hometown_state_id.name"/>
+                        </li>
+                        <br/>
+                        <li>Nơi ở hiện nay:
+                            <span t-field="o.current_address.name"/>
+                        </li>
+                        <br/>
+                        <li>Dân tộc:
+                            <span t-field="o.ethnic"/>
+                        </li>
+                        <br/>
+                        <li>Tôn giáo:
+                            <span t-field="o.religion"/>
+
+                        </li>
+                        <br/>
+                        <li>Thành phần gia đình xuất thân:
+                            <span t-field="o.family_composition_comes_from"/>
+                        </li>
+                        <br/>
+                        <li>Nghề nghiệp bản thân trước khi được tuyển dụng:
+                            <span t-field="o.job_before_recruitment"/>
+                        </li>
+                        <br/>
+                        <li>Ngày được tuyển dụng:
+                            <span t-field="o.day_recruitment"/>
+                        </li>
+                        <br/>
+                        <li>Ngày vào cơ quan hiện đang công tác:
+                            <span t-field="o.first_work_day"/>
+                        </li>
+                    </ol>
+                    <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Ngày tham gia cách mạng:
+                        <span t-field="o.day_join_revolution"/>
+                    </p>
+                    <ol start="14">
+                        <li>&amp;nbsp;Ngày vào Đảng cộng sản Việt Nam&amp;nbsp;:&amp;nbsp;<span
+                                t-field="o.day_join_DCSVN"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                            Ngày chính thức:
+                            <span t-field="o.day_officer"/>
+                        </li>
+                        <br/>
+                        <li>Ngày tham gia các tổ chức chính trị, xã hội<em>&amp;nbsp;(Đoàn TNCS Hồ Chí Minh, Công đoàn,
+                            Hội.....)</em>:
+                        </li>
+                        <br/>
+                        <table style="width:100%">
+                            <tr>
+                                <th>Ngày tham gia</th>
+                                <th>Tên tổ chức chính trị xã hội</th>
+                            </tr>
+                            <t t-foreach="o.day_join_social_and_political_organizations" t-as="social_join">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <t t-esc="social_join.date.strftime('%m/%d/%Y')"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="social_join.name"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </t>
+                        </table>
+                    </ol>
+                    <ol start="16">
+                        <li>Ngày nhập ngũ:
+                            <span t-field="o.date_of_enlistment"/>
+                            &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;;Ngày
+                            xuất ngũ:
+                            <span t-field="o.demobilization_day"/>
+                        </li>
+                    </ol>
+                    <p>&amp;nbsp;&amp;nbsp;Quân hàm, chức vụ cao nhất (năm):
+                        <span t-field="o.demobilization_day"/>
+                    </p>
+                    <ol start="17">
+                        <li>Trình độ học vấn:</li>
+                    </ol>
+                    <p>&amp;nbsp;&amp;nbsp;+ Trình độ chuyên môn chính:
+                        <span t-field="o.major_qualification"/>
+                    </p>
+                    <p>&amp;nbsp;&amp;nbsp;+ Giáo dục phổ thông:
+                        <span t-field="o.general_education"/>
+                    </p>
+                    <p>&amp;nbsp;&amp;nbsp;+ Học hàm, học vị cao nhất:
+                        <span t-field="o.highest_position_education"/>
+                    </p>
+                    <p>&amp;nbsp;&amp;nbsp;+ Lý luận chính trị:
+                        <span t-field="o.political_theory"/>
+
+                    </p>
+                    <p>&amp;nbsp;&amp;nbsp;+ Ngoại ngữ:
+                        <span t-field="o.foreign_language"/>
+
+                    </p>
+                    <ol start="18">
+                        <li>Công tác chính đang làm:
+                            <span t-field="o.main_work_is_doing"/>
+                        </li>
+                        <br/>
+                        <li>Ngạch công chức:
+                            <span t-field="o.ngach_cong_chuc_id.name"/>
+                        </li>
+                        <br/>
+                        <li>Danh hiệu được phong&amp;nbsp;<em>(năm nào)</em>:
+                            <br/>
+                            <table style="width:100%;">
+                                <tr>
+                                    <td width="200">
+                                        <p>Năm</p>
+                                    </td>
+                                    <td width="500">
+                                        <p>Danh hiệu được phong</p>
+                                    </td>
+                                </tr>
+                                <t t-foreach="o.label" t-as="label">
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">
+                                                <p>
+                                                    <t t-esc="label.year"/>
+                                                </p>
+                                            </td>
+                                            <td width="500">
+                                                <p>
+                                                    <t t-esc="label.label"/>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </t>
+                            </table>
+                            <p>
+                                <em>(Anh hùng lao động, Anh hùng lực lượng vũ trang; nhà giáo, thày thuốc, nghệ sỹ nhân
+                                    dân,
+                                    ưu tú)
+                                </em>
+                            </p>
+                        </li>
+                    </ol>
+                    <ol start="21">
+                        <li>Sở trường công tác:
+                            <span t-field="o.forte"/> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                            ; Công việc đã làm lâu nhất:
+                            <span t-field="o.work_longest"/>
+                        </li>
+                        <br/>
+                        <li>Khen thưởng<em>&amp;nbsp;(huân chương, huy chương, năm nào)</em>:
+                        </li>
+                        <br/>
+                        <table style="width:100%;">
+                            <tr>
+                                <td width="200">
+                                    <p>Năm</p>
+                                </td>
+                                <td width="500">
+                                    <p>Huân chương, huy chương</p>
+                                </td>
+                            </tr>
+                            <t t-foreach="o.bonus" t-as="bonus">
+                                <tbody>
+                                    <tr>
+                                        <td width="200">
+                                            <p>
+                                                <t t-esc="bonus.year"/>
+                                            </p>
+                                        </td>
+                                        <td width="500">
+                                            <p>
+                                                <t t-esc="bonus.medal"/>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </t>
+                        </table>
+                        <br/>
+                        <li>Kỷ luật<em>(hành chính, đảng, đoàn thể, cấp quyết định, năm nào, lý do, hình thức)</em>:
+                        </li>
+                        <br/>
+                        <table style="width:100%; ">
+                            <tr>
+                                <td width="150">
+                                    <p>Năm</p>
+                                </td>
+                                <td width="200">
+                                    <p>Lý do</p>
+                                </td>
+                                <td width="200">
+                                    <p>Bộ phận quyết định</p>
+                                </td>
+                                <td width="250">
+                                    <p>Hình thức kỷ luật</p>
+                                </td>
+                            </tr>
+                            <t t-foreach="o.discipline" t-as="discipline">
+                                <tbody>
+                                    <tr>
+                                        <td width="150">
+                                            <p>
+                                                <t t-esc="discipline.year"/>
+                                            </p>
+                                        </td>
+                                        <td width="200">
+                                            <p>
+                                                <t t-esc="discipline.reason"/>
+                                            </p>
+                                        </td>
+                                        <td width="200">
+                                            <p>
+                                                <t t-esc="discipline.rules"/>
+                                            </p>
+                                        </td>
+                                        <td width="250">
+                                            <p>
+                                                <t t-esc="discipline.method"/>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </t>
+                        </table>
+                        <br/>
+                        <li>Tình trạng sức khoẻ&amp;nbsp;<em>(Tốt, bình thường, yếu hoặc có bệnh mãn tính gì)</em>:&amp;nbsp;
+                            <span t-field="o.health_status"/>
+                        </li>
+                    </ol>
+                    <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Chiều cao:
+                        <span t-field="o.height"/> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        cm,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        &amp;nbsp; Cân nặng:&amp;nbsp;<span t-field="o.weight"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        ,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        Nhóm máu:&amp;nbsp;<span t-field="o.blood_group"/>&amp;nbsp;&amp;nbsp;
+                    </p>
+                    <ol start="25">
+                        <li>Số CMND:&amp;nbsp;<span t-field="o.identification_id"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                            , Ngày cấp:&amp;nbsp;<span t-field="o.release_date_CMND"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;,
+                            Thương binh loại:&amp;nbsp;
+                            <span t-field="o.veteran_type"/>
+                            ,&amp;nbsp;Gia đình liệt sỹ:&amp;nbsp;
+                            <t t-if="o.is_family_of_martyrs == True">x</t>
+                        </li>
+                    </ol>
+                    <p>
+                        <strong>
+                            <br/>
+                        </strong>
+                    </p>
+                    <center>
+                        <strong>26. ĐÀO TẠO, BỒI DƯỠNG VỀ CHUYÊN MÔN, NGHIỆP VỤ, LÝ LUẬN CHÍNH TRỊ, NGOẠI NGỮ:
+                        </strong>
+
+                    </center>
+                    <br/>
+                    <table style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="156" style="border: 1px solid black; text-align: center;">
+                                <p>
+                                    <strong>Tên trường</strong>
+                                </p>
+                            </td>
+                            <td width="172" style="border: 1px solid black; text-align: center;">
+                                <p>
+                                    <strong>Ngành học và tên lớp học</strong>
+                                </p>
+                            </td>
+                            <td width="119" style="border: 1px solid black; text-align: center;">
+                                <p>
+                                    <strong>Thời gian học</strong>
+                                </p>
+                            </td>
+                            <td width="129" style="border: 1px solid black; text-align: center;">
+                                <p>
+                                    <strong>Hình thức học
+                                        <em>(chính quy, tại chức, chuyên tu, bồi dưỡng, mở rộng)</em>
+                                    </strong>
+                                </p>
+                            </td>
+                            <td style="border: 1px solid black; text-align: center;">
+                                <p>
+                                    <strong>Văn bằng, chứng chỉ, trình độ gì
+                                        <em>(tiến sỹ, thạc sỹ, cử nhân, kỹ sư...)</em>
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <t t-foreach="o.study_process_id" t-as="study">
+                            <tbody>
+
+                                <tr>
+                                    <td width="156" style="border: 1px solid black;">
+                                        <p>
+                                            <t t-esc="study.name_school"/>
+                                        </p>
+                                    </td>
+                                    <td width="172" style="border: 1px solid black;">
+                                        <p>
+                                            <t t-esc="study.major"/>
+                                        </p>
+                                    </td>
+                                    <td width="119" style="border: 1px solid black;">
+                                        <p>
+                                            <t t-esc="study.date"/>
+                                        </p>
+                                    </td>
+                                    <td width="129" style="border: 1px solid black;">
+                                        <p>
+                                            <t t-esc="study.formality"/>
+                                        </p>
+                                    </td>
+                                    <td style="border: 1px solid black;">
+                                        <p>
+                                            <t t-esc="study.certificate"/>
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </t>
+                    </table>
+
+                    <p>&amp;nbsp;</p>
+                    <center>
+                        <strong>27.TÓM TẮT QUÁ TRÌNH CÔNG TÁC:</strong>
+                    </center>
+                    <br/>
+                    <table style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="200" style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Từ tháng, năm</p>
+                                    <p>đến tháng, năm</p>
+                                </strong>
+                            </td>
+                            <td width="600" style="border: 1px solid black; text-align: center; ">
+                                <p>
+                                    <strong>Chức danh, chức vụ,</strong>
+                                </p>
+                                <p>
+                                    <strong>&amp;nbsp;đơn vị công tác</strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <t t-foreach="o.position_history_ids" t-as="job_history">
+                            <tbody>
+                                <tr>
+                                    <td width="156" style="border: 1px solid black;">
+                                        <p>Từ
+                                            <span t-field="job_history.date"/>
+                                        </p>
+                                        <p>đến
+                                            <span t-field="job_history.date_to"/>
+                                        </p>
+                                    </td>
+                                    <td style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="job_history.position_id"/>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </t>
+                    </table>
+                    <p>&amp;nbsp;</p>
+                    <center>
+                        <strong>28. ĐẶC ĐIỂM LỊCH SỬ CỦA BẢN THÂN:</strong>
+                    </center>
+                    <ol type="a">
+                        <li>Khai rõ: bị bắt, bị tù (từ ngày, tháng, năm nào đến ngày, tháng, năm nào, ở đâu), đã
+                            khai báo
+                            cho ai, những vấn đề gì:
+                            <t t-if="o.is_to_jail == True"><strong>Có</strong>. Lý do:
+                                <span t-field="o.info_to_jail"/>
+                            </t>
+                            <t t-if="o.is_to_jail == False">
+                                <strong>Không</strong>
+                            </t>
+                        </li>
+                        <br/>
+                        <li>Bản thân có làm việc trong chế độ cũ<em>(cơ quan, đơn vị nào, địa điểm, chức danh, chức
+                            vụ, thời
+                            gian làm việc...)</em>:
+                            <t t-if="o.is_work_old_regime == True"><strong>Có</strong>. Chi tiết:
+                                <span t-field="o.info_old_regime"/>
+                            </t>
+                            <t t-if="o.is_work_old_regime == False">
+                                <strong>Không</strong>
+                            </t>
+                        </li>
+                    </ol>
+
+                    <p>&amp;nbsp;</p>
+                    <center>
+                        <strong>29. QUAN HỆ VỚI NƯỚC NGOÀI:</strong>
+
+                    </center>
+
+                    <ol type="a">
+                        <li>Tham gia hoặc có quan hệ với các tổ chức chính trị, kinh tế, xã hội nào ở nước ngoài
+                            <em>(làm gì, tổ chức nào, đặt trụ sở ở đâu?)</em>
+                            :
+                            <t t-if="o.is_join_foreign_organization == True"><strong>Có</strong>. Chi tiết:
+                                <span t-field="o.info_foreigin_organization"/>
+                            </t>
+                            <t t-if="o.is_join_foreign_organization == False">
+                                <strong>Không</strong>
+                            </t>
+                        </li>
+                        <br/>
+                        <li>Có thân nhân  <em>(bố, mẹ, vợ, chồng, con, anh chị em ruột)</em>) ở nước ngoài
+                            <em>(làm gì, địa chỉ)</em>:
+                            <t t-if="o.is_relatives_foreiger == True"><strong>Có</strong>. Chi tiết:
+                                <span t-field="o.info_relatives_foreiger"/>
+                            </t>
+                            <t t-if="o.is_relatives_foreiger == False">
+                                <strong>Không</strong>
+                            </t>
+                        </li>
+                    </ol>
+                    <p>&amp;nbsp;</p>
+                    <center>
+                        <strong>30. QUAN HỆ GIA ĐÌNH:</strong>
+                    </center>
+
+                    <center>
+                        <strong>a. Về bản thân: Bố, mẹ, vợ (chồng), các con, anh chị em ruột.</strong>
+                    </center>
+
+                    <br/>
+                    <table style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="90" style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Quan hệ</p>
+                                </strong>
+                            </td>
+                            <td width="180" style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Họ và tên</p>
+                                </strong>
+                            </td>
+                            <td width="102" style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Năm sinh</p>
+                                </strong>
+                            </td>
+                            <td style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Quê quán, nghề nghiệp, chức danh, chức vụ, đơn vị công tác, học tập, nơi ở
+                                        (trong,
+                                        ngoài nước), thành viên các tổ chức chính trị - xã hội...
+                                    </p>
+                                </strong>
+                            </td>
+                        </tr>
+                        <t t-foreach="o.family_relationship_of_me_id" t-as="family">
+                            <tbody>
+                                <tr>
+                                    <td width="90" style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="family.relationer"/>
+                                        </p>
+                                    </td>
+                                    <td width="180" style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="family.full_name"/>
+                                        </p>
+                                    </td>
+                                    <td width="102" style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="family.year"/>
+                                        </p>
+                                    </td>
+                                    <td width="336" style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="family.infomation"/>
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </t>
+                    </table>
+                    <br/>
+                    <center>
+                        <strong>b. Bên vợ : Bố, mẹ, anh chị em vợ.</strong>
+                    </center>
+
+                    <br/>
+                    <table style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="90" style="border: 1px solid black; text-align: center; ">
+                                <strong>
+                                    <p>Quan hệ</p>
+                                </strong>
+                            </td>
+                            <td width="180" style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Họ và tên</p>
+                                </strong>
+                            </td>
+                            <td width="102" style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Năm sinh</p>
+                                </strong>
+                            </td>
+                            <td width="102" style="border: 1px solid black; text-align: center;">
+                                <strong>
+                                    <p>Quê quán, nghề nghiệp, chức danh, chức vụ, đơn vị công tác, học tập, nơi ở
+                                        (trong,
+                                        ngoài nước), thành viên các tổ chức chính trị - xã hội...
+                                    </p>
+                                </strong>
+                            </td>
+                        </tr>
+                        <t t-foreach="o.family_relationship_of_partner_id" t-as="in_law">
+                            <tbody>
+
+                                <tr>
+                                    <td width="90" style="border: 1px solid black; ">
+                                        <p>
+                                            <span t-field="in_law.relationer"/>
+                                        </p>
+                                    </td>
+                                    <td width="180" style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="in_law.full_name"/>
+                                        </p>
+                                    </td>
+                                    <td width="102" style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="in_law.year"/>
+                                        </p>
+                                    </td>
+                                    <td width="336" style="border: 1px solid black;">
+                                        <p>
+                                            <span t-field="in_law.infomation"/>
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </t>
+                    </table>
+                    <p>&amp;nbsp;</p>
+                    <center>
+                        <strong>31. HOÀN CẢNH KINH TẾ GIA ĐÌNH:</strong>
+                    </center>
+                    <strong>a. Quá trình lương của bản thân:</strong>
+                    <br/>
+                    <br/>
+                    <t t-set="i" t-value="0"/>
+                    <t t-foreach="o.salary_process_id" t-as="salary">
+                        <t t-if="int(i) == 0">
+                            <table style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                                <tr>
+                                    <td width="115" style="border: 1px solid black; text-align: center;">
+                                        <strong>
+                                            <p>Tháng/năm</p>
+                                        </strong>
+                                    </td>
+                                    <t t-set="t" t-value="0"/>
+                                    <t t-foreach="o.salary_process_id" t-as="slt">
+                                        <t t-if="int(t) &lt; 9">
+                                            <td width="100" style="border: 1px solid black;">
+                                                <p>
+                                                    <span t-field="slt.time"/>
+                                                </p>
+                                            </td>
+                                        </t>
+                                        <t t-set="t" t-value="t+1"/>
+                                    </t>
+                                </tr>
+                                <tr>
+                                    <td width="115" style="border: 1px solid black; text-align: center;">
+                                        <strong>
+                                            <p>Ngạch/bậc</p>
+                                        </strong>
+                                    </td>
+                                    <t t-set="l" t-value="0"/>
+                                    <t t-foreach="o.salary_process_id" t-as="sll">
+                                        <t t-if="int(l) &lt; 9">
+                                            <td width="100" style="border: 1px solid black;">
+                                                <p>
+                                                    <span t-field="sll.level"/>
+                                                </p>
+                                            </td>
+                                        </t>
+                                        <t t-set="l" t-value="l+1"/>
+                                    </t>
+                                </tr>
+                                <tr>
+                                    <td width="115" style="border: 1px solid black; text-align: center;">
+                                        <strong>
+                                            <p>Hệ số lương</p>
+                                        </strong>
+                                    </td>
+                                    <t t-set="l" t-value="0"/>
+                                    <t t-foreach="o.salary_process_id" t-as="co">
+                                        <t t-if="int(l) &lt; 9">
+                                            <td width="100" style="border: 1px solid black;">
+                                                <p>
+                                                    <span t-field="co.coefficients_salary"/>
+                                                </p>
+                                            </td>
+                                        </t>
+                                        <t t-set="l" t-value="l+1"/>
+                                    </t>
+                                </tr>
+                            </table>
+                            <br/>
+                            <br/>
+                        </t>
+                        <t t-if="int(i) == 9">
+
+                            <table style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                                <tr>
+                                    <td width="115" style="border: 1px solid black; text-align: center;">
+                                        <strong>
+                                            <p>Tháng/năm</p>
+                                        </strong>
+                                    </td>
+                                    <t t-set="t" t-value="0"/>
+                                    <t t-foreach="o.salary_process_id" t-as="slt">
+                                        <t t-if="int(t) &gt; 8">
+                                            <td width="100" style="border: 1px solid black;">
+                                                <p>
+                                                    <span t-field="slt.time"/>
+                                                </p>
+                                            </td>
+                                        </t>
+                                        <t t-set="t" t-value="t+1"/>
+                                    </t>
+                                </tr>
+                                <tr>
+                                    <td width="115" style="border: 1px solid black; text-align: center;">
+                                        <strong>
+                                            <p>Ngạch/bậc</p>
+                                        </strong>
+                                    </td>
+                                    <t t-set="l" t-value="0"/>
+                                    <t t-foreach="o.salary_process_id" t-as="sll">
+                                        <t t-if="int(l) &gt; 8">
+                                            <td width="100" style="border: 1px solid black;">
+                                                <p>
+                                                    <span t-field="sll.level"/>
+                                                </p>
+                                            </td>
+                                        </t>
+                                        <t t-set="l" t-value="l+1"/>
+                                    </t>
+                                </tr>
+                                <tr>
+                                    <td width="115" style="border: 1px solid black; text-align: center;">
+                                        <strong>
+                                            <p>Hệ số lương</p>
+                                        </strong>
+                                    </td>
+                                    <t t-set="l" t-value="0"/>
+                                    <t t-foreach="o.salary_process_id" t-as="co">
+                                        <t t-if="int(l) &gt; 8">
+                                            <td width="100" style="border: 1px solid black;">
+                                                <p>
+                                                    <span t-field="co.coefficients_salary"/>
+                                                </p>
+                                            </td>
+                                        </t>
+                                        <t t-set="l" t-value="l+1"/>
+                                    </t>
+                                </tr>
+                            </table>
+                            <br/>
+                            <br/>
+                        </t>
+                        <t t-set="i" t-value="i+1"/>
+                    </t>
+                    <br/>
+
+                    <strong>b. Nguồn thu nhập chính của gia đình</strong>
+                    (hàng năm):
+
+
+                    <p>- Lương:
+                        <span t-field="o.total_salary_family"/> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        ; trong đó Chồng:&amp;nbsp;<span t-field="o.salary_husband"/>&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        ; Vợ:&amp;nbsp;
+                        <span t-field="o.salary_wife"/>
+                    </p>
+                    <p>- Các nguồn khác:&amp;nbsp;
+                        <span t-field="o.other_money"/>
+                        - Lãi tiết kiệm, Cổ tức, tư vấn quản lý và tư vấn kinh doanh.
+                    </p>
+
+
+                    <li>
+                        <strong>Nhà ở:&amp;nbsp;</strong>
+                    </li>
+
+                    <p>- Được cấp, được thuê, loại nhà, tổng diện tích sử dụng:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        <span t-field="o.house_area"/>
+                        m2
+                    </p>
+                    <p>- Nhà tự mua, tự xây, loại nhà:&amp;nbsp;
+                        <span t-field="o.house_type"/>
+                    </p>
+
+
+                    <strong>c. Đất ở:&amp;nbsp;</strong>
+
+
+                    <p>- Đất được cấp:&amp;nbsp;
+                        <span t-field="o.land_granted"/>
+                        m2&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                        - Đất tự mua:&amp;nbsp;<span t-field="o.land_purchased"/>&amp;nbsp;
+                    </p>
+
+                    <strong>d. Đất sản xuất, kinh doanh</strong>
+                    (tổng diện tích đất được cấp, tự mua, tự khai
+                    phá...):
+                    <span t-field="o.land_production_business"/>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="680">
+                                    <center>
+                                        <p>&amp;nbsp;</p>
+                                        <p>
+                                            <strong>Người khai</strong>
+                                        </p>
+                                        <p>Tôi xin cam đoan những</p>
+                                        <p>lời khai trên đây là đúng sự thật</p>
+                                        <p>&amp;nbsp;</p>
+                                    </center>
+
+                                </td>
+                                <td width="450">
+                                    <center>
+                                        <p>
+                                            <em>Hà Nội, ngày&amp;nbsp;.......
+                                                tháng&amp;nbsp;.......
+                                                năm&amp;nbsp;.......
+                                            </em>
+                                        </p>
+                                        <p>
+                                            <strong>Xác nhận của cơ quan quản lý;</strong>
+                                        </p>
+                                        <p>&amp;nbsp;</p>
+                                    </center>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </t>
+        </t>
+    </template>
+
+
+    <record id="paperformat_A4" model="report.paperformat">
+        <field name="name">A4 Cutom</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">8</field>
+        <field name="margin_left">8</field>
+        <field name="margin_right">8</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">20</field>
+        <field name="dpi">90</field>
+    </record>
+    <report
+            id="hr_employee_print"
+            string="Xem hồ sơ nhân viên"
+            model="hr.employee"
+            report_type="qweb-pdf"
+            name="mvb_hr.print_hr_employee"
+            file="mvb_hr.print_hr_employee"
+            print_report_name="'Hồ sơ nhân viên %s' % (object.name)"
+            paperformat="mvb_hr.paperformat_A4"
+    />
+</odoo>

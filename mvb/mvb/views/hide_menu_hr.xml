@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.menu" id="hr_contract.hr_menu_contract">
+            <field name="groups_id" eval="[(6,0,[ref('mvb.group_no_one_user')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="hr.menu_human_resources_configuration">
+            <field name="groups_id" eval="[(6,0,[ref('mvb.group_no_one_user')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="utm.menu_link_tracker_root">
+            <field name="groups_id" eval="[(6,0,[ref('mvb.group_no_one_user')])]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_job_filter" model="ir.ui.view">
+            <field name="name">hr.job.search</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.view_job_filter"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='department_id']" position="after">
+                    <field name="company_id"/>
+                </xpath>
+
+            </field>
+        </record>
+        <record id="view_hr_job_form_inherit" model="ir.ui.view">
+            <field name="name">hr.job.form</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr_recruitment.hr_job_survey"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//form/header" position="attributes">
+                    <attribute name="attrs">{'invisible':1}</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='no_of_recruitment']" position="attributes">
+                    <attribute name="attrs">{'invisible':1}</attribute>
+                </xpath>
+
+                <xpath expr="//div[@name='button_box']" position="attributes">
+                    <attribute name="attrs">{'invisible':1}</attribute>
+                </xpath>
+
+                <xpath expr="//group[@name='offer']" position="attributes">
+                    <attribute name="attrs">{'invisible':1}</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='user_id']" position="attributes">
+                    <attribute name="attrs">{'invisible':1}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_hr_job" model="ir.actions.act_window">
+            <field name="name">Quản lý chức vụ</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.job</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="view_hr_job_tree_inherit" model="ir.ui.view">
+            <field name="name">hr.job.tree</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.view_hr_job_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="company_id"/>
+                </xpath>
+                <xpath expr="//field[@name='no_of_recruitment']" position="attributes">
+                    <attribute name="attrs">{'column_invisible':1}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='no_of_employee']" position="attributes">
+                    <attribute name="attrs">{'column_invisible':1}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='expected_employees']" position="attributes">
+                    <attribute name="attrs">{'column_invisible':1}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='no_of_hired_employee']" position="attributes">
+                    <attribute name="attrs">{'column_invisible':1}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='state']" position="attributes">
+                    <attribute name="attrs">{'column_invisible':1}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+
+    <menuitem id="menu_hr_job" name="Chức vụ" parent="company_root" action="mvb_company.action_hr_job" sequence="3"/>
+</odoo>

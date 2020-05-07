@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="train_year_plan_form" model="ir.ui.view">
+        <field name="name">train.year.plan.form</field>
+        <field name="model">train.report.year.plan</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <button name="generate_plan_line" type="object" string="Tạo nhanh kế hoạch" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="......"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="year"/>
+                    </group>
+                    <notebook>
+                        <page string="Danh sách tiêu chí">
+                            <field name="list_property_ids" context="{'search_default_company_id': 1}"/>
+                        </page>
+
+                        <page string="Kế hoạch năm kế">
+                            <field name="line_ids">
+                                <tree>
+                                    <field name="property_id"/>
+                                    <field name="attendees_expected_amount"/>
+                                    <field name="company_expected_amount"/>
+                                    <field name="group_expected_amount"/>
+                                    <field name="other_expected_amount"/>
+                                </tree>
+
+                                <form>
+                                    <group>
+                                        <field name="property_id"/>
+                                    </group>
+                                    <group string="Số người dự học" col="4">
+                                        <field name="attendees_expected_amount" string="Số lượng"/>
+                                    </group>
+
+                                    <group string="Kinh phí(triệu đồng)">
+                                        <field name="company_expected_amount"/>
+                                        <field name="group_expected_amount"/>
+                                        <field name="other_expected_amount"/>
+                                    </group>
+                                </form>
+
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="train_year_plan_tree" model="ir.ui.view">
+        <field name="name">train_year_plan.tree</field>
+        <field name="model">train.report.year.plan</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="train_year_plan_action" model="ir.actions.act_window">
+        <field name="name">Tạo kế hoạch năm công tác đào tạo, bồi dưỡng</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">train.report.year.plan</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+            </p>
+            <p>
+            </p>
+        </field>
+    </record>
+
+    <record id="train_year_plan_line_form" model="ir.ui.view">
+        <field name="name">train.year.plan.line.form</field>
+        <field name="model">train.report.year.plan.line</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+
+                    <group col="4">
+                        <field name="property_id"/>
+                        <field name="year_plan_id" options="{'no_create': True, 'no_open': True}"/>
+                    </group>
+
+                    <group string="Số người dự học">
+                        <field name="attendees_expected_amount" string="Số lượng"/>
+                    </group>
+
+                    <group string="Kinh phí(triệu đồng)">
+                        <field name="company_expected_amount"/>
+                        <field name="group_expected_amount"/>
+                        <field name="other_expected_amount"/>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="train_year_plan_line_tree" model="ir.ui.view">
+        <field name="name">train_year_plan.line.tree</field>
+        <field name="model">train.report.year.plan.line</field>
+        <field name="arch" type="xml">
+            <tree string="" default_order="year_plan_id desc" delete="0" editable="top" edit="0">
+                <field name="year_plan_id" invisible="1"/>
+                <field name="property_id" invisible="1"/>
+                <field name="company_id" invisible="1"/>
+                <field name="short_name"/>
+                <field name="attendees_expected_amount"/>
+                <field name="company_expected_amount"/>
+                <field name="group_expected_amount"/>
+                <field name="other_expected_amount"/>
+                <field name="total_expected_amount"/>
+                <button string="Xem chi tiết" name="open_training_plan" class="oe_highlight" type="object"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="training_plan_search" model="ir.ui.view">
+        <field name="name">training.report.search</field>
+        <field name="model">train.report.year.plan.line</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="property_id" string="Tiêu chí" filter_domain="[('property_id.name','ilike',self)]"/>
+                <filter string="Trạng thái dữ liệu: Mở" name="state_unlock" domain="[('state', '=', 'unlock')]"/>
+                <filter string="Trạng thái dữ liệu: Đóng" name="state_lock" domain="[('state', '=', 'lock')]"/>
+                <group expand='0' string='Nhóm'>
+                    <filter string='Báo cáo tháng' name="group1" context="{'group_by' : 'year_plan_id'}"/>
+                    <filter string='Tên công ty' name="group3" context="{'group_by' : 'company_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="train_year_plan_line_action" model="ir.actions.act_window">
+        <field name="name">Tạo kế hoạch năm công tác đào tạo, bồi dưỡng từng tiêu chí</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">train.report.year.plan.line</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{'search_default_state_unlock':0}</field>
+        <field name="search_view_id" ref="mvb_hr.training_plan_search"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+
+            </p>
+            <p>
+
+            </p>
+        </field>
+    </record>
+</odoo>

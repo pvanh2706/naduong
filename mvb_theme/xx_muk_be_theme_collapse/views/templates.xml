@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="companion_collapser" inherit_id="web.webclient_bootstrap" name="Companion Collapser">
+        <xpath expr="//div[hasclass('o_main')]" position="after">
+            <div id="mwt_companion_collapser" class="companion-collapser-button-container">
+                <div class="companion-collapser-button" style="user-select: none;">
+                    <div class="companion-collapser-button-icon"></div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
+

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="discipline_1" model="discipline.sub.property">
+            <field name="name">a- Công ty con và đơn vị trực thuộc Tập đoàn 
+(đơn vị cấp 2)</field>
+            <field name="sequence">1</field>
+            <field name="level" eval="1"/>
+        </record>
+        <record id="discipline_2" model="discipline.sub.property">
+            <field name="name">Chủ tịch HĐQT, HĐTV, Chủ tịch Công ty</field>
+            <field name="sequence">2</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_3" model="discipline.sub.property">
+            <field name="name">Uỷ viên HĐQT, HĐTV</field>
+            <field name="sequence">3</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_4" model="discipline.sub.property">
+            <field name="name">Trưởng ban Kiểm soát, Kiểm soát viên trưởng</field>
+            <field name="sequence">4</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_5" model="discipline.sub.property">
+            <field name="name">Uỷ viên Ban Kiểm soát, Kiểm soát viên</field>
+            <field name="sequence">5</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_6" model="discipline.sub.property">
+            <field name="name">Tổng GĐ, GĐ, hiệu trưởng, viện trưởng</field>
+            <field name="sequence">6</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_7" model="discipline.sub.property">
+            <field name="name">Phó TGĐ, Phó GĐ, Phó HT, Phó VT</field>
+            <field name="sequence">7</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_8" model="discipline.sub.property">
+            <field name="name">Kế toán trưởng </field>
+            <field name="sequence">8</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_9" model="discipline.sub.property">
+            <field name="name">Trưởng phòng, ban, khoa, bộ môn</field>
+            <field name="sequence">9</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_10" model="discipline.sub.property">
+            <field name="name">Phó trưởng phòng, ban, khoa, bộ môn</field>
+            <field name="sequence">10</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_11" model="discipline.sub.property">
+            <field name="name">Quản đốc và tương đương</field>
+            <field name="sequence">11</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_12" model="discipline.sub.property">
+            <field name="name">Phó quản đốc và tương đương</field>
+            <field name="sequence">12</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_13" model="discipline.sub.property">
+            <field name="name">b- Đơn vị trực thuộc đơn vị cấp 2 (đơn vị cấp 3)</field>
+            <field name="sequence">13</field>
+            <field name="level" eval="1"/>
+        </record>
+        <record id="discipline_14" model="discipline.sub.property">
+            <field name="name">Chủ tịch HĐQT, HĐTV, Chủ tịch Công ty</field>
+            <field name="sequence">14</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_15" model="discipline.sub.property">
+            <field name="name">Uỷ viên HĐQT, HĐTV</field>
+            <field name="sequence">15</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_16" model="discipline.sub.property">
+            <field name="name">Trưởng ban Kiểm soát</field>
+            <field name="sequence">16</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_17" model="discipline.sub.property">
+            <field name="name">Uỷ viên Ban Kiểm soát</field>
+            <field name="sequence">17</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_18" model="discipline.sub.property">
+            <field name="name">Giám đốc, hiệu trưởng, viện trưởng</field>
+            <field name="sequence">18</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_19" model="discipline.sub.property">
+            <field name="name">Phó giám đốc, Phó HT, Phó VT</field>
+            <field name="sequence">19</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_20" model="discipline.sub.property">
+            <field name="name">Kế toán trưởng </field>
+            <field name="sequence">20</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_21" model="discipline.sub.property">
+            <field name="name">Trưởng phòng, ban, khoa, bộ môn</field>
+            <field name="sequence">21</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_22" model="discipline.sub.property">
+            <field name="name">Phó trưởng phòng, ban, khoa, bộ môn</field>
+            <field name="sequence">22</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_23" model="discipline.sub.property">
+            <field name="name">Quản đốc và tương đương</field>
+            <field name="sequence">23</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_24" model="discipline.sub.property">
+            <field name="name">Phó quản đốc và tương đương</field>
+            <field name="sequence">24</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_25" model="discipline.sub.property">
+            <field name="name">c- Đơn vị trực thuộc đơn vị cấp 3 (đơn vị cấp 4)</field>
+            <field name="sequence">25</field>
+            <field name="level" eval="1"/>
+        </record>
+        <record id="discipline_26" model="discipline.sub.property">
+            <field name="name">Chủ tịch HĐQT, HĐTV, Chủ tịch Công ty</field>
+            <field name="sequence">26</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_27" model="discipline.sub.property">
+            <field name="name">Uỷ viên HĐQT, HĐTV</field>
+            <field name="sequence">27</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_28" model="discipline.sub.property">
+            <field name="name">Trưởng ban Kiểm soát</field>
+            <field name="sequence">28</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_29" model="discipline.sub.property">
+            <field name="name">Uỷ viên Ban Kiểm soát</field>
+            <field name="sequence">29</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_30" model="discipline.sub.property">
+            <field name="name">Giám đốc, hiệu trưởng, viện trưởng</field>
+            <field name="sequence">30</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_31" model="discipline.sub.property">
+            <field name="name">Phó giám đốc, Phó HT, Phó VT</field>
+            <field name="sequence">31</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_32" model="discipline.sub.property">
+            <field name="name">Kế toán trưởng </field>
+            <field name="sequence">32</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_33" model="discipline.sub.property">
+            <field name="name">Trưởng phòng, ban, khoa, bộ môn</field>
+            <field name="sequence">33</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_34" model="discipline.sub.property">
+            <field name="name">Phó trưởng phòng, ban, khoa, bộ môn</field>
+            <field name="sequence">34</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_35" model="discipline.sub.property">
+            <field name="name">Quản đốc và tương đương</field>
+            <field name="sequence">35</field>
+            <field name="level" eval="2"/>
+        </record>
+        <record id="discipline_36" model="discipline.sub.property">
+            <field name="name">Phó quản đốc và tương đương</field>
+            <field name="sequence">36</field>
+            <field name="level" eval="2"/>
+        </record>
+    </data>
+</odoo>

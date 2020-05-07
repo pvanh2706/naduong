@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="assets_backend_inherit_ninebox" inherit_id="web.assets_backend" name="Employees Asset">
+            <xpath expr="script[last()]" position="after">
+                <script type="text/javascript" src="/my_calendar/static/src/js/listview_button.js"></script>
+                <link href="/my_calendar/static/src/css/style.css" rel="stylesheet" type="text/css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

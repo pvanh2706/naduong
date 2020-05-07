@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="mvb_template" xml:space="preserve">
+    <t t-extend="ListView.buttons">
+        <t t-jquery="div.o_list_buttons" t-operation="append">
+            <t t-if = "widget.modelName == 'mvb.incoming.text'">
+                <button type="button" class="btn btn-primary o_report_range_button">
+                    Tìm kiếm theo khoảng thời gian
+                </button>
+            </t>
+        </t>
+    </t>
+</templates>

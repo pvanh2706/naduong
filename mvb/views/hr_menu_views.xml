@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Menu Hồ sơ -->
+
+    <record model="ir.ui.menu" id="hr.menu_open_view_employee_list_my">
+        <field name="groups_id" eval="[(6,0,[ref('mvb.group_no_one_user')])]"/>
+    </record>
+
+    <record model="ir.ui.menu" id="hr_contract.hr_menu_contract">
+        <field name="groups_id" eval="[(6,0,[ref('mvb.group_no_one_user')])]"/>
+    </record>
+
+    <menuitem id="profile_menu" name="Nhân sự" sequence="0" parent="hr.menu_hr_root"
+              groups="mvb_hr.group_mvb_hr_employee_create,mvb_hr.group_mvb_hr_employee_view,mvb_hr.group_mvb_hr_employee_edit,mvb_hr.group_mvb_hr_employee_delete"/>
+
+    <menuitem id="info_hr_menu" name="Thông tin nhân sự" parent="profile_menu" sequence="1" groups="mvb_hr.mvb_hr_employee_access_menu_info"/>
+    <menuitem id="view_employee_tree" name="Hồ sơ" parent="info_hr_menu" action="hr.open_view_employee_list_my"
+              sequence="2" />
+    <menuitem id="hr_contract_view_kanban" name="Hợp đồng" parent="info_hr_menu" action="hr_contract.action_hr_contract"
+              sequence="3"/>
+
+    <menuitem id="menu_work_process_id" name="Quá trình làm việc" parent="profile_menu" sequence="5"
+              groups="mvb_hr.mvb_hr_employee_access_menu_work_process"/>
+
+    <menuitem id="menu_position_history_id" name="Quá trình công tác" parent="menu_work_process_id"
+              action="mvb_hr.hr_position_history" sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="menu_hr_ctag_discipline" name="Kỉ luật" parent="profile_menu" sequence="10"
+              groups="mvb_hr.mvb_hr_employee_access_menu_discipline"/>
+    <menuitem id="menu_discipline_id" name="Kỷ luật" parent="menu_hr_ctag_discipline"
+              action="mvb_hr.hr_discipline_action_id" sequence="5"/>
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="menu_hr_ctag_bonus" name="Khen thưởng" parent="profile_menu" sequence="15"
+              groups="mvb_hr.mvb_hr_employee_access_menu_bonus"/>
+    <menuitem id="menu_bonus_id" name="Khen thưởng" parent="menu_hr_ctag_bonus" action="mvb_hr.hr_bonus_action_id"
+              sequence="1"/>
+
+    <menuitem id="menu_paryroll_process_id" name="Quá trình tăng lương" parent="profile_menu" sequence="20"
+              groups="mvb_hr.mvb_hr_employee_access_menu_salary_process"/>
+    <menuitem name="Quá trình tăng lương" id="hr_salary_process_menu" parent="menu_paryroll_process_id"
+              action="mvb_hr.hr_salary_process_act" sequence="1"/>
+
+    <menuitem id="training_hr_menu" name="Quá trình đào tạo" parent="profile_menu" sequence="25"
+              groups="mvb_hr.mvb_hr_employee_access_menu_training_process"/>
+    <menuitem id="menu_training_id" name="Quá trình đào tạo bồi dưỡng" parent="training_hr_menu"
+              action="mvb_hr.action_study_process" sequence="1"/>
+
+    <menuitem id="guide_hr_menu" name="Hướng dẫn sử dụng" parent="profile_menu" sequence="30"/>
+    <menuitem id="menu_hr_instruction_id" name="Hướng dẫn" parent="guide_hr_menu"
+              action="mvb_hr.hr_instruction_action" sequence="1"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="menu_ctag_bonus_setting" name="Cấu hình" parent="profile_menu" sequence="35" groups="mvb_hr.mvb_hr_employee_access_menu_em_config"/>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="menu_bonus_type_setting" name="Loại khen thưởng" parent="menu_ctag_bonus_setting"
+              action="mvb_hr.hr_bonus_type_action" sequence="1"/>
+
+    <!-- Menu Lương -->
+    <menuitem id="payroll_menu" name="Chấm công và Tính lương" sequence="2" parent="hr.menu_hr_root"
+              groups="mvb_hr.group_mvb_hr_employee_payroll_create,mvb_hr.group_mvb_hr_employee_payroll_view,mvb_hr.group_mvb_hr_employee_payroll_edit,mvb_hr.group_mvb_hr_employee_payroll_delete"/>
+    <menuitem id="payroll_timesheet_categ" name="Phiếu chấm công" parent="payroll_menu"
+              action="mvb_hr_payroll.hr_timesheet_view_action" sequence="1"/>
+    <menuitem id="payroll_personal_income_tax" name="Thuế thu nhập cá nhân" parent="payroll_menu"
+              action="mvb_hr_payroll.hr_persion_tax_manager_action" sequence="5"/>
+
+    <menuitem id="hr_employee_advance_middle_month_salary_menu_act" name="Tạm ứng lương đợt 1" parent="payroll_menu"
+              action="mvb_hr_payroll.hr_employee_advance_middle_month_salary_action" sequence="10"/>
+    <menuitem id="hr_payslip_run_tree" name="Bảng lương" parent="payroll_menu"
+              action="mvb_hr_payroll.hr_payslip_run_action" sequence="15"/>
+
+    <menuitem id="mvb_hr_payslip_tree_menu" name="Phiếu lương nhân viên" parent="payroll_menu"
+              action="mvb_hr_payroll.action_mvb_hr_payslip_form" sequence="20"/>
+
+    <menuitem name="Hướng dẫn sử dụng" id="instruction_menu" sequence="25" parent="payroll_menu"
+              action="mvb_hr_payroll.payroll_instruction_action"/>
+
+    <!-- Menu Đào tạo -->
+    <menuitem id="training_menu" name="Đào tạo" sequence="3" parent="hr.menu_hr_root"
+              groups="mvb_hr.group_mvb_hr_employee_education_create,mvb_hr.group_mvb_hr_employee_education_view,mvb_hr.group_mvb_hr_employee_education_edit,mvb_hr.group_mvb_hr_employee_education_delete"/>
+    <menuitem id="view_employee_training_tree " name="Khóa đào tạo" parent="training_menu"
+              action="mvb_employee_trainining.action_employee_training" sequence="1"/>
+    <menuitem id="view_employee_orientation_tree" name="Định hướng đào tạo" parent="training_menu"
+              action="mvb_employee_trainining.action_employee_orientation" sequence="2"/>
+    <menuitem id="view_orientation_request_tree  " name="Yêu cầu đào tạo" parent="training_menu"
+              action="mvb_employee_trainining.action_orientation_request" sequence="3"/>
+    <menuitem id="training_instruction_menu" name="Hướng dẫn sử dụng" parent="training_menu"
+              action="mvb_employee_trainining.training_instruction_action" sequence="4"/>
+
+    <!-- Menu b/c nhân sự -->
+    <menuitem id="employee_report_menu" name="Báo cáo nhân sự" sequence="5" parent="hr.menu_hr_root"/>
+
+    <menuitem id="payroll_report_menu" name="Công tác tiền lương" sequence="1" parent="employee_report_menu"
+              groups="mvb_hr.group_mvb_hr_employee_report_create,mvb_hr.group_mvb_hr_employee_report_edit,mvb_hr.group_mvb_hr_employee_report_view,mvb_hr.group_mvb_hr_employee_report_delete"/>
+
+    <menuitem id="payroll_year_plan_menu" action="mvb_hr.payroll_year_plan_action" name="Tạo kế hoạch năm" sequence="1"
+              parent="payroll_report_menu" groups="mvb_hr.group_mvb_hr_employee_report_company"/>
+    <menuitem id="payroll_year_plan_line_menu" action="mvb_hr.payroll_year_plan_line_action"
+              name="Kế hoạch năm của đơn vị" sequence="2" parent="payroll_report_menu"/>
+    <menuitem id="payroll_year_report_menu" action="mvb_hr.payroll_report_action" name="Tạo báo cáo" sequence="3"
+              parent="payroll_report_menu" groups="mvb_hr.group_mvb_hr_employee_report_company"/>
+    <menuitem id="payroll_property_report_menu" name="Báo cáo của đơn vị" parent="payroll_report_menu"
+              action="mvb_hr.payroll_report_line_action" sequence="10"/>
+
+    <menuitem id="train_report_menu" name="Công tác đào tạo" sequence="2" parent="employee_report_menu"
+              groups="mvb_hr.group_mvb_hr_employee_report_create,mvb_hr.group_mvb_hr_employee_report_edit,mvb_hr.group_mvb_hr_employee_report_view,mvb_hr.group_mvb_hr_employee_report_delete"/>
+    <menuitem id="train_year_plan_menu" action="mvb_hr.train_year_plan_action" name="Tạo kế hoạch năm" sequence="1"
+              parent="train_report_menu"/>
+    <menuitem id="train_year_plan_line_menu" action="mvb_hr.train_year_plan_line_action" name="Kế hoạch năm của đơn vị"
+              sequence="2" parent="train_report_menu"/>
+    <menuitem id="train_year_report_menu" action="mvb_hr.train_report_action" name="Tạo báo cáo" sequence="3"
+              parent="train_report_menu"/>
+    <menuitem id="train_year_report_line_menu" action="mvb_hr.train_report_line_action" name="Báo cáo của đơn vị"
+              sequence="4" parent="train_report_menu"/>
+
+    <menuitem id="discipline_menu" name="Xử lý kỷ luật" sequence="3" parent="employee_report_menu"
+                groups="mvb_hr.group_mvb_hr_employee_report_create,mvb_hr.group_mvb_hr_employee_report_edit,mvb_hr.group_mvb_hr_employee_report_view,mvb_hr.group_mvb_hr_employee_report_delete"/>
+    <menuitem id="discipline_report_menu" action="mvb_hr.discipline_report_action" name="Tạo báo cáo" sequence="3"
+              parent="discipline_menu"/>
+    <menuitem id="discipline_report_line_menu" action="mvb_hr.discipline_report_line_action" name="Báo cáo của đơn vị"
+              sequence="4" parent="discipline_menu"/>            
+
+    <!--Cấu hình-->
+    <record model="ir.ui.menu" id="hr.menu_view_employee_category_form">
+        <field name="groups_id" eval="[(6,0,[ref('mvb.group_no_one_user')])]"/>
+    </record>
+
+    <record model="ir.ui.menu" id="hr_contract.hr_menu_contract_type">
+        <field name="groups_id" eval="[(6,0,[ref('mvb.group_no_one_user')])]"/>
+    </record>
+
+    <record model="ir.ui.menu" id="hr.menu_human_resources_configuration">
+        <field name="groups_id" eval="[(6,0,[ref('base.user_admin')])]"/>
+    </record>
+
+    <menuitem id="payroll_setting" name="Cấu hình tính lương" parent="hr.menu_human_resources_configuration"
+              sequence="2" groups="base.user_admin"/>
+    <menuitem id="view_hr_payroll_structure_list_view" name="Cấu trúc lương" parent="payroll_setting" sequence="2"
+              action="hr_payroll.action_view_hr_payroll_structure_list_form" groups="base.user_admin"/>
+    <menuitem id="hr_salary_rule_category_tree" name="Nhóm Quy tắc Lương" parent="payroll_setting" sequence="2"
+              action="hr_payroll.action_hr_salary_rule_category" groups="base.user_admin"/>
+    <menuitem id="hr_salary_rule_list" name="Quy tắc Lương" parent="payroll_setting" sequence="3"
+              action="hr_payroll.action_salary_rule_form" groups="base.user_admin"/>
+
+    <menuitem id="hr_report_setting" name="Cấu hình báo cáo nhân sự" parent="hr.menu_human_resources_configuration"
+              sequence="2" groups="base.user_admin"/>
+    <menuitem id="payroll_report_setting_property" name="Tiêu chí báo cáo tiền lương" parent="hr_report_setting"
+              sequence="1" action="mvb_hr.payroll_plan_property_action" groups="base.user_admin"/>
+    <menuitem id="training_report_setting_property" name="Nội dung đào tạo, bồi dưỡng" parent="hr_report_setting"
+              sequence="2" action="mvb_hr.train_plan_property_action" groups="base.user_admin"/>
+    <menuitem id="discipline_report_setting_property" name="Tiêu chí báo cáo kỷ luật" parent="hr_report_setting"
+              sequence="3" action="mvb_hr.discipline_property_action" groups="base.user_admin"/>
+
+</odoo>

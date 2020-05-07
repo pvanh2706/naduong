@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--
+    © 2017 Creu Blanca
+    License AGPL-3.0 or later (https://www.gnuorg/licenses/agpl.html).
+    -->
+
+<!--    Report for ktkh-->
+    <report
+        id="mvb_document_xlsx"
+        model="mvb.document"
+        string="Xem báo cáo tài liệu hợp đồng"
+        report_type="xlsx"
+        name="mvb_documents.mvb_document_xlsx"
+        file="Tổng hợp hợp đồng"
+        attachment_use="False"
+    />
+
+</odoo>

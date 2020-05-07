@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_g_mail_mailbox_manager,g_mail_mailbox_manager,model_g_mail_mailbox,group_g_mail_manager,1,1,1,1
+access_g_mail_mailbox_archivist,g_mail_mailbox_archivist,model_g_mail_mailbox,group_g_mail_archivist,1,1,0,0
+access_g_mail_mailbox_read,g_mail_mailbox_read,model_g_mail_mailbox,group_g_mail_read,1,0,0,0
+access_g_mail_mailbox_write,g_mail_mailbox_write,model_g_mail_mailbox,group_g_mail_write,0,1,0,0
+access_g_mail_mailbox_create,g_mail_mailbox_create,model_g_mail_mailbox,group_g_mail_create,0,0,1,0
+access_g_mail_mailbox_unlink,g_mail_mailbox_unlink,model_g_mail_mailbox,group_g_mail_unlink,0,0,0,1
+access_g_mail_sent_mail_manager,g_mail_sent_mail_manager,model_g_mail_sent_mail,group_g_mail_manager,1,1,1,1
+access_g_mail_sent_mail_archivist,g_mail_sent_mail_archivist,model_g_mail_sent_mail,group_g_mail_archivist,1,1,1,1

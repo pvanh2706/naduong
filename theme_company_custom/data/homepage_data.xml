@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="theme" model="ir.ui.view">
+            <field name="name">Home</field>
+            <field name="type">qweb</field>
+            <field name="key">website.homepage.theme</field>
+            <field name="arch" type="xml">
+                <t name="Home" priority="29" t-name="website.homepage.theme">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'homepage'"/>
+                        <div id="page-top"/>
+                        <!-- Header -->
+                        <header class="masthead oe_structure" spellcheck="false">
+                            <section class="carousel-banner-heading">
+                                <div class="container-fluid container-responsive pr-0 pl-0">
+                                    <div class="col-12">
+                                        <div id="bannerCarousel" class="s_carousel carousel slide s_carousel_rounded"
+                                             data-interval="10000">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#bannerCarousel" data-slide-to="0"/>
+                                                <li data-target="#bannerCarousel" data-slide-to="1" class="active"/>
+                                                <li data-target="#bannerCarousel" data-slide-to="2"/>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item oe_custom_bg oe_img_bg pb256 pt256"
+                                                     style="background-image: url(/theme_company_custom/static/src/img/demo/Banner.jpg);"
+                                                     data-name="Slide">
+                                                    <div class="container"/>
+                                                </div>
+                                                <div class="carousel-item oe_custom_bg oe_img_bg pb0 pt16 active"
+                                                     style="background-image: url(/theme_company_custom/static/src/img/demo/Banner.jpg);"
+                                                     data-name="Slide">
+                                                    <div class="container"/>
+                                                </div>
+                                                <div class="carousel-item oe_custom_bg oe_img_bg pt128 pb0"
+                                                     style="background-image: url(/theme_company_custom/static/src/img/demo/Banner.jpg); background-size: cover; background-position: 0% 0%;"
+                                                     data-name="Slide">
+                                                    <div class="container"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="feature-post" spellcheck="false">
+                                <div class="container-fluid container-responsive">
+                                    <div class="row">
+                                        <div class="col-xl-7">
+                                            <div class="s_blog_post_feature pt-5">
+                                                <div class="container-fluid">
+                                                    <div class="row s_col_no_bgcolor js_get_posts active"
+                                                         data-loading="true"
+                                                         data-template="theme_company_custom.s_feature_post_only"
+                                                         data-posts-limit="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <div class="s_blog_post_feature_image_3 pt-5">
+                                                <div class="container-fluid">
+                                                    <div class="row s_col_no_bgcolor js_get_posts active"
+                                                         data-loading="true"
+                                                         data-template="theme_company_custom.s_latest_posts_3_picture_template"
+                                                         data-posts-limit="3"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="company-title">
+                                <div class="container-fluid container-responsive">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title pt16 pb16" style="text-align: left;">
+                                            <h1 class="s_title_default"
+                                                style="background-image: url(/theme_company_custom/static/description/banner/banner2.jpg);padding: 30px;">
+                                                <span class="responsive-title">"KỶ LUẬT VÀ ĐỒNG TÂM"</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="product-service">
+                                <div class="container-fluid container-responsive">
+                                    <h2 class="title-primary">Sản phẩm và dịch vụ</h2>
+                                    <div class="s_blog_post_feature_image_3 pt16 pb16">
+                                        <div class="container-fluid">
+                                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true"
+                                                 data-template="theme_company_custom.template_product_and_service"
+                                                 data-posts-limit="4"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="news-and-event">
+                                <div class="container-fluid container-responsive">
+                                    <div class="row">
+                                        <div class="col-xl-8">
+                                            <h2 class="title-primary">Tin tức và sự kiện</h2>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="s_blog_post_news_event col-xl-6" style="">
+                                                        <div class="container-fluid">
+                                                            <div class="row s_col_no_bgcolor js_get_posts active"
+                                                                 data-loading="true"
+                                                                 data-template="theme_company_custom.s_blog_post_news_event_latest"
+                                                                 data-posts-limit="1" data-filter-by-blog-id="19"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="s_latest_posts col-xl-6">
+                                                        <div class="container-fluid">
+                                                            <div class="row s_col_no_bgcolor js_get_posts active"
+                                                                 data-loading="true"
+                                                                 data-template="theme_company_custom.s_latest_posts_list_template"
+                                                                 data-filter-by-blog-id="19" data-posts-limit="3"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <h2 class="title-primary">Bản tin nhanh</h2>
+                                            <div class="container-fluid">
+                                                <!--                                                <img class="img img-responsive"-->
+                                                <!--                                                     src="/theme_company_custom/static/src/img/demo/Demo1-&#45;&#45;Nui-Hong_21.jpg"-->
+                                                <!--                                                     alt=""/>-->
+                                                <section class="s_blog_post_videos_slide pt16 pb16">
+                                                    <div class="row s_col_no_bgcolor js_get_posts videos-slide"
+                                                         data-loading="true"
+                                                         data-template="theme_company_custom.s_blog_post_videos_slide_template"
+                                                         data-posts-limit="10" data-filter-by-blog-id="6"/>
+                                                </section>
+                                                <div class="s_blog_post_vina_news pt16 pb16" style="">
+                                                    <div class="container-fluid">
+                                                        <div class="row s_col_no_bgcolor js_get_posts active"
+                                                             data-loading="true"
+                                                             data-template="theme_company_custom.s_blog_post_vina_news_latest"
+                                                             data-posts-limit="5" data-filter-by-blog-id="20"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Portfolio Grid -->
+                            <section class="o_multi_gallery s_multi_image_gallery o_slideshow o_spc-medium mb-5"
+                                     data-columns="3" style="overflow: hidden;">
+                                <div class="container-fluid container-responsive">
+                                    <h2 class="title-primary">Thư viện hình ảnh và video</h2>
+                                    <div class="container-fluid container-responsive mt-5">
+                                        <div id="slideshow_1578621892990" class="slide image-gallery">
+<!--                                        <marquee class="slideshow_img" behavior="alternate" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">-->
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_29.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_27.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_25.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_23.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_21.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_7.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_9.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_12.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_3.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+                                            <div>
+                                                <img class="img img-fluid d-block"
+                                                     src="/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_5.jpg"
+                                                     alt="Slide image"/>
+                                            </div>
+<!--                                        </marquee>-->
+                                        </div>
+                                    </div>
+<!--                                    <script type="text/javascript"-->
+<!--                                            src="/theme_company_custom/static/src/js/lightslider.js"/>-->
+<!--                                    <link rel="stylesheet" type="text/css"-->
+<!--                                          href="/theme_company_custom/static/src/css/lightslider.css"/>-->
+                                    <script type="text/javascript">
+<!--                                        $(document).ready(function() {-->
+<!--                                        $(".image-gallery:not(.lightSlider)").lightSlider({-->
+<!--                                        item:5,-->
+<!--                                        loop:true,-->
+<!--                                        auto:true,-->
+<!--                                        slideMove:1,-->
+<!--                                        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',-->
+<!--                                        speed:600,-->
+<!--                                        responsive : [-->
+<!--                                        {-->
+<!--                                        breakpoint:800,-->
+<!--                                        settings: {-->
+<!--                                        item:3,-->
+<!--                                        slideMove:1,-->
+<!--                                        slideMargin:6,-->
+<!--                                        loop:true,-->
+<!--                                        auto:true,-->
+<!--                                        }-->
+<!--                                        },-->
+<!--                                        {-->
+<!--                                        breakpoint:480,-->
+<!--                                        settings: {-->
+<!--                                        item:2,-->
+<!--                                        slideMove:1,-->
+<!--                                        loop:true,-->
+<!--                                        auto:true,-->
+<!--                                        }-->
+<!--                                        }-->
+<!--                                        ]-->
+<!--                                        });-->
+<!--                                        $(".videos-slide:not(.lightSlider)").lightSlider({-->
+<!--                                        item:1,-->
+<!--                                        loop:true,-->
+<!--                                        auto:true,-->
+<!--                                        slideMove:1,-->
+<!--                                        speed:600,-->
+<!--                                        slideMargin: 3,-->
+<!--                                        responsive : [-->
+<!--                                        {-->
+<!--                                        breakpoint:800,-->
+<!--                                        settings: {-->
+<!--                                        item:1,-->
+<!--                                        slideMove:1,-->
+<!--                                        slideMargin:6,-->
+<!--                                        loop:true,-->
+<!--                                        auto:true,-->
+<!--                                        }-->
+<!--                                        },-->
+<!--                                        {-->
+<!--                                        breakpoint:480,-->
+<!--                                        settings: {-->
+<!--                                        item:1,-->
+<!--                                        slideMove:1,-->
+<!--                                        loop:true,-->
+<!--                                        auto:true,-->
+<!--                                        }-->
+<!--                                        }-->
+<!--                                        ]-->
+<!--                                        });-->
+<!--                                        });-->
+                                    </script>
+                                </div>
+                            </section>
+                        </header>
+                    </t>
+                </t>
+            </field>
+        </record>
+    </data>
+    <template id="remove_layout_footer_copyright" inherit_id="website.layout" name="Remove Footer Copyright">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace"/>
+        <xpath expr="//footer" position="after">
+            <button id="gototop" title="Go to top">
+                <i class="fa fa-chevron-up" aria-hidden="false"></i>
+            </button>
+        </xpath>
+    </template>
+</odoo>

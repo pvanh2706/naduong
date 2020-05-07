@@ -1,0 +1,2285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="blog_blog_1_1" model="blog.blog">
+            <field name="name">Primary Blog</field>
+        </record>
+        <record id="blog_blog_2" model="blog.blog">
+            <field name="name">Giới thiệu công ty</field>
+        </record>
+        <record id="blog_blog_3" model="blog.blog">
+            <field name="name">Sản phẩm - Dịch vụ</field>
+        </record>
+        <record id="blog_blog_4" model="blog.blog">
+            <field name="name">Tin tức sự kiện</field>
+        </record>
+        <record id="blog_blog_5" model="blog.blog">
+            <field name="name">Bản tin</field>
+        </record>
+        <!--        <record id="blog_blog_6" model="blog.blog">-->
+        <!--            <field name="name">Hình ảnh</field>-->
+        <!--        </record>-->
+        <record id="blog_post_num_1" model="blog.post">
+            <field name="name">Giới thiệu</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_1_1"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Banner.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+
+        <record id="blog_post_num_2" model="blog.post">
+            <field name="name">Lịch sử hình thành và phát triển</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_2"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Banner.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_3" model="blog.post">
+            <field name="name">Cơ cấu tổ chức</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_2"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_27.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_4" model="blog.post">
+            <field name="name">Thành tích nổi bật</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_2"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_5.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+
+        <record id="blog_post_num_5" model="blog.post">
+            <field name="name">Sản xuất đá vôi nguyên liệu cho xi măng</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_3"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_23.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_6" model="blog.post">
+            <field name="name">Sản xuất và tiêu thụ than</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_3"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_25.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_7" model="blog.post">
+            <field name="name">Sửa chữa trung đại tu thiết bị công trình</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_3"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_27.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_5_1" model="blog.post">
+            <field name="name">Sản xuất đá vôi nguyên liệu cho xi măng</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_3"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_27.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <!--        <record id="blog_post_num_6_1" model="blog.post">-->
+        <!--            <field name="name">Sản xuất và tiêu thụ than</field>-->
+        <!--            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and-->
+        <!--                information flows are one of the biggest wastes of time in companies, we have to fix this.-->
+        <!--            </field>-->
+        <!--            <field name="blog_id" ref="blog_blog_3"/>-->
+        <!--            <field name="website_published" eval="True"/>-->
+        <!--            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>-->
+        <!--            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>-->
+        <!--            <field name="cover_properties">{"background-image": "url(/website/static/src/img/library/mobile.jpg)",-->
+        <!--                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}-->
+        <!--            </field>-->
+        <!--            <field name="content"><![CDATA[-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    Emails are broken.-->
+        <!--                </p><p>-->
+        <!--                    Emails make me waste my time. But I need them.-->
+        <!--                    Given the importance that emails have in our lives,-->
+        <!--                    it's incredible it's still one of the only software-->
+        <!--                    areas that did not evolve in the past 20 years!-->
+        <!--                </p><p>-->
+        <!--                    Reading my inbox is the most unproductive task I do-->
+        <!--                    on a daily basis. I have to spend one full hour a-->
+        <!--                    day to process my emails. All the junk flows in the-->
+        <!--                    same inbox; spams, information that doesn't matter,-->
+        <!--                    quoted answers of quoted answers, etc. At the end-->
+        <!--                    of the hour, only 10 emails actually requested an-->
+        <!--                    answer from me. With a good tool, I could have done-->
+        <!--                    my job in 10 minutes!-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    At Odoo, we build tools to bring productivity to-->
+        <!--                    enterprises. As emails and information flows are one of-->
+        <!--                    the biggest wastes of time in companies, we have to fix-->
+        <!--                    this.-->
+        <!--                </p><p>-->
+        <!--                    To disrupt emails, you need more than just another user-->
+        <!--                    interface. We need to rethink the whole communication flow.-->
+        <!--                </p>-->
+        <!--                <h3>The Communication Mechanism of Odoo</h3>-->
+        <!--                <p>-->
+        <!--                    Here are the ideas behind the Odoo communication tools:-->
+        <!--                </p>-->
+        <!--                <ul>-->
+        <!--                    <li>-->
+        <!--                        Get Things Done: your inbox is a-->
+        <!--                        todo list. You should be able to process (not only-->
+        <!--                        read) the inbox and easily mark messages for future-->
+        <!--                        actions. Every inbox should be empty after having-->
+        <!--                        been processed; no more overload of information.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        Keep control of what you want to receive or don't want-->
+        <!--                        to receive. People should never receive spam. You-->
+        <!--                        should follow/unfollow any kind of information in one-->
+        <!--                        click.-->
+        <!--                    </li><li>-->
+        <!--                        Productivity is key: our smart user-->
+        <!--                        interface does not require you to click on every mail-->
+        <!--                        to read a thread. Reading a full thread, replying,-->
+        <!--                        attaching documents is super fast.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        A mix of push & pull: Today, people-->
+        <!--                        are victims of what others decide to push to them.-->
+        <!--                        Odoo differentiates:-->
+        <!--                        <ul>-->
+        <!--                            <li>-->
+        <!--                                Messages "for information":-->
+        <!--                                you can pull them when you need some specific-->
+        <!--                                information; they are not required to be read-->
+        <!--                                every day.You receive only what you decided-->
+        <!--                                to follow.This accounts for 90% of your daily-->
+        <!--                                emails.Use the "Inbox" menu for these.-->
+        <!--                            </li><li>-->
+        <!--                                Messages "for action": they-->
+        <!--                                require your immediate attention and you need-->
+        <!--                                to process them all. This accounts for 10%-->
+        <!--                                of your daily emails. Use the "To: me" menu-->
+        <!--                                for these.-->
+        <!--                            </li>-->
+        <!--                        </ul>-->
+        <!--                    </li><li>-->
+        <!--                        Focus on the Content: Everything is-->
+        <!--                        stripped to emphasize on the real message. No more-->
+        <!--                        welcome introductions, greetings, signatures and legal-->
+        <!--                        notes.We standardize the layout of each message.-->
+        <!--                        (signatures are on the profile of a contact, not in-->
+        <!--                        every message)-->
+        <!--                    </li><li>-->
+        <!--                        Folders and mailing lists are great tools but too-->
+        <!--                        complex in traditional email clients. In Odoo, a-->
+        <!--                        group of contacts that share a discussion can be-->
+        <!--                        created with one click. Every group should have it's-->
+        <!--                        own email address.-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--]]>-->
+        <!--            </field>-->
+        <!--        </record>-->
+        <!--        <record id="blog_post_num_7_1" model="blog.post">-->
+        <!--            <field name="name">Sửa chữa trung đại tu thiết bị công trình</field>-->
+        <!--            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and-->
+        <!--                information flows are one of the biggest wastes of time in companies, we have to fix this.-->
+        <!--            </field>-->
+        <!--            <field name="blog_id" ref="blog_blog_3"/>-->
+        <!--            <field name="website_published" eval="True"/>-->
+        <!--            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>-->
+        <!--            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>-->
+        <!--            <field name="cover_properties">{"background-image": "url(/website/static/src/img/library/office.jpg)",-->
+        <!--                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}-->
+        <!--            </field>-->
+        <!--            <field name="content"><![CDATA[-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    Emails are broken.-->
+        <!--                </p><p>-->
+        <!--                    Emails make me waste my time. But I need them.-->
+        <!--                    Given the importance that emails have in our lives,-->
+        <!--                    it's incredible it's still one of the only software-->
+        <!--                    areas that did not evolve in the past 20 years!-->
+        <!--                </p><p>-->
+        <!--                    Reading my inbox is the most unproductive task I do-->
+        <!--                    on a daily basis. I have to spend one full hour a-->
+        <!--                    day to process my emails. All the junk flows in the-->
+        <!--                    same inbox; spams, information that doesn't matter,-->
+        <!--                    quoted answers of quoted answers, etc. At the end-->
+        <!--                    of the hour, only 10 emails actually requested an-->
+        <!--                    answer from me. With a good tool, I could have done-->
+        <!--                    my job in 10 minutes!-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    At Odoo, we build tools to bring productivity to-->
+        <!--                    enterprises. As emails and information flows are one of-->
+        <!--                    the biggest wastes of time in companies, we have to fix-->
+        <!--                    this.-->
+        <!--                </p><p>-->
+        <!--                    To disrupt emails, you need more than just another user-->
+        <!--                    interface. We need to rethink the whole communication flow.-->
+        <!--                </p>-->
+        <!--                <h3>The Communication Mechanism of Odoo</h3>-->
+        <!--                <p>-->
+        <!--                    Here are the ideas behind the Odoo communication tools:-->
+        <!--                </p>-->
+        <!--                <ul>-->
+        <!--                    <li>-->
+        <!--                        Get Things Done: your inbox is a-->
+        <!--                        todo list. You should be able to process (not only-->
+        <!--                        read) the inbox and easily mark messages for future-->
+        <!--                        actions. Every inbox should be empty after having-->
+        <!--                        been processed; no more overload of information.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        Keep control of what you want to receive or don't want-->
+        <!--                        to receive. People should never receive spam. You-->
+        <!--                        should follow/unfollow any kind of information in one-->
+        <!--                        click.-->
+        <!--                    </li><li>-->
+        <!--                        Productivity is key: our smart user-->
+        <!--                        interface does not require you to click on every mail-->
+        <!--                        to read a thread. Reading a full thread, replying,-->
+        <!--                        attaching documents is super fast.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        A mix of push & pull: Today, people-->
+        <!--                        are victims of what others decide to push to them.-->
+        <!--                        Odoo differentiates:-->
+        <!--                        <ul>-->
+        <!--                            <li>-->
+        <!--                                Messages "for information":-->
+        <!--                                you can pull them when you need some specific-->
+        <!--                                information; they are not required to be read-->
+        <!--                                every day.You receive only what you decided-->
+        <!--                                to follow.This accounts for 90% of your daily-->
+        <!--                                emails.Use the "Inbox" menu for these.-->
+        <!--                            </li><li>-->
+        <!--                                Messages "for action": they-->
+        <!--                                require your immediate attention and you need-->
+        <!--                                to process them all. This accounts for 10%-->
+        <!--                                of your daily emails. Use the "To: me" menu-->
+        <!--                                for these.-->
+        <!--                            </li>-->
+        <!--                        </ul>-->
+        <!--                    </li><li>-->
+        <!--                        Focus on the Content: Everything is-->
+        <!--                        stripped to emphasize on the real message. No more-->
+        <!--                        welcome introductions, greetings, signatures and legal-->
+        <!--                        notes.We standardize the layout of each message.-->
+        <!--                        (signatures are on the profile of a contact, not in-->
+        <!--                        every message)-->
+        <!--                    </li><li>-->
+        <!--                        Folders and mailing lists are great tools but too-->
+        <!--                        complex in traditional email clients. In Odoo, a-->
+        <!--                        group of contacts that share a discussion can be-->
+        <!--                        created with one click. Every group should have it's-->
+        <!--                        own email address.-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--]]>-->
+        <!--            </field>-->
+        <!--        </record>-->
+        <!--        <record id="blog_post_num_5_2" model="blog.post">-->
+        <!--            <field name="name">Sản xuất đá vôi nguyên liệu cho xi măng</field>-->
+        <!--            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and-->
+        <!--                information flows are one of the biggest wastes of time in companies, we have to fix this.-->
+        <!--            </field>-->
+        <!--            <field name="blog_id" ref="blog_blog_3"/>-->
+        <!--            <field name="website_published" eval="True"/>-->
+        <!--            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>-->
+        <!--            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>-->
+        <!--            <field name="cover_properties">{"background-image": "url(/website/static/src/img/library/ice_coffe.jpg)",-->
+        <!--                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}-->
+        <!--            </field>-->
+        <!--            <field name="content"><![CDATA[-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    Emails are broken.-->
+        <!--                </p><p>-->
+        <!--                    Emails make me waste my time. But I need them.-->
+        <!--                    Given the importance that emails have in our lives,-->
+        <!--                    it's incredible it's still one of the only software-->
+        <!--                    areas that did not evolve in the past 20 years!-->
+        <!--                </p><p>-->
+        <!--                    Reading my inbox is the most unproductive task I do-->
+        <!--                    on a daily basis. I have to spend one full hour a-->
+        <!--                    day to process my emails. All the junk flows in the-->
+        <!--                    same inbox; spams, information that doesn't matter,-->
+        <!--                    quoted answers of quoted answers, etc. At the end-->
+        <!--                    of the hour, only 10 emails actually requested an-->
+        <!--                    answer from me. With a good tool, I could have done-->
+        <!--                    my job in 10 minutes!-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    At Odoo, we build tools to bring productivity to-->
+        <!--                    enterprises. As emails and information flows are one of-->
+        <!--                    the biggest wastes of time in companies, we have to fix-->
+        <!--                    this.-->
+        <!--                </p><p>-->
+        <!--                    To disrupt emails, you need more than just another user-->
+        <!--                    interface. We need to rethink the whole communication flow.-->
+        <!--                </p>-->
+        <!--                <h3>The Communication Mechanism of Odoo</h3>-->
+        <!--                <p>-->
+        <!--                    Here are the ideas behind the Odoo communication tools:-->
+        <!--                </p>-->
+        <!--                <ul>-->
+        <!--                    <li>-->
+        <!--                        Get Things Done: your inbox is a-->
+        <!--                        todo list. You should be able to process (not only-->
+        <!--                        read) the inbox and easily mark messages for future-->
+        <!--                        actions. Every inbox should be empty after having-->
+        <!--                        been processed; no more overload of information.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        Keep control of what you want to receive or don't want-->
+        <!--                        to receive. People should never receive spam. You-->
+        <!--                        should follow/unfollow any kind of information in one-->
+        <!--                        click.-->
+        <!--                    </li><li>-->
+        <!--                        Productivity is key: our smart user-->
+        <!--                        interface does not require you to click on every mail-->
+        <!--                        to read a thread. Reading a full thread, replying,-->
+        <!--                        attaching documents is super fast.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        A mix of push & pull: Today, people-->
+        <!--                        are victims of what others decide to push to them.-->
+        <!--                        Odoo differentiates:-->
+        <!--                        <ul>-->
+        <!--                            <li>-->
+        <!--                                Messages "for information":-->
+        <!--                                you can pull them when you need some specific-->
+        <!--                                information; they are not required to be read-->
+        <!--                                every day.You receive only what you decided-->
+        <!--                                to follow.This accounts for 90% of your daily-->
+        <!--                                emails.Use the "Inbox" menu for these.-->
+        <!--                            </li><li>-->
+        <!--                                Messages "for action": they-->
+        <!--                                require your immediate attention and you need-->
+        <!--                                to process them all. This accounts for 10%-->
+        <!--                                of your daily emails. Use the "To: me" menu-->
+        <!--                                for these.-->
+        <!--                            </li>-->
+        <!--                        </ul>-->
+        <!--                    </li><li>-->
+        <!--                        Focus on the Content: Everything is-->
+        <!--                        stripped to emphasize on the real message. No more-->
+        <!--                        welcome introductions, greetings, signatures and legal-->
+        <!--                        notes.We standardize the layout of each message.-->
+        <!--                        (signatures are on the profile of a contact, not in-->
+        <!--                        every message)-->
+        <!--                    </li><li>-->
+        <!--                        Folders and mailing lists are great tools but too-->
+        <!--                        complex in traditional email clients. In Odoo, a-->
+        <!--                        group of contacts that share a discussion can be-->
+        <!--                        created with one click. Every group should have it's-->
+        <!--                        own email address.-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--]]>-->
+        <!--            </field>-->
+        <!--        </record>-->
+        <!--        <record id="blog_post_num_6_2" model="blog.post">-->
+        <!--            <field name="name">Sản xuất và tiêu thụ than</field>-->
+        <!--            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and-->
+        <!--                information flows are one of the biggest wastes of time in companies, we have to fix this.-->
+        <!--            </field>-->
+        <!--            <field name="blog_id" ref="blog_blog_3"/>-->
+        <!--            <field name="website_published" eval="True"/>-->
+        <!--            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>-->
+        <!--            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>-->
+        <!--            <field name="cover_properties">{"background-image": "url(/website/static/src/img/library/rocket.jpg)",-->
+        <!--                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}-->
+        <!--            </field>-->
+        <!--            <field name="content"><![CDATA[-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    Emails are broken.-->
+        <!--                </p><p>-->
+        <!--                    Emails make me waste my time. But I need them.-->
+        <!--                    Given the importance that emails have in our lives,-->
+        <!--                    it's incredible it's still one of the only software-->
+        <!--                    areas that did not evolve in the past 20 years!-->
+        <!--                </p><p>-->
+        <!--                    Reading my inbox is the most unproductive task I do-->
+        <!--                    on a daily basis. I have to spend one full hour a-->
+        <!--                    day to process my emails. All the junk flows in the-->
+        <!--                    same inbox; spams, information that doesn't matter,-->
+        <!--                    quoted answers of quoted answers, etc. At the end-->
+        <!--                    of the hour, only 10 emails actually requested an-->
+        <!--                    answer from me. With a good tool, I could have done-->
+        <!--                    my job in 10 minutes!-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    At Odoo, we build tools to bring productivity to-->
+        <!--                    enterprises. As emails and information flows are one of-->
+        <!--                    the biggest wastes of time in companies, we have to fix-->
+        <!--                    this.-->
+        <!--                </p><p>-->
+        <!--                    To disrupt emails, you need more than just another user-->
+        <!--                    interface. We need to rethink the whole communication flow.-->
+        <!--                </p>-->
+        <!--                <h3>The Communication Mechanism of Odoo</h3>-->
+        <!--                <p>-->
+        <!--                    Here are the ideas behind the Odoo communication tools:-->
+        <!--                </p>-->
+        <!--                <ul>-->
+        <!--                    <li>-->
+        <!--                        Get Things Done: your inbox is a-->
+        <!--                        todo list. You should be able to process (not only-->
+        <!--                        read) the inbox and easily mark messages for future-->
+        <!--                        actions. Every inbox should be empty after having-->
+        <!--                        been processed; no more overload of information.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        Keep control of what you want to receive or don't want-->
+        <!--                        to receive. People should never receive spam. You-->
+        <!--                        should follow/unfollow any kind of information in one-->
+        <!--                        click.-->
+        <!--                    </li><li>-->
+        <!--                        Productivity is key: our smart user-->
+        <!--                        interface does not require you to click on every mail-->
+        <!--                        to read a thread. Reading a full thread, replying,-->
+        <!--                        attaching documents is super fast.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        A mix of push & pull: Today, people-->
+        <!--                        are victims of what others decide to push to them.-->
+        <!--                        Odoo differentiates:-->
+        <!--                        <ul>-->
+        <!--                            <li>-->
+        <!--                                Messages "for information":-->
+        <!--                                you can pull them when you need some specific-->
+        <!--                                information; they are not required to be read-->
+        <!--                                every day.You receive only what you decided-->
+        <!--                                to follow.This accounts for 90% of your daily-->
+        <!--                                emails.Use the "Inbox" menu for these.-->
+        <!--                            </li><li>-->
+        <!--                                Messages "for action": they-->
+        <!--                                require your immediate attention and you need-->
+        <!--                                to process them all. This accounts for 10%-->
+        <!--                                of your daily emails. Use the "To: me" menu-->
+        <!--                                for these.-->
+        <!--                            </li>-->
+        <!--                        </ul>-->
+        <!--                    </li><li>-->
+        <!--                        Focus on the Content: Everything is-->
+        <!--                        stripped to emphasize on the real message. No more-->
+        <!--                        welcome introductions, greetings, signatures and legal-->
+        <!--                        notes.We standardize the layout of each message.-->
+        <!--                        (signatures are on the profile of a contact, not in-->
+        <!--                        every message)-->
+        <!--                    </li><li>-->
+        <!--                        Folders and mailing lists are great tools but too-->
+        <!--                        complex in traditional email clients. In Odoo, a-->
+        <!--                        group of contacts that share a discussion can be-->
+        <!--                        created with one click. Every group should have it's-->
+        <!--                        own email address.-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--]]>-->
+        <!--            </field>-->
+        <!--        </record>-->
+        <!--        <record id="blog_post_num_7_2" model="blog.post">-->
+        <!--            <field name="name">Sửa chữa trung đại tu thiết bị công trình</field>-->
+        <!--            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and-->
+        <!--                information flows are one of the biggest wastes of time in companies, we have to fix this.-->
+        <!--            </field>-->
+        <!--            <field name="blog_id" ref="blog_blog_3"/>-->
+        <!--            <field name="website_published" eval="True"/>-->
+        <!--            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>-->
+        <!--            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>-->
+        <!--            <field name="cover_properties">{"background-image": "url(/website/static/src/img/library/sell.jpg)",-->
+        <!--                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}-->
+        <!--            </field>-->
+        <!--            <field name="content"><![CDATA[-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    Emails are broken.-->
+        <!--                </p><p>-->
+        <!--                    Emails make me waste my time. But I need them.-->
+        <!--                    Given the importance that emails have in our lives,-->
+        <!--                    it's incredible it's still one of the only software-->
+        <!--                    areas that did not evolve in the past 20 years!-->
+        <!--                </p><p>-->
+        <!--                    Reading my inbox is the most unproductive task I do-->
+        <!--                    on a daily basis. I have to spend one full hour a-->
+        <!--                    day to process my emails. All the junk flows in the-->
+        <!--                    same inbox; spams, information that doesn't matter,-->
+        <!--                    quoted answers of quoted answers, etc. At the end-->
+        <!--                    of the hour, only 10 emails actually requested an-->
+        <!--                    answer from me. With a good tool, I could have done-->
+        <!--                    my job in 10 minutes!-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--<section class="s_text_block">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2 mb16 mt16">-->
+        <!--                <p>-->
+        <!--                    At Odoo, we build tools to bring productivity to-->
+        <!--                    enterprises. As emails and information flows are one of-->
+        <!--                    the biggest wastes of time in companies, we have to fix-->
+        <!--                    this.-->
+        <!--                </p><p>-->
+        <!--                    To disrupt emails, you need more than just another user-->
+        <!--                    interface. We need to rethink the whole communication flow.-->
+        <!--                </p>-->
+        <!--                <h3>The Communication Mechanism of Odoo</h3>-->
+        <!--                <p>-->
+        <!--                    Here are the ideas behind the Odoo communication tools:-->
+        <!--                </p>-->
+        <!--                <ul>-->
+        <!--                    <li>-->
+        <!--                        Get Things Done: your inbox is a-->
+        <!--                        todo list. You should be able to process (not only-->
+        <!--                        read) the inbox and easily mark messages for future-->
+        <!--                        actions. Every inbox should be empty after having-->
+        <!--                        been processed; no more overload of information.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        Keep control of what you want to receive or don't want-->
+        <!--                        to receive. People should never receive spam. You-->
+        <!--                        should follow/unfollow any kind of information in one-->
+        <!--                        click.-->
+        <!--                    </li><li>-->
+        <!--                        Productivity is key: our smart user-->
+        <!--                        interface does not require you to click on every mail-->
+        <!--                        to read a thread. Reading a full thread, replying,-->
+        <!--                        attaching documents is super fast.-->
+        <!--                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>-->
+        <!--                    </li><li>-->
+        <!--                        A mix of push & pull: Today, people-->
+        <!--                        are victims of what others decide to push to them.-->
+        <!--                        Odoo differentiates:-->
+        <!--                        <ul>-->
+        <!--                            <li>-->
+        <!--                                Messages "for information":-->
+        <!--                                you can pull them when you need some specific-->
+        <!--                                information; they are not required to be read-->
+        <!--                                every day.You receive only what you decided-->
+        <!--                                to follow.This accounts for 90% of your daily-->
+        <!--                                emails.Use the "Inbox" menu for these.-->
+        <!--                            </li><li>-->
+        <!--                                Messages "for action": they-->
+        <!--                                require your immediate attention and you need-->
+        <!--                                to process them all. This accounts for 10%-->
+        <!--                                of your daily emails. Use the "To: me" menu-->
+        <!--                                for these.-->
+        <!--                            </li>-->
+        <!--                        </ul>-->
+        <!--                    </li><li>-->
+        <!--                        Focus on the Content: Everything is-->
+        <!--                        stripped to emphasize on the real message. No more-->
+        <!--                        welcome introductions, greetings, signatures and legal-->
+        <!--                        notes.We standardize the layout of each message.-->
+        <!--                        (signatures are on the profile of a contact, not in-->
+        <!--                        every message)-->
+        <!--                    </li><li>-->
+        <!--                        Folders and mailing lists are great tools but too-->
+        <!--                        complex in traditional email clients. In Odoo, a-->
+        <!--                        group of contacts that share a discussion can be-->
+        <!--                        created with one click. Every group should have it's-->
+        <!--                        own email address.-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--]]>-->
+        <!--            </field>-->
+        <!--        </record>-->
+
+        <record id="blog_post_num_8" model="blog.post">
+            <field name="name">Than Núi Hồng hoàn thành trên 95% kế hoạch năm</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_4"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_21.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_9" model="blog.post">
+            <field name="name">Đại hội công đoàn công ty than núi hồng - VVMI</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_4"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_9.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_10" model="blog.post">
+            <field name="name">Đại hội công đoàn công ty than núi hồng - VVMII</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_4"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_9.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_11" model="blog.post">
+            <field name="name">Đại hội công đoàn công ty than núi hồng - VVMIII</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_4"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_9.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+
+        <record id="blog_post_num_12" model="blog.post">
+            <field name="name">Bản tin số 179 (từ ngày 11/11/2019 đến ngày 17/11/2019)</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_5"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_7.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_13" model="blog.post">
+            <field name="name">Bản tin số 180 (từ ngày 11/11/2019 đến ngày 17/11/2019)</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_5"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_7.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_14" model="blog.post">
+            <field name="name">Bản tin số 181 (từ ngày 11/11/2019 đến ngày 17/11/2019)</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_5"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_7.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_15" model="blog.post">
+            <field name="name">Bản tin số 182 (từ ngày 11/11/2019 đến ngày 17/11/2019)</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_5"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_7.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+        <record id="blog_post_num_16" model="blog.post">
+            <field name="name">Bản tin số 183 (từ ngày 11/11/2019 đến ngày 17/11/2019)</field>
+            <field name="subtitle">At Odoo, we build tools to bring productivity to enterprises. As emails and
+                information flows are one of the biggest wastes of time in companies, we have to fix this.
+            </field>
+            <field name="blog_id" ref="blog_blog_5"/>
+            <field name="website_published" eval="True"/>
+            <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="website_meta_description">Ideas behind the Odoo communication tools.</field>
+            <field name="cover_properties">{"background-image":
+                "url(/theme_company_custom/static/src/img/demo/Demo1---Nui-Hong_7.jpg)",
+                "resize_class": "cover container cover_narrow", "background-color": "oe_black", "opacity": "0.0"}
+            </field>
+            <field name="content"><![CDATA[
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    Emails are broken.
+                </p><p>
+                    Emails make me waste my time. But I need them.
+                    Given the importance that emails have in our lives,
+                    it's incredible it's still one of the only software
+                    areas that did not evolve in the past 20 years!
+                </p><p>
+                    Reading my inbox is the most unproductive task I do
+                    on a daily basis. I have to spend one full hour a
+                    day to process my emails. All the junk flows in the
+                    same inbox; spams, information that doesn't matter,
+                    quoted answers of quoted answers, etc. At the end
+                    of the hour, only 10 emails actually requested an
+                    answer from me. With a good tool, I could have done
+                    my job in 10 minutes!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s_text_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb16 mt16">
+                <p>
+                    At Odoo, we build tools to bring productivity to
+                    enterprises. As emails and information flows are one of
+                    the biggest wastes of time in companies, we have to fix
+                    this.
+                </p><p>
+                    To disrupt emails, you need more than just another user
+                    interface. We need to rethink the whole communication flow.
+                </p>
+                <h3>The Communication Mechanism of Odoo</h3>
+                <p>
+                    Here are the ideas behind the Odoo communication tools:
+                </p>
+                <ul>
+                    <li>
+                        Get Things Done: your inbox is a
+                        todo list. You should be able to process (not only
+                        read) the inbox and easily mark messages for future
+                        actions. Every inbox should be empty after having
+                        been processed; no more overload of information.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-00.png" alt=""/>
+                    </li><li>
+                        Keep control of what you want to receive or don't want
+                        to receive. People should never receive spam. You
+                        should follow/unfollow any kind of information in one
+                        click.
+                    </li><li>
+                        Productivity is key: our smart user
+                        interface does not require you to click on every mail
+                        to read a thread. Reading a full thread, replying,
+                        attaching documents is super fast.
+                        <img class="img-fluid" src="/website_blog/static/src/img/mail-sc-03.png" alt=""/>
+                    </li><li>
+                        A mix of push & pull: Today, people
+                        are victims of what others decide to push to them.
+                        Odoo differentiates:
+                        <ul>
+                            <li>
+                                Messages "for information":
+                                you can pull them when you need some specific
+                                information; they are not required to be read
+                                every day.You receive only what you decided
+                                to follow.This accounts for 90% of your daily
+                                emails.Use the "Inbox" menu for these.
+                            </li><li>
+                                Messages "for action": they
+                                require your immediate attention and you need
+                                to process them all. This accounts for 10%
+                                of your daily emails. Use the "To: me" menu
+                                for these.
+                            </li>
+                        </ul>
+                    </li><li>
+                        Focus on the Content: Everything is
+                        stripped to emphasize on the real message. No more
+                        welcome introductions, greetings, signatures and legal
+                        notes.We standardize the layout of each message.
+                        (signatures are on the profile of a contact, not in
+                        every message)
+                    </li><li>
+                        Folders and mailing lists are great tools but too
+                        complex in traditional email clients. In Odoo, a
+                        group of contacts that share a discussion can be
+                        created with one click. Every group should have it's
+                        own email address.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+]]>
+            </field>
+        </record>
+    </data>
+    <template id="blog_post_remove_next_post" name="Remove next post" inherit_id="website_blog.blog_post_complete"
+              active="True" customize_show="True">
+        <xpath expr="//div[hasclass('o_blog_post_complete','o_sharing_links')]" position="replace"/>
+    </template>
+    <template id="blog_post_remove_next_post_2" name="Remove next post 2"
+              inherit_id="website_blog.opt_blog_post_complete_read_next"
+              active="True" customize_show="True">
+        <xpath expr="//t[@t-if='next_post']" position="replace"/>
+    </template>
+</odoo>

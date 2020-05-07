@@ -1,0 +1,2819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="discipline_rp_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_lahien_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_lahien_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_lahien_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_lahien_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_lahien_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_lahien_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_lahien_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_lahien_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_lahien_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_lahien_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_lahien_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_lahien_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_lahien_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_lahien_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_lahien_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_lahien_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_lahien_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_lahien_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_lahien_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_lahien_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_lahien_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_lahien_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_lahien_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_lahien_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_lahien_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_lahien_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_lahien_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_lahien_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_lahien_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_lahien_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_lahien_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_lahien_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_lahien_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.LaHien"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_TTDD_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_TTDD_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_TTDD_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_TTDD_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_TTDD_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_TTDD_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_TTDD_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_TTDD_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_TTDD_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_TTDD_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_TTDD_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_TTDD_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_TTDD_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_TTDD_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_TTDD_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_TTDD_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_TTDD_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_TTDD_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_TTDD_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_TTDD_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_TTDD_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_TTDD_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_TTDD_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_TTDD_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_TTDD_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_TTDD_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_TTDD_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_TTDD_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_TTDD_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_TTDD_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_TTDD_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_TTDD_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_TTDD_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TTDD"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_thannh_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_thannh_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_thannh_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_thannh_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_thannh_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_thannh_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_thannh_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_thannh_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_thannh_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_thannh_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_thannh_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_thannh_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_thannh_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_thannh_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_thannh_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_thannh_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_thannh_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_thannh_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_thannh_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_thannh_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_thannh_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_thannh_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_thannh_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_thannh_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_thannh_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_thannh_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_thannh_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_thannh_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_thannh_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_thannh_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_thannh_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_thannh_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_thannh_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_NH"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_thannd_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_thannd_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_thannd_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_thannd_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_thannd_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_thannd_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_thannd_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_thannd_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_thannd_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_thannd_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_thannd_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_thannd_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_thannd_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_thannd_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_thannd_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_thannd_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_thannd_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_thannd_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_thannd_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_thannd_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_thannd_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_thannd_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_thannd_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_thannd_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_thannd_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_thannd_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_thannd_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_thannd_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_thannd_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_thannd_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_thannd_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_thannd_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_thannd_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_ND"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_thankh_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_thankh_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_thankh_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_thankh_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_thankh_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_thankh_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_thankh_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_thankh_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_thankh_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_thankh_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_thankh_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_thankh_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_thankh_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_thankh_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_thankh_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_thankh_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_thankh_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_thankh_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_thankh_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_thankh_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_thankh_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_thankh_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_thankh_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_thankh_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_thankh_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_thankh_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_thankh_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_thankh_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_thankh_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_thankh_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_thankh_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_thankh_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_thankh_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.Than_KH"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_dautuxd_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_dautuxd_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_dautuxd_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_dautuxd_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_dautuxd_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_dautuxd_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_dautuxd_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_dautuxd_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_dautuxd_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_dautuxd_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_dautuxd_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_dautuxd_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_dautuxd_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_dautuxd_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_dautuxd_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_dautuxd_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_dautuxd_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_dautuxd_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_dautuxd_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_dautuxd_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_dautuxd_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_dautuxd_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_dautuxd_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_dautuxd_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_dautuxd_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_dautuxd_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_dautuxd_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_dautuxd_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_dautuxd_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_dautuxd_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_dautuxd_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_dautuxd_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_dautuxd_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.DautuXD"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_tanquang_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_tanquang_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_tanquang_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_tanquang_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_tanquang_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_tanquang_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_tanquang_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_tanquang_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_tanquang_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_tanquang_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_tanquang_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_tanquang_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_tanquang_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_tanquang_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_tanquang_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_tanquang_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_tanquang_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_tanquang_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_tanquang_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_tanquang_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_tanquang_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_tanquang_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_tanquang_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_tanquang_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_tanquang_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_tanquang_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_tanquang_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_tanquang_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_tanquang_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_tanquang_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_tanquang_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_tanquang_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_tanquang_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TanQuang"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_quantrieu_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_quantrieu_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_quantrieu_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_quantrieu_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_quantrieu_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_quantrieu_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_quantrieu_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_quantrieu_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_quantrieu_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_quantrieu_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_quantrieu_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_quantrieu_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_quantrieu_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_quantrieu_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_quantrieu_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_quantrieu_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_quantrieu_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_quantrieu_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_quantrieu_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_quantrieu_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_quantrieu_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_quantrieu_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_quantrieu_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_quantrieu_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_quantrieu_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_quantrieu_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_quantrieu_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_quantrieu_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_quantrieu_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_quantrieu_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_quantrieu_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_quantrieu_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_quantrieu_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.QuanTrieu"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_kdth_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_kdth_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_kdth_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_kdth_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_kdth_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_kdth_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_kdth_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_kdth_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_kdth_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_kdth_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_kdth_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_kdth_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_kdth_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_kdth_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_kdth_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_kdth_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_kdth_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_kdth_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_kdth_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_kdth_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_kdth_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_kdth_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_kdth_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_kdth_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_kdth_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_kdth_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_kdth_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_kdth_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_kdth_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_kdth_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_kdth_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_kdth_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_kdth_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KDTH"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_tbal_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_tbal_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_tbal_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_tbal_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_tbal_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_tbal_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_tbal_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_tbal_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_tbal_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_tbal_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_tbal_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_tbal_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_tbal_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_tbal_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_tbal_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_tbal_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_tbal_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_tbal_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_tbal_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_tbal_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_tbal_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_tbal_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_tbal_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_tbal_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_tbal_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_tbal_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_tbal_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_tbal_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_tbal_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_tbal_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_tbal_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_tbal_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_tbal_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.TBAL"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_vttb_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_vttb_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_vttb_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_vttb_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_vttb_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_vttb_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_vttb_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_vttb_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_vttb_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_vttb_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_vttb_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_vttb_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_vttb_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_vttb_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_vttb_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_vttb_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_vttb_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_vttb_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_vttb_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_vttb_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_vttb_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_vttb_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_vttb_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_vttb_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_vttb_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_vttb_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_vttb_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_vttb_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_vttb_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_vttb_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_vttb_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_vttb_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_vttb_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.VTTB"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_ksthainguyen_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_ksthainguyen_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_ksthainguyen_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_ksthainguyen_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.KSThaiNguyen"/>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="discipline_rp_cmk_2" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_2')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="discipline_rp_cmk_3" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_3')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="discipline_rp_cmk_4" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_4')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="discipline_rp_cmk_5" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_5')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="discipline_rp_cmk_6" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_6')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="discipline_rp_cmk_7" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_7')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="discipline_rp_cmk_8" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_8')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="discipline_rp_cmk_9" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_9')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="discipline_rp_cmk_10" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_10')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="discipline_rp_cmk_11" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_11')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="discipline_rp_cmk_12" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_1'),ref('discipline_12')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="discipline_rp_cmk_14" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_14')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="discipline_rp_cmk_15" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_15')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="discipline_rp_cmk_16" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_16')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="discipline_rp_cmk_17" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_17')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="discipline_rp_cmk_18" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_18')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="discipline_rp_cmk_19" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_19')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="discipline_rp_cmk_20" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_20')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="discipline_rp_cmk_21" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_21')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="discipline_rp_cmk_22" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_22')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="discipline_rp_cmk_23" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_23')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="discipline_rp_cmk_24" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_13'),ref('discipline_24')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="discipline_rp_cmk_26" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_26')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="discipline_rp_cmk_27" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_27')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="discipline_rp_cmk_28" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_28')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="discipline_rp_cmk_29" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_29')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="discipline_rp_cmk_30" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_30')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="discipline_rp_cmk_31" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_31')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="discipline_rp_cmk_32" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_32')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="discipline_rp_cmk_33" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_33')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="discipline_rp_cmk_34" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_34')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="discipline_rp_cmk_35" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_35')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="discipline_rp_cmk_36" model="discipline.property">
+            <field name="property_ids" eval="[(6, 0,[ref('discipline_25'),ref('discipline_36')])]">
+            </field>
+            <field name="company_id" ref="mvb_company.CMK"/>
+            <field name="sequence">36</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--<record id="group_li" model="res.groups">-->
+        <!--<field name="name">Librarians</field>-->
+        <!--<field name="users" eval="[(4, ref('base.user_admin'))]"/>-->
+    <!--</record>-->
+    <record id="rule_share_document" model="ir.rule">
+        <field name="name">Rule Share Documents</field>
+        <field ref="model_mvb_document" name="model_id"/>
+        <field name="domain_force">[('share_user.id','=', user.id)]</field>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_unlink" eval="0"/>
+
+    </record>
+
+    <!--<record id="rule_share_bidding_document" model="ir.rule">-->
+        <!--<field name="name">Rule Bidding Documents</field>-->
+        <!--<field ref="model_mvb_document_biddingstate" name="model_id"/>-->
+        <!--<field name="domain_force">[('bidding_packages_list.share_user.id','=', user.id)]</field>-->
+        <!--<field name="perm_write" eval="1"/>-->
+        <!--<field name="perm_create" eval="1"/>-->
+        <!--<field name="perm_read" eval="1"/>-->
+        <!--<field name="perm_unlink" eval="1"/>-->
+    <!--</record>-->
+
+
+</odoo>

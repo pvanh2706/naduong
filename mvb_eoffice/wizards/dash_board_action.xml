@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="dash_board_action_wizards_view_form" model="ir.ui.view">
+            <field name="name">Công việc chờ</field>
+            <field name="model">dash.board.action.wizards</field>
+            <field name="arch" type="xml">
+                <form string="Công việc chờ xử lý" class="interface_background">
+                    <div class="row" style="margin: auto;">
+                        <button name="action_document_incoming_for_person" type="object"
+                                class="col-xl-3 col-lg-3 col-md-12 col-sm-12 oh-card text_doc button_header">
+                            <div class="stat-content">
+                                <div class="stat-text" style="margin: -5px 0px -45px 0px;">Văn bản đến</div>
+                                <div class="stat-digit">
+                                    <field name="count_document_text_incoming" string='Số văn bản đến'
+                                           readonly="1"/>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 button_header_1">
+                            <button name="action_document_incoming" type="object"
+                                    class="oh-payslip oh-card oh-broad-factor ">
+                                <div class="oh-card-body">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon stat-icon_1">
+                                            <i class="fa fa-book"/>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-text">Chưa xử lý</div>
+                                            <div class="stat-digit">
+                                                <field name="count_incoming_solution" string='Chưa xử lý'
+                                                       readonly="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 button_header_1">
+                            <button name="action_document_incoming_deadline" type="object"
+                                    class="oh-card oh-payslip ">
+                                <div class="oh-card-body">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon stat-icon_1">
+                                            <i class="fa fa-clock-o"/>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-text">Quá hạn xử lý</div>
+                                            <div class="stat-digit">
+                                                <field name="count_document_deadline" string='Quá hạn xử lý'
+                                                       readonly="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 button_header_1">
+                            <button name="action_document_follow" type="object"
+                                    class="oh-card oh-payslip oh-timesheets">
+                                <div class="oh-card-body">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon stat-icon_1">
+                                            <i class="fa fa-edit"/>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-text">Đang theo dõi</div>
+                                            <div class="stat-digit">
+                                                <field name="count_incoming_follow" string='Đang theo dõi'
+                                                       readonly="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 button_header_1">
+                            <button name="action_document_notification" type="object"
+                                    class="oh-card oh-payslip oh-timesheets">
+                                <div class="oh-card-body">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon stat-icon_1" id="notify">
+                                            <i class="fa fa-bell"/>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-text">Văn bản thông báo</div>
+                                            <div class="stat-digit">
+                                                <field name="count_document_notification" string='Đang theo dõi'
+                                                       readonly="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: auto;">
+                        <button name="action_document_outgoing_for_person" type="object"
+                                class="col-xl-3 col-lg-3 col-md-12 col-sm-12 oh-card text_doc button_header">
+                            <div class="stat-content">
+                                <div class="stat-text" style="margin: -5px 0px -45px 0px;">Văn bản đi</div>
+                                <div class="stat-digit">
+                                    <field name="count_document_text_outgoing" string='Văn bản đi'
+                                           readonly="1"/>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 button_header_1">
+                            <button name="action_document_outgoing" type="object"
+                                    class="oh-payslip oh-card oh-broad-factor button_doc_going">
+                                <div class="oh-card-body">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon stat-icon_1">
+                                            <i class="fa fa-fw fa-book"/>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-text">Chưa xử lý</div>
+                                            <div class="stat-digit">
+                                                <field name="count_outgoing_solution" string='Dự thảo chờ xử lý'
+                                                       readonly="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 button_header_1">
+                            <button name="action_document_outgoing_deadline" type="object"
+                                    class="oh-card oh-payslip  button_doc_going">
+                                <div class="oh-card-body">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-icon stat-icon_1" id="xuly">
+                                            <i class="fa fa-clock-o"/>
+                                        </div>
+                                        <div class="stat-content ">
+                                            <div class="stat-text">Quá hạn xử lý</div>
+                                            <div class="stat-digit">
+                                                <field name="count_document_outgoing_deadline" string='Quá hạn xử lý'
+                                                       readonly="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-xl-2 col-lg-2">
+                        </div>
+                        <div class="col-xl-3 col-lg-3">
+                        </div>
+                    </div>
+                    <div>
+                        <field name="view_calendar"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="dash_board_action_wizards_action">
+            <field name="name">Công việc chờ xử lý</field>
+            <field name="res_model">dash.board.action.wizards</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="dash_board_action_wizards_view_form"/>
+            <field name="target">inline</field>
+        </record>
+    </data>
+</odoo>

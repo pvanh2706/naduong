@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="document_guide_view_form" model="ir.ui.view">
+            <field name="name">Tài liệu Hướng dẫn</field>
+            <field name="model">document.guide</field>
+            <field name="arch" type="xml">
+                <form string="Tài liệu Hướng dẫn"
+                      class="interface_background">
+                    <sheet>
+                        <div class="container" style="font-family:Times New Roman; font-size: 20px; ">
+                            <p style="text-align: center;">
+                                <a id="_Toc33187868"></a>
+                                <strong>HƯỚNG DẪN SỬ DỤNG PHÂN HỆ LỊCH CÔNG TÁC</strong>
+                            </p>
+
+                            <ol>
+                                <li>
+                                    <a></a>
+                                    <strong>1. Mục đích</strong>
+                                </li>
+                            </ol>
+                            <p>Phân hệ Lịch công tác hỗ trợ quản lý lịch công tác của các lãnh đạo, giúp cho nhân viên
+                                trong
+                                Công ty chủ động trong công việc
+                            </p>
+                            <ol>
+                                <li>
+                                    <a></a>
+                                    <strong>2. Chức năng chính</strong>
+                                </li>
+                            </ol>
+                            <ul>
+                                <li>Tạo lịch công tác tuần: Hỗ trợ Ban lãnh đạo tạo lịch công tác trong tuần của từng
+                                    người
+                                </li>
+                                <li>Tổng hợp lịch công tác: Hỗ trợ Chánh Văn phòng tổng hợp lịch công tác của Ban Lãnh
+                                    đạo
+                                    Công ty
+                                </li>
+                                <li>Phê duyệt lịch: Hỗ trợ người dùng phê duyệt lịch và công bố lịch công tác của Ban
+                                    lãnh
+                                    đạo tới toàn thể nhân viên
+                                </li>
+                            </ul>
+                            <ol>
+                                <li>
+                                    <a></a>
+                                    <strong>3. Hướng dẫn sử dụng đối với Ban Lãnh đạo tạo lịch Công tác cá nhân</strong>
+                                </li>
+                            </ol>
+                            <p>Phân hệ Lịch công tác hỗ trợ Phó Giám đốc lập lịch công tác của mình ngay trên phần mềm
+                                và
+                                công bố lịch của mình tới toàn bộ nhân viên trong Công ty. Người dùng thực hiện theo các
+                                bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1</strong>: Trên màn hình giao diện hệ thống, người dùng chọn
+                                    <strong>“Lịch công tác” -&gt; “Tạo”</strong>
+                                </li>
+                                <br/>
+                                <img src="/my_calendar/static/src/img/anh2.png" style="width:100%;"/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Trên màn hình hiển thị, người dùng chọn <strong>“Từ ngày”
+                                </strong> để lựa chọn ngày bắt đầu tạo lịch và nhập nội dung theo các ngày trong tuần
+                                </li>
+                                <br/>
+                                <img src="/my_calendar/static/src/img/anh1.png" style="width:100%;"/>
+                                <br/>
+                            </ul>
+                            <p>
+                                <strong>
+                                </strong>
+                            </p>
+                            <ul>
+                                <li><strong>Bước 3:</strong>Sau khi hoàn tất nhập nội dung, người dùng nhấn <strong>
+                                    “Lưu” -&gt;
+                                    “Xác thực”</strong>để hoàn thành và chuyển đến Văn phòng để tổng hợp
+                                </li>
+
+                            </ul>
+                            <p>Video Hướng đẫn tạo Lịch Công tác cá nhân</p>
+                            <embed width="100%" height="450px"
+                                   src="/my_calendar/static/src/videos/video_1.mp4">
+                            </embed>
+                            <ol>
+                                <li>
+                                    <a></a>
+                                    <strong>4. Hướng dẫn sử dụng đối với Chánh Văn phòng và Văn Thư</strong>
+                                </li>
+                            </ol>
+                            <p>
+                                Phân hệ Lịch công tác hỗ trợ Chánh Văn phòng tổng hợp lịch công tác của các Phó Giám đốc
+                                và
+                                gửi xin ý kiến của Giám đốc ngay trên hệ thống. Người dùng thực hiện theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>Trên màn hình giao diện hệ thống, người dùng chọn <strong>“Lịch công tác” -&gt;
+                                    “Tổng
+                                    hợp Lịch” -&gt;</strong>lựa chọn ngày bắt đầu tổng hợp lịch và nhấn
+                                    <strong>“Tổng hợp”</strong>
+                                </li>
+                                <br/>
+                                <br/>
+                                <img src="/my_calendar/static/src/img/anh3.png" style="width:100%;"/>
+                                <br/>
+                                <img src="/my_calendar/static/src/img/anh4.png" style="width:100%;"/>
+                                <br/>
+                            </ul>
+                            <p>Video Hướng dẫn sử dụng đối với Chánh Văn phòng và Văn Thư</p>
+                            <embed width="100%" height="450px"
+                                   src="/my_calendar/static/src/videos/video_2.mp4">
+                            </embed>
+                            <p>Nếu khi tổng hợp lịch công tác gửi tới Giám đốc không <b>"Duyệt"</b> Giám đốc sẽ cho ý
+                                kiến chỉ Đạo cần sửa lại.
+                            </p>
+                            <p>Trên giao diện phần mềm sẽ xuất hiện thông báo như hình dưới đây:</p>
+                            <br/>
+                            <img src="/my_calendar/static/src/img/anh9_chuong.png" style="width:100%;"/>
+                            <br/>
+                            <p>Người dùng Kích vào sẽ dẫn đến Lịch công tác tuần cần phải chỉnh sửa lại.</p>
+                            <br/>
+                            <img src="/my_calendar/static/src/img/anh10.png" style="width:100%;"/>
+                            <br/>
+                            <p>Phần Nội dung Giám đốc chỉ đạo nằm ở đây:</p>
+                            <br/>
+                            <img src="/my_calendar/static/src/img/anh8.png" style="width:100%;"/>
+                            <br/>
+                            <p>Sau khi điều chỉnh theo Chỉ Đạo của Giám đốc thì Người dùng kích vào <b>"Gửi lại"</b> Lịch
+                                sẽ chuyển lại cho Giám đốc <b>"Duyệt"</b>.
+                            </p>
+
+                            <ol>
+                                <li>
+                                    <a></a>
+                                    <strong>5. Hướng dẫn sử dụng đối với Giám đốc</strong>
+                                </li>
+                            </ol>
+                            <p>Phân hệ Lịch công tác hỗ trợ Giám đốc phê duyệt lịch công tác của các Phó Giám đốc ngay
+                                trên
+                                hệ thống. Người dùng thực hiện theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>
+                                    </strong>
+                                    Bước 1: Trên màn hình giao diện hệ thống, người dùng chọn <strong>“Lịch công tác” -&gt;
+                                    “Lịch công tác chờ duyệt” -&gt;</strong>lựa chọn lịch công tác đang chờ duyệt
+                                    <strong></strong>
+                                </li>
+                                <br/>
+                                <img src="/my_calendar/static/src/img/anh5.png" style="width:100%;"/>
+                                <br/>
+                                <p>Video Hướng dẫn sử dụng đối với Giám đốc</p>
+                                <embed width="100%" height="450px"
+                                       src="/my_calendar/static/src/videos/video_3.mp4">
+                                </embed>
+                            </ul>
+                            <p>Nếu Giám Đốc không <b>"Duyệt"</b> có thể kích vào nút <b>"Ý kiến điều chỉnh"</b> và gửi
+                                lại Nội dung muốn chuyền đạt cho Văn thư và Chánh Văn Phòng.
+                            </p>
+                            <br/>
+                            <img src="/my_calendar/static/src/img/anh6.png" style="width:100%;"/>
+                            <br/>
+                            <p>Sau đó sẽ xuất hiện cửa sổ Giám Đốc sẽ đánh <b>"Nội dung"</b> muốn chuyền đạt và ấn
+                                <b>"Gửi".</b>
+                            </p>
+                            <br/>
+                            <img src="/my_calendar/static/src/img/anh7.png" style="width:100%;"/>
+                            <br/>
+                            <p>Khi Nhân viên điều chỉnh xong gửi lại Giám đốc <b>"Duyệt"</b> sẽ có thông báo như hình
+                                dưới đây:
+                            </p>
+                            <br/>
+                            <img src="/my_calendar/static/src/img/anh_chuong11.png" style="width:100%;"/>
+                            <br/>
+                            <p>Giám đốc kích vào sẽ ra Lịch công tác Tuần cần
+                                <b>"Duyệt"</b>.
+                            </p>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="document_guide_view_action">
+            <field name="name">Tài liệu Hướng dẫn</field>
+            <field name="res_model">document.guide</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="document_guide_view_form"/>
+            <field name="target">inline</field>
+        </record>
+    </data>
+</odoo>

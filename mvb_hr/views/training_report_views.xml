@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="train_report_pivot" model="ir.ui.view">
+        <field name="name">train.report.pivot</field>
+        <field name="model">train.report.property</field>
+        <field name="arch" type="xml">
+            <pivot disable_linking="1">
+                <field name="property_1" type="row"/>
+                <field name="property_2" type="row"/>
+                <field name="property_3" type="row"/>
+                <field name="property_4" type="row"/>
+                <field name="property_5" type="row"/>
+                <field name="label_l1" type="col"/>
+                <field name="label_l2" type="col"/>
+                <field name="label_l3" type="col"/>
+                <field name="amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="train_report_pivot_action" model="ir.actions.act_window">
+        <field name="name">Báo cáo công tác đào tạo, bồi dưỡng năm</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">train.report.property</field>
+        <field name="view_mode">pivot</field>
+        <field name="domain">[('report_id', '=' , active_id)]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+
+            </p>
+            <p>
+
+            </p>
+        </field>
+    </record>
+
+    <record id="train_report_form" model="ir.ui.view">
+        <field name="name">train.report.form</field>
+        <field name="model">train.report</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <button name="lock_data" type="object" string="Khóa" class="oe_highlight"/>
+                    <button name="unlock_data" type="object" string="Mở dữ liệu" class="oe_highlight"/>
+                    <button name="generate_report_line" type="object" string="Tạo nhanh báo cáo"
+                            class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <!-- <div class="oe_button_box" name="expense_button_box">
+                        <button name="%(train_report_pivot_action)d" type="action" string="Xem thống kê năm" class="oe_stat_button" icon="fa-crosshairs">
+                        </button>
+                    </div> -->
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="......"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="plan_id" options="{'no_create': True, 'no_open': True}"/>    
+                        <!-- <field name="year" invisible="1"/>      -->
+                    </group>
+                    <separator string="Báo cáo cho từng nội dung đào tạo, bồi dưỡng"/>
+                    <field name="line_ids">
+                        <tree editable="top">
+                            <field name="company_id"/>
+                            <field name="property_id"/>
+                            <field name="state"/>
+                        </tree>
+                    </field>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="train_report_tree" model="ir.ui.view">
+        <field name="name">train.report</field>
+        <field name="model">train.report</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="train_report_action" model="ir.actions.act_window">
+        <field name="name">Báo cáo công tác đào tạo, bồi dưỡng</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">train.report</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+
+            </p>
+            <p>
+
+            </p>
+        </field>
+    </record>
+
+    <!--view dvi thanh vien-->
+    <record id="training_report_line_form" model="ir.ui.view">
+        <field name="name">train.report_line.form</field>
+        <field name="model">train.report_line</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group col="4">
+                        <field name="report_id" options="{'no_create': True, 'no_open': True}" string="Tên báo cáo"/>
+                        <field name="company_id"/>
+                    </group>
+                    <group>
+                        <field name="property_id"/>
+                    </group>
+                    <group col="4" string="Số người">
+                        <field name="attendees_amount"/>
+                        <field name="qualified"/>
+                        <field name="percent"/>
+                    </group>
+                    <group col="4" string="Kinh phí (triệu đồng)">
+                        <field name="company_amount"/>
+                        <field name="group_amount"/>
+                        <field name="other_amount"/>
+                        <field name="total_amount"/>                        
+                    </group>
+
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="training_report_line_tree" model="ir.ui.view">
+        <field name="name">train.report_line.tree</field>
+        <field name="model">train.report_line</field>
+        <field name="arch" type="xml">
+            <tree string="" delete="0" editable="top" edit="0">
+                <field name="report_id" invisible="1"/>
+                <field name="property_id" invisible="1"/>
+                <field name="company_id" invisible="1"/>
+                <field name="short_name"/>
+                <field name="attendees_amount"/>
+                <field name="qualified"/>
+                <field name="percent"/>
+                <field name="company_amount"/>
+                <field name="group_amount"/>
+                <field name="other_amount"/>
+                <field name="total_amount"/>
+                <field name="state" invisible="1"/>
+                <button string="Xem chi tiết" name="open_training_report" class="oe_highlight" type="object"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="training_report_search" model="ir.ui.view">
+        <field name="name">training.report.search</field>
+        <field name="model">train.report_line</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="property_id" string="Tiêu chí"
+                           filter_domain="[('property_id.name','ilike',self)]"/>
+                <filter string="Trạng thái dữ liệu: Mở" name="state_unlock" domain="[('state', '=', 'unlock')]"/>
+                <filter string="Trạng thái dữ liệu: Đóng" name="state_lock" domain="[('state', '=', 'lock')]"/>
+                <group expand='0' string='Nhóm'>
+                    <filter string='Báo cáo tháng' name="group1" context="{'group_by' : 'report_id'}"/>
+                    <filter string='Tên công ty' name="group3" context="{'group_by' : 'company_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="train_report_line_action" model="ir.actions.act_window">
+        <field name="name">Báo cáo công tác đào tạo, bồi dưỡng từng tiêu chí</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">train.report_line</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{'search_default_state_unlock':0}</field>
+        <field name="search_view_id" ref="mvb_hr.training_report_search"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+
+            </p>
+            <p>
+
+            </p>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,74 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="preview_file.list">
+        <field name="name">preview_file list</field>
+        <field name="model">preview_file.preview_file</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="attachment_ids"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="preview_file_form">
+        <field name="name">preview_file</field>
+        <field name="model">preview_file.preview_file</field>
+        <field name="arch" type="xml">
+            <form string="Preview">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="attachment_ids" filename="store_fname"/>
+                        <field name="store_fname" invisible="1" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="preview_file.action_window">
+      <field name="name">preview_file window</field>
+      <field name="res_model">preview_file.preview_file</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+
+    </record>
+   
+
+    <!-- server action to the one above -->
+<!--     
+    <record model="ir.actions.server" id="preview_file.action_server">
+      <field name="name">preview_file server</field>
+      <field name="model_id" ref="model_preview_file_preview_file"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    
+    <menuitem name="preview_file" id="preview_file.menu_root"/>
+   
+    <!-- menu categories -->
+    
+    <menuitem name="Menu 1" id="preview_file.menu_1" parent="preview_file.menu_root"/>
+    <!-- <menuitem name="Menu 2" id="preview_file.menu_2" parent="preview_file.menu_root"/> -->
+   
+    <!-- actions -->
+    
+    <menuitem name="List" id="preview_file.menu_1_list" parent="preview_file.menu_1"
+              action="preview_file.action_window"/>
+    <!-- <menuitem name="Server to list" id="preview_file" parent="preview_file.menu_2"
+              action="preview_file.action_server"/> -->
+   
+  </data>
+</odoo>

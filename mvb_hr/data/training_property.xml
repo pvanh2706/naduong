@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="training_1" model="train.plan.sub.property">
+            <field name="name">I. ĐÀO TẠO, BỒI DƯỠNG CÔNG NHÂN KỸ THUẬT (I.1 + I.2)</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">1</field>
+        </record>
+        <record id="training_2" model="train.plan.sub.property">
+            <field name="name">I.1. Đào tạo CNKT (1.1 + 1.2 + 1.3)</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">2</field>
+        </record>
+        <record id="training_3" model="train.plan.sub.property">
+            <field name="name">1.1. Trình độ cao đẳng nghề</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">3</field>
+        </record>
+        <record id="training_4" model="train.plan.sub.property">
+            <field name="name">- Nghề KT khai thác mỏ hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">4</field>
+        </record>
+        <record id="training_5" model="train.plan.sub.property">
+            <field name="name">- Nghề KT xây dựng mỏ hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">5</field>
+        </record>
+        <record id="training_6" model="train.plan.sub.property">
+            <field name="name">- Nghề KT cơ điện mỏ hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">6</field>
+        </record>
+        <record id="training_7" model="train.plan.sub.property">
+            <field name="name">- Nghề Luyện kim màu</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">7</field>
+        </record>
+        <record id="training_8" model="train.plan.sub.property">
+            <field name="name">- Nghề Luyện kim đen</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">8</field>
+        </record>
+        <record id="training_9" model="train.plan.sub.property">
+            <field name="name">- Ngành nghề khác</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">9</field>
+        </record>
+        <record id="training_10" model="train.plan.sub.property">
+            <field name="name">1.2. Trình độ trung cấp nghề</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="training_11" model="train.plan.sub.property">
+            <field name="name">- Nghề KT khai thác than hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">11</field>
+        </record>
+        <record id="training_12" model="train.plan.sub.property">
+            <field name="name">- Nghề KT XDM hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">12</field>
+        </record>
+        <record id="training_13" model="train.plan.sub.property">
+            <field name="name">- Nghề KT cơ điện mỏ hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">13</field>
+        </record>
+        <record id="training_14" model="train.plan.sub.property">
+            <field name="name">- Nghề Luyện kim màu</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">14</field>
+        </record>
+        <record id="training_15" model="train.plan.sub.property">
+            <field name="name">- Nghề Luyện kim đen</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">15</field>
+        </record>
+        <record id="training_16" model="train.plan.sub.property">
+            <field name="name">- Ngành nghề khác</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">16</field>
+        </record>
+        <record id="training_17" model="train.plan.sub.property">
+            <field name="name">1.3. Trình độ sơ cấp nghề</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">17</field>
+        </record>
+        <record id="training_18" model="train.plan.sub.property">
+            <field name="name">- Nghề KT khai thác than hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">18</field>
+        </record>
+        <record id="training_19" model="train.plan.sub.property">
+            <field name="name">- Nghề KT XDM hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">19</field>
+        </record>
+        <record id="training_20" model="train.plan.sub.property">
+            <field name="name">- Nghề KT cơ điện mỏ hầm lò</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="training_21" model="train.plan.sub.property">
+            <field name="name">- Nghề Luyện kim màu</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">21</field>
+        </record>
+        <record id="training_22" model="train.plan.sub.property">
+            <field name="name">- Nghề Luyện kim đen</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">22</field>
+        </record>
+        <record id="training_23" model="train.plan.sub.property">
+            <field name="name">- Ngành nghề khác</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">23</field>
+        </record>
+        <record id="training_24" model="train.plan.sub.property">
+            <field name="name">I.2. Bồi dưỡng CNKT</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">24</field>
+        </record>
+        <record id="training_25" model="train.plan.sub.property">
+            <field name="name">- Bồi dưỡng thợ bậc cao</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">25</field>
+        </record>
+        <record id="training_26" model="train.plan.sub.property">
+            <field name="name">- Bồi dưỡng giữ bậc</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">26</field>
+        </record>
+        <record id="training_27" model="train.plan.sub.property">
+            <field name="name">- Thi giữ bậc</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">27</field>
+        </record>
+        <record id="training_28" model="train.plan.sub.property">
+            <field name="name">- Bồi dưỡng nâng bậc</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">28</field>
+        </record>
+        <record id="training_29" model="train.plan.sub.property">
+            <field name="name">- Thi nâng bậc</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">29</field>
+        </record>
+        <record id="training_30" model="train.plan.sub.property">
+            <field name="name">- Bồi dưỡng khác</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="training_31" model="train.plan.sub.property">
+            <field name="name">- Thi thợ giỏi</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">31</field>
+        </record>
+        <record id="training_32" model="train.plan.sub.property">
+            <field name="name">+ Cấp Công ty</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">32</field>
+        </record>
+        <record id="training_33" model="train.plan.sub.property">
+            <field name="name">+ Cấp Tập đoàn</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">33</field>
+        </record>
+        <record id="training_34" model="train.plan.sub.property">
+            <field name="name">II. ĐÀO TẠO, BỒI DƯỠNG CÁN BỘ (II.1 + II.2)</field>
+            <field name="level" eval="1"/>
+            <field name="sequence">34</field>
+        </record>
+        <record id="training_35" model="train.plan.sub.property">
+            <field name="name">II.1. Đào tạo cán bộ</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">35</field>
+        </record>
+        <record id="training_36" model="train.plan.sub.property">
+            <field name="name">- Lý luận chính trị</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">36</field>
+        </record>
+        <record id="training_37" model="train.plan.sub.property">
+            <field name="name">- Cao cấp</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">37</field>
+        </record>
+        <record id="training_38" model="train.plan.sub.property">
+            <field name="name">- Trung cấp</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">38</field>
+        </record>
+        <record id="training_39" model="train.plan.sub.property">
+            <field name="name">- Quản trị kinh doanh cao cấp</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">39</field>
+        </record>
+        <record id="training_40" model="train.plan.sub.property">
+            <field name="name">- Trên đại học</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">40</field>
+        </record>
+        <record id="training_41" model="train.plan.sub.property">
+            <field name="name">- Tiến sĩ</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">41</field>
+        </record>
+        <record id="training_42" model="train.plan.sub.property">
+            <field name="name">- Thạc sĩ</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">42</field>
+        </record>
+        <record id="training_43" model="train.plan.sub.property">
+            <field name="name">- Đại học</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">43</field>
+        </record>
+        <record id="training_44" model="train.plan.sub.property">
+            <field name="name">- Cao đẳng</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">44</field>
+        </record>
+        <record id="training_45" model="train.plan.sub.property">
+            <field name="name">- Trung cấp</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">45</field>
+        </record>
+        <record id="training_46" model="train.plan.sub.property">
+            <field name="name">- Khác</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">46</field>
+        </record>
+        <record id="training_47" model="train.plan.sub.property">
+            <field name="name">II.2. Bồi dưỡng cán bộ</field>
+            <field name="level" eval="2"/>
+            <field name="sequence">47</field>
+        </record>
+        <record id="training_48" model="train.plan.sub.property">
+            <field name="name">- Tại Trường Quản trị kinh doanh-Vinacomin</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">48</field>
+        </record>
+        <record id="training_49" model="train.plan.sub.property">
+            <field name="name">- Tổ chức tại đơn vị</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">49</field>
+        </record>
+        <record id="training_50" model="train.plan.sub.property">
+            <field name="name">- Tại cơ sở đào tạo khác</field>
+            <field name="level" eval="3"/>
+            <field name="sequence">50</field>
+        </record>
+        <record id="training_51" model="train.plan.sub.property">
+            <field name="name">+ Ở trong nước</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">51</field>
+        </record>
+        <record id="training_52" model="train.plan.sub.property">
+            <field name="name">+ Ở ngoài nước</field>
+            <field name="level" eval="4"/>
+            <field name="sequence">52</field>
+        </record>
+    </data>
+</odoo>

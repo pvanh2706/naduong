@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <record id="mvb_database_rule" model="ir.rule">
+           <field name="name"></field>
+           <field ref="muk_dms.model_muk_dms_storage" name="model_id"/>
+           <field name="domain_force">['|',('company','=',False),('company.id','child_of',[user.company_id.id])]</field>
+           <field name="perm_write" eval="1"/>
+           <field name="perm_create" eval="1"/>
+           <field name="perm_read" eval="1"/>
+           <field name="perm_unlink" eval="1"/>
+           <!-- You can attach this rule to a specific group, Or make it Global -->
+           <!--<field name="global" eval="1"/> -->
+       </record>
+
+
+    </data>
+</odoo>

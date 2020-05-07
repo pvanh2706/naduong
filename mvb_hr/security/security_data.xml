@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="module_category_mvb_hr_employee_menu" model="ir.module.category">
+            <field name="name">Quản lý menu nhân sự</field>
+            <field name="sequence">0</field>
+        </record>
+
+        <record id="mvb_hr_employee_access_menu_salary_process" model="res.groups">
+            <field name="name">1. Truy cập quá trình tăng lương</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_menu"/>
+        </record>
+
+        <record id="mvb_hr_employee_access_menu_work_process" model="res.groups">
+            <field name="name">2. Truy cập quá trình công tác</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_menu"/>
+        </record>
+
+        <record id="mvb_hr_employee_access_menu_training_process" model="res.groups">
+            <field name="name">3. Truy cập quá trình đào tạo</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_menu"/>
+        </record>
+
+        <record id="mvb_hr_employee_access_menu_bonus" model="res.groups">
+            <field name="name">4. Truy cập khen thưởng</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_menu"/>
+        </record>
+
+        <record id="mvb_hr_employee_access_menu_discipline" model="res.groups">
+            <field name="name">5. Truy cập kỉ luật</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_menu"/>
+        </record>
+
+        <record id="mvb_hr_employee_access_menu_info" model="res.groups">
+            <field name="name">6. Truy cập thông tin nhân sự</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_menu"/>
+        </record>
+
+        <record id="mvb_hr_employee_access_menu_em_config" model="res.groups">
+            <field name="name">7. Truy cập cấu hình khen thưởng</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_menu"/>
+        </record>
+
+
+        <record model="ir.module.category" id="module_category_mvb_hr_employee">
+            <field name="name">Quản lý nhân sự - Hồ sơ nhân sự</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="group_mvb_hr_employee_create" model="res.groups">
+            <field name="name">1. Tạo</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record>
+        <record id="group_mvb_hr_employee_view" model="res.groups">
+            <field name="name">2. Xem</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record>
+        <record id="group_mvb_hr_employee_edit" model="res.groups">
+            <field name="name">3. Sửa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record>
+        <record id="group_mvb_hr_employee_delete" model="res.groups">
+            <field name="name">4. Xóa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record>
+        <!-- <record id="group_mvb_hr_employee_code_edit" model="res.groups">
+            <field name="name">5. Sửa mã nhân viên</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record> -->
+        <record id="group_mvb_hr_employee_normal_user" model="res.groups">
+            <field name="name">5. Người dùng thường</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record>
+
+        <record id="group_mvb_hr_employee_user_main_company" model="res.groups">
+            <field name="name">6. Người dùng thuộc tổng công ty</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record>
+        <record id="group_mvb_hr_employee_user_lead_office_user" model="res.groups">
+            <field name="name">7. Người dùng Trưởng phòng / Quản đốc</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee"/>
+        </record>
+
+        <record id="hr_employee_normal_user_rule" model="ir.rule">
+            <field name="name">Normal User can see its own records</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="domain_force">[('user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('group_mvb_hr_employee_normal_user'))]"/>
+            <field name='perm_create' eval='False'/>
+            <field name='perm_read' eval='True'/>
+            <field name='perm_unlink' eval='False'/>
+            <field name='perm_write' eval='False'/>
+        </record>
+
+        <record id="hr_employee_lead_office_user_rule" model="ir.rule">
+            <field name="name">Normal User can see its own records</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="domain_force">[('department_id.name','=',user.mvb_department_name)]</field>
+            <field name="groups" eval="[(4, ref('group_mvb_hr_employee_user_lead_office_user'))]"/>
+            <field name='perm_create' eval='False'/>
+            <field name='perm_read' eval='True'/>
+            <field name='perm_unlink' eval='False'/>
+            <field name='perm_write' eval='False'/>
+        </record>
+
+        <record model="ir.module.category" id="module_category_mvb_hr_employee_payroll">
+            <field name="name">Quản lý nhân sự - Chấm công tính lương</field>
+            <field name="sequence">2</field>
+        </record>
+
+        <record id="group_mvb_hr_employee_payroll_create" model="res.groups">
+            <field name="name">1. Tạo</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_payroll"/>
+        </record>
+        <record id="group_mvb_hr_employee_payroll_view" model="res.groups">
+            <field name="name">2. Xem</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_payroll"/>
+        </record>
+        <record id="group_mvb_hr_employee_payroll_edit" model="res.groups">
+            <field name="name">3. Sửa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_payroll"/>
+        </record>
+        <record id="group_mvb_hr_employee_payroll_delete" model="res.groups">
+            <field name="name">4. Xóa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_payroll"/>
+        </record>
+
+        <record id="group_mvb_hr_employee_payroll_hr_user" model="res.groups">
+            <field name="name">5. Phòng tổ chức nhân sự</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_payroll"/>
+        </record>
+        <record id="group_mvb_hr_employee_payroll_accounting_user" model="res.groups">
+            <field name="name">6. Kế toán trưởng</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_payroll"/>
+        </record>
+        <record id="group_mvb_hr_employee_payroll_director_user" model="res.groups">
+            <field name="name">7. Tổng giám đốc</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_payroll"/>
+        </record>
+
+
+        <record model="ir.module.category" id="module_category_mvb_hr_employee_education">
+            <field name="name">Quản lý nhân sự - Đào tạo</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record id="group_mvb_hr_employee_education_create" model="res.groups">
+            <field name="name">1. Tạo</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_education"/>
+        </record>
+        <record id="group_mvb_hr_employee_education_view" model="res.groups">
+            <field name="name">2. Xem</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_education"/>
+        </record>
+        <record id="group_mvb_hr_employee_education_edit" model="res.groups">
+            <field name="name">3. Sửa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_education"/>
+        </record>
+        <record id="group_mvb_hr_employee_education_delete" model="res.groups">
+            <field name="name">4. Xóa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_education"/>
+        </record>
+
+        <record model="ir.module.category" id="module_category_mvb_hr_employee_report">
+            <field name="name">Quản lý nhân sự - Báo cáo nhân sự</field>
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="group_mvb_hr_employee_report_create" model="res.groups">
+            <field name="name">1. Tạo</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_report"/>
+        </record>
+        <record id="group_mvb_hr_employee_report_view" model="res.groups">
+            <field name="name">2. Xem</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_report"/>
+        </record>
+        <record id="group_mvb_hr_employee_report_edit" model="res.groups">
+            <field name="name">3. Sửa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_report"/>
+        </record>
+        <record id="group_mvb_hr_employee_report_delete" model="res.groups">
+            <field name="name">4. Xóa</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_report"/>
+        </record>
+
+        <record id="group_mvb_hr_employee_report_company" model="res.groups">
+            <field name="name">5. Thuộc Tổng công ty</field>
+            <field name="category_id" ref="module_category_mvb_hr_employee_report"/>
+        </record>
+        <!--        rule for report-->
+
+
+        <record id="payroll_plan_property_company_rule" model="ir.rule">
+            <field name="name">Consume property for each company</field>
+            <field name="model_id" ref="model_payroll_plan_property"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+            <field name='perm_create' eval='True'/>
+            <field name='perm_read' eval='True'/>
+            <field name='perm_unlink' eval='True'/>
+            <field name='perm_write' eval='True'/>
+        </record>
+
+        <record id="payroll_report_year_plan_line_company_rule" model="ir.rule">
+            <field name="name">Payroll plan line for each company</field>
+            <field name="model_id" ref="model_payroll_report_year_plan_line"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+            <field name='perm_create' eval='True'/>
+            <field name='perm_read' eval='True'/>
+            <field name='perm_unlink' eval='True'/>
+            <field name='perm_write' eval='True'/>
+        </record>
+
+        <record id="payroll_report_line_company_rule" model="ir.rule">
+            <field name="name">Payroll report line for each company</field>
+            <field name="model_id" ref="model_payroll_report_line"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+            <field name='perm_create' eval='True'/>
+            <field name='perm_read' eval='True'/>
+            <field name='perm_unlink' eval='True'/>
+            <field name='perm_write' eval='True'/>
+        </record>
+    </data>
+</odoo>

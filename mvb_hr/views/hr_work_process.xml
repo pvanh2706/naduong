@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ky luat -->
+        <record id="hr_discipline_search_view" model="ir.ui.view">
+            <field name="name">hr_discipline_search_view</field>
+            <field name="model">hr.discipline</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="employee_id" string="Nhân sự" domain="[()]"/>
+                    <field name="department_id" string="Chức vụ" domain="[()]"/>
+                    <field name="company_id" string="Công ty" domain="[()]"/>
+                    <group>
+                        <filter name="group_type_employee" string="Nhân sự" domain="[]"
+                                context="{'group_by':'employee_id'}"/>
+                        <filter name="group_type_company" string="Công ty" domain="[]"
+                                context="{'group_by':'company_id'}"/>
+                        <filter name="group_type_year" string="Năm" domain="[]"
+                                context="{'group_by':'year'}"/>
+                        <filter name="group_type_method" string="Hình thức kỉ luật" domain="[]"
+                                context="{'group_by':'method'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+        <record id="hr_discipline_tree_view" model="ir.ui.view">
+            <field name="name">hr.discipline.tree</field>
+            <field name="model">hr.discipline</field>
+            <field name="arch" type="xml">
+                <tree string="Kỷ luật">
+                    <field name="company_id"/>
+                    <field name="department_id"/>
+                    <field name="job_id"/>
+                    <field name="employee_id"/>
+                    <field name="year"/>
+                    <field name="reason"/>
+                    <field name="rules"/>
+                    <field name="method"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_discipline_form_views" model="ir.ui.view">
+            <field name="name">hr.discipline.form</field>
+            <field name="model">hr.discipline</field>
+            <field name="arch" type="xml">
+                <form string="Khen thưởng">
+                    <sheet>
+                        <group col="4">
+                            <field name="employee_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="company_id"/>
+                            <field name="department_id"/>
+                            <field name="job_id"/>
+                            <field name="year"/>
+                            <field name="rules"/>
+                            <field name="method"/>
+                            <field name="reason"/>
+                            <field name="attach_discipline_record" widget="many2many_binary" class="oe_inline" string="Hồ sơ kỉ luật"/>
+                            <field name="attach_discipline_record_name"
+                                   invisible="1" string="Hồ sơ kỉ luật"
+                            />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_discipline_action_id" model="ir.actions.act_window">
+            <field name="name">Kỷ luật</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.discipline</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'group_by': 'employee_id'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <!-- Khen thuong -->
+        <record id="hr_bonus_search_views" model="ir.ui.view">
+            <field name="name">hr_bonus_search_views</field>
+            <field name="model">hr.bonus</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="employee_id" string="Nhân sự" domain="[()]"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_type_year" string="Năm" domain="[]"
+                                context="{'group_by':'year'}"/>
+                        <filter name="group_type_company" string="Công ty" domain="[]"
+                                context="{'group_by':'company_id'}"/>
+                        <filter name="group_type_medal" string="Huân huy chương" domain="[]"
+                                context="{'group_by':'medal'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="hr_bonus_action_id" model="ir.actions.act_window">
+            <field name="name">Khen thưởng</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.bonus</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'group_by': 'employee_id'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+        <record id="hr_bonus_tree_views" model="ir.ui.view">
+            <field name="name">hr.bonus.tree</field>
+            <field name="model">hr.bonus</field>
+            <field name="arch" type="xml">
+                <tree string="Khen thưởng">
+                    <field name="company_id"/>
+                    <field name="department_id"/>
+                    <field name="job_id"/>
+                    <field name="employee_id"/>
+                    <field name="year"/>
+                    <!--<field name="medal"/>-->
+                    <field name="bonus_type"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_bonus_form_views" model="ir.ui.view">
+            <field name="name">hr.bonus.form</field>
+            <field name="model">hr.bonus</field>
+            <field name="arch" type="xml">
+                <form string="Khen thưởng">
+                    <sheet>
+                        <group col="4">
+                            <field name="employee_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="company_id"/>
+                            <field name="department_id"/>
+                            <field name="job_id"/>
+                            <field name="year"/>
+                            <!--<field name="medal"/>-->
+                            <field name="bonus_type"/>
+                            <field name="attach_reward_record" widget="many2many_binary" class="oe_inline"/>
+                            <field name="attach_reward_record_name"
+                                   invisible="1"
+                            />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_bonus_type_action" model="ir.actions.act_window">
+            <field name="name">Loại khen thưởng</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.bonus.type</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+
+        <record id="hr_position_history_search_view" model="ir.ui.view">
+            <field name="name">hr_position_history_search_view</field>
+            <field name="model">hr.position.history</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="employee_id" string="Nhân sự" domain="[()]"/>
+                    <field name="position_id" string="Chức danh, chức vụ"/>
+                    <group>
+                         <filter name="group_type_history_position" string="Chức danh/chức vụ" domain="[]"
+                                context="{'group_by':'position_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="hr_position_history" model="ir.actions.act_window">
+            <field name="name">Quá trình công tác</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.position.history</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'group_by': 'employee_id'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+        <record id="hr_position_history_tree_view" model="ir.ui.view">
+            <field name="name">hr.position.history.tree</field>
+            <field name="model">hr.position.history</field>
+            <field name="arch" type="xml">
+                <tree string="Quá trình công tác">
+                    <field name="employee_id"/>
+                    <field name="position_id"/>
+                    <field name="date"/>
+                    <field name="date_to"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_position_history_form_view" model="ir.ui.view">
+            <field name="name">hr.position.history.form</field>
+            <field name="model">hr.position.history</field>
+            <field name="arch" type="xml">
+                <form string="Quá trình công tác">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="employee_id" options="{'no_create': True, 'no_open': True}"/>
+                            </h1>
+                        </div>
+                        <group col="4" string="Thông tin công tác">
+                            <field name="position_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="date"/>
+                            <field name="date_to"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--            quá trình tăng lương-->
+        <record id="hr_salary_process_act" model="ir.actions.act_window">
+            <field name="name">Quá trình tăng lương</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.salary.process</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'group_by': 'employee_id'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+        <record id="hr_salary_process_tree_view" model="ir.ui.view">
+            <field name="name">hr.salary.process.tree</field>
+            <field name="model">hr.salary.process</field>
+            <field name="arch" type="xml">
+                <tree string="Quá trình tăng lương">
+                    <field name="employee_id"/>
+                    <field name="time"/>
+                    <field name="level"/>
+                    <field name="coefficients_salary"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_salary_process_form_view" model="ir.ui.view">
+            <field name="name">Quá trình tăng lương</field>
+            <field name="model">hr.salary.process</field>
+            <field name="arch" type="xml">
+                <form string="Quá trình tăng lương">
+                    <sheet>
+                        <group col="4" string="Quá trình tăng lương">
+                            <field name="employee_id"/>
+                            <field name="time"/>
+                            <field name="level"/>
+                            <field name="coefficients_salary"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

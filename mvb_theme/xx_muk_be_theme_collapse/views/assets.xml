@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		<template id="assets_backend" name="Backend Theme" inherit_id="web.assets_backend">
+			<xpath expr=".">
+				<script type="text/javascript" src="/xx_muk_be_theme_collapse/static/src/js/companion-collapser.js"></script>
+				<link rel="stylesheet" href="/xx_muk_be_theme_collapse/static/src/css/styles.css"/>
+			</xpath>
+		</template>
+    </data>
+</odoo>

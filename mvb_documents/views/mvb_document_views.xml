@@ -1,0 +1,613 @@
+<odoo>
+    <data>
+
+        <record id="mvb_document_search_view" model="ir.ui.view">
+            <field name="name">mvb_document_search_view</field>
+            <field name="model">mvb.document</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="name_document" string="Tên tài liệu"/>
+                    <field name="bidding_packages_list" string="Tên Gói thầu"
+                           filter_domain="[('bidding_packages_list.id_bidding_state.name','ilike',self)]"/>
+                    <field name="document_type" string="Tên loại tài liệu"
+                           filter_domain="[('document_type.name','ilike',self)]"/>
+                    <field name="name" string="Số hiệu văn bản"/>
+                    <field name="unit_signing" string="Đơn vị kí kết hợp đồng"/>
+                    <!--<field name="hire_location_pay" string="Vị trí thuê"/>-->
+                    <filter name="document_type" string="Công văn đến" domain="[('document_type','=','Công văn đến')]"/>
+                    <filter name="document_type" string="Công văn đi" domain="[('document_type','=','Công văn đi')]"/>
+                    <filter name="document_type" string="Quyết định" domain="[('document_type','=','Quyết định')]"/>
+                    <filter name="document_type" string="Hồ sơ dự thầu"
+                            domain="[('document_type','=','Hồ sơ dự thầu')]"/>
+                    <filter name="document_type" string="Hồ sơ mời thầu"
+                            domain="[('document_type','=','Hồ sơ mời thầu')]"/>
+                    <separator/>
+                    <filter name="bidding_packages_list" string="Giai đoạn: Chuẩn bị lựa chọn nhà thầu"
+                            domain="[('bidding_packages_list.state_bidding','=','giaidoan_1')]"/>
+                    <filter name="bidding_packages_list" string="Giai đoạn: Tổ chức lựa chọn nhà thầu"
+                            domain="[('bidding_packages_list.state_bidding','=','giaidoan_2')]"/>
+                    <filter name="bidding_packages_list" string="Giai đoạn: Đánh giá hồ sơ"
+                            domain="[('bidding_packages_list.state_bidding','=','giaidoan_3')]"/>
+                    <filter name="bidding_packages_list"
+                            string="Giai đoạn: Trình, thẩm định, phê duyệt và công khai kết quả"
+                            domain="[('bidding_packages_list.state_bidding','=','giaidoan_4')]"/>
+                    <filter name="bidding_packages_list" string="Giai đoạn: Đàm phán, hoàn thiện, ký kết hợp đồng"
+                            domain="[('bidding_packages_list.state_bidding','=','giaidoan_5')]"/>
+                    <filter name="bidding_packages_list" string="Giai đoạn: Thực hiện gói thầu"
+                            domain="[('bidding_packages_list.state_bidding','=','giaidoan_6')]"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_type_document" string="Loại văn bản" domain="[]"
+                                context="{'group_by':'document_type'}"/>
+                        <filter name="group_people_update" string="Người cập nhật" domain="[]"
+                                context="{'group_by':'people_update'}"/>
+                        <filter name="group_project_no_bidding" string="Dự án không gói thầu" domain="[]"
+                                context="{'group_by':'project_name'}"/>
+                        <filter name="group_create_id" string="Người tạo" domain="[]"
+                                context="{'group_by':'create_uid'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="mvb_document_search_user_view" model="ir.ui.view">
+            <field name="name">mvb_document_search_user_view</field>
+            <field name="model">res.users</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="name"
+                           filter_domain="['|', '|', ('name','ilike',self), ('login','ilike',self), ('email','ilike',self)]"
+                           string="Tài khoản"/>
+                    <filter string='Công ty' name="group_by_company" domain="[]" context="{'group_by' : 'company_id'}"/>
+                    <filter string='Phòng ban' name="group_by_department" domain="[]"
+                            context="{'group_by' : 'mvb_department_name'}"/>
+                    <filter string='Chức vụ' name="group_by_job" domain="[]"
+                            context="{'group_by' : 'mvb_job_name'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="mvb_res_users_tree_view" model="ir.ui.view">
+            <field name="name">mvb_res_users_tree_view</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_tree"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='login_date']" position="after">
+                    <!-- Add new fields here -->
+                    <field name="mvb_department_name"/>
+                    <field name="mvb_job_name"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="mvb_document_rent_form_view" model="ir.ui.view">
+            <field name="name">Lấy tài liệu</field>
+            <field name="model">mvb.document.rent</field>
+            <field name="arch" type="xml">
+                <form string="Lấy tài liệu">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="human_rent" options="{'no_create': True}"/>
+                            <field name="return_date"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_document_rent_tree_view" model="ir.ui.view">
+            <field name="name">mvb_document_rent_tree_view</field>
+            <field name="model">mvb.document.rent</field>
+            <field name="arch" type="xml">
+                <tree string="" editable="bottom">
+                    <field name="name"/>
+                    <field name="human_rent"/>
+                    <field name="return_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="mvb_document_tree_view" model="ir.ui.view">
+            <field name="name">Tài liệu</field>
+            <field name="model">mvb.document</field>
+            <field name="arch" type="xml">
+                <tree string="" decoration-danger="has_attachment==False">
+                    <field name="document_type" options="{'no_create': True}"/>
+                    <field name="name"/>
+                    <field name="name_document"/>
+                    <field name="date_document"/>
+                    <field name="document_arrival_date"/>
+                    <field name="create_uid" string="Người tạo"/>
+                    <field name="write_date" string="Ngày cập nhật"/>
+                    <field name="has_attachment"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="mvb_document_tree_view_no_edit" model="ir.ui.view">
+            <field name="name">Tài liệu</field>
+            <field name="model">mvb.document</field>
+            <field name="arch" type="xml">
+                <tree string="" create="false" decoration-danger="has_attachment==False">
+                    <field name="document_type" options="{'no_create': True}"/>
+                    <field name="name"/>
+                    <field name="name_document"/>
+                    <field name="date_document"/>
+                    <field name="document_arrival_date"/>
+                    <field name="create_uid" string="Người tạo"/>
+                    <field name="write_date" string="Ngày cập nhật"/>
+                    <field name="has_attachment"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="mvb_document_form_view" model="ir.ui.view">
+            <field name="name">Tài liệu</field>
+            <field name="model">mvb.document</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group colspan="2" col="4">
+                            <field name="document_type" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="name_document"/>
+                        </group>
+                        <group colspan="2" col="6">
+                            <field name="date_document"/>
+                            <field name="document_arrival_date" invisible="1"/>
+                            <field name="count_document" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="unit_promulgate" options="{'no_create': True, 'no_open': True}"/>
+                        </group>
+                        <group>
+                            <field name="document_notebook" options="{'no_create': True, 'no_open': True}" invisible="1"/>
+                            <field name="active_lock" invisible="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Dự án/Phương án" invisible="1">
+                                <group string="Dự án có gói thầu không?">
+                                    <field name="is_not_bidding"/>
+                                    <!--<field name="project_name"/>-->
+                                </group>
+                                <group string="Dự án không có gói thầu"
+                                       attrs="{'invisible':[('is_not_bidding','=', False)]}">
+                                    <field name="project_not_bidding" options="{'no_create': True, 'no_open': True}"/>
+                                </group>
+                                <group string="Danh sách gói thầu" attrs="{'invisible':[('is_not_bidding','=', True)]}">
+                                    <field name="bidding_packages_list" nolabel="1">
+                                        <tree>
+                                            <field name="id_bidding_state"/>
+                                            <field name="state_bidding"/>
+                                            <field name="project_name"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Hợp đồng" invisible="1">
+                                <group string="Thông tin hợp đồng" col="4">
+                                    <field name="type_contract_document"
+                                           options="{'no_create': True, 'no_open': True}"/>
+                                    <field name="date_contract"/>
+                                    <field name="unit_signing"/>
+                                    <field name="payment_term"/>
+                                    <field name="unit_contract"/>
+                                    <field name="tl"/>
+                                </group>
+                                <group col="3">
+                                    <group string="Giá trị hợp đồng">
+                                        <field name="contract_values_quantity"/>
+                                        <field name="contract_values_cost"/>
+                                    </group>
+                                    <group string="Giá trị thực hiện hợp đồng">
+                                        <field name="contract_values_action_quantity"/>
+                                        <field name="contract_values_action_cost"/>
+                                    </group>
+                                    <group string="Thời gian hợp đồng">
+                                        <field name="start_contract"/>
+                                        <field name="end_contract"/>
+                                    </group>
+                                </group>
+                                <!--<group string="Thuê tài sản" col="4">-->
+                                <!--<field name="hire_location_pay"/>-->
+                                <!--<field name="hire_contract_amount"/>-->
+                                <!--<field name="hire_contract_values"/>-->
+                                <!--<field name="q"/>-->
+                                <!--<field name="hire_contract_number"/>-->
+                                <!--</group>-->
+                                <group string="Thanh lý &amp; Ghi chú">
+                                    <field name="liquidation"/>
+                                    <field name="note_contract"/>
+                                </group>
+                            </page>
+                            <page string="Lưu trữ">
+                                <group string="Lưu trữ tài liệu">
+                                    <field name="storage_data" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="name"/>
+                                            <field name="date_storage"/>
+                                            <field name="type_document_storage"/>
+                                            <field name="number_storage"/>
+                                            <field name="human_resources_saved"
+                                                   options="{'no_create': True, 'no_open': True}"/>
+                                            <field name="date_storage" invisible="1"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                                <group string="Danh sách lấy tài liệu">
+                                    <field name="rent_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="name"/>
+                                            <field name="human_rent" options="{'no_create': True, 'no_open': True}"/>
+                                            <field name="number_rent"/>
+                                            <field name="return_date"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Chia sẻ tài liệu">
+                                <group string="Danh sách chia sẻ tài liệu" nolabel="1">
+                                    <group>
+                                        <field name="add_remove_multi_user" widget="radio"/>
+                                    </group>
+                                    <field name="share_user"
+                                           context="{'search_default_group_by_company': 1 , 'search_default_group_by_department': 1}"
+                                           options="{'no_create': True}" nolabel="1">
+                                        <tree>
+                                            <field name="name"/>
+                                            <field name="login"/>
+                                            <field name="mvb_department_name"/>
+                                            <field name="mvb_job_name"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                        <field name="has_attachment"/>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_document_form_view_no_edit" model="ir.ui.view">
+            <field name="name">Tài liệu</field>
+            <field name="model">mvb.document</field>
+            <field name="arch" type="xml">
+                <form string="" create="false">
+                    <sheet>
+                        <group colspan="2" col="4">
+                            <field name="document_type" options="{'no_create': True, 'no_open': True}"
+                                   attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                            <field name="name" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                        </group>
+                        <group>
+                            <field name="name_document" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                        </group>
+                        <group colspan="2" col="6">
+                            <field name="date_document" attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                            <field name="document_arrival_date" attrs="{'readonly': [('active_lock', '=', False)]} " invisible="1"/>
+                            <field name="count_document" attrs="{'readonly': [('active_lock', '=', False)]}" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="unit_promulgate" options="{'no_create': True, 'no_open': True}"
+                                   attrs="{'readonly': [('active_lock', '=', False)]}"/>
+                        </group>
+                        <group>
+                            <field name="document_notebook" options="{'no_create': True, 'no_open': True}"
+                                   attrs="{'readonly': [('active_lock', '=', False)]}" invisible="1"/>
+                            <field name="active_lock" invisible="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Dự án/Phương án" invisible="1">
+                                <group string="Dự án có gói thầu không?">
+                                    <field name="is_not_bidding"/>
+                                </group>
+                                <group string="Dự án không có gói thầu"
+                                       attrs="{'invisible':[('is_not_bidding','=', False)]}">
+                                    <field name="project_not_bidding" options="{'no_create': True, 'no_open': True}"/>
+                                </group>
+                                <group string="Danh sách gói thầu" attrs="{'invisible':[('is_not_bidding','=', True)]}">
+                                    <field name="bidding_packages_list" nolabel="1">
+                                        <tree>
+                                            <field name="id_bidding_state"/>
+                                            <field name="state_bidding"/>
+                                            <field name="project_name"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Hợp đồng" invisible="1">
+                                <group string="Thông tin hợp đồng">
+                                    <field name="type_contract_document"
+                                           options="{'no_create': True, 'no_open': True}"/>
+                                    <field name="date_contract"/>
+                                    <field name="unit_signing"/>
+                                    <field name="payment_term"/>
+                                    <field name="unit_contract"/>
+                                    <field name="tl"/>
+                                </group>
+                                <group col="3">
+                                    <group string="Giá trị hợp đồng">
+                                        <field name="contract_values_quantity"/>
+                                        <field name="contract_values_cost"/>
+                                    </group>
+                                    <group string="Giá trị thực hiện hợp đồng">
+                                        <field name="contract_values_action_quantity"/>
+                                        <field name="contract_values_action_cost"/>
+                                    </group>
+                                    <group string="Thời gian hợp đồng">
+                                        <field name="start_contract"/>
+                                        <field name="end_contract"/>
+                                    </group>
+                                </group>
+                                <!--<group string="Thuê tài sản" col="4">-->
+                                <!--<field name="hire_location_pay"/>-->
+                                <!--<field name="hire_contract_amount"/>-->
+                                <!--<field name="hire_contract_values"/>-->
+                                <!--<field name="q"/>-->
+                                <!--<field name="hire_contract_number"/>-->
+                                <!--</group>-->
+                                <group string="Thanh lý &amp; Ghi chú">
+                                    <field name="liquidation"/>
+                                    <field name="note_contract"/>
+                                </group>
+                            </page>
+                            <page string="Lưu trữ">
+                                <group string="Lưu trữ tài liệu">
+                                    <field name="storage_data" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="name"/>
+                                            <field name="date_storage"/>
+                                            <field name="type_document_storage"/>
+                                            <field name="number_storage"/>
+                                            <field name="human_resources_saved"
+                                                   options="{'no_create': True, 'no_open': True}"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                                <group string="Danh sách lấy tài liệu">
+                                    <field name="rent_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="name"/>
+                                            <field name="human_rent" options="{'no_create': True, 'no_open': True}"/>
+                                            <field name="number_rent"/>
+                                            <field name="return_date"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Chia sẻ tài liệu">
+                                <group string="Danh sách chia sẻ tài liệu">
+                                    <group>
+                                        <field name="add_remove_multi_user" widget="radio"/>
+                                    </group>
+                                    <field name="share_user"
+                                           context="{'search_default_group_by_company': 1 ,'search_default_group_by_department': 1, }"
+                                           options="{'no_create': True}" nolabel="1">
+                                        <tree>
+                                            <field name="name"/>
+                                            <field name="login"/>
+                                            <field name="mvb_department_name"/>
+                                            <field name="mvb_job_name"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="mvb_project_action" model="ir.actions.act_window">
+            <field name="name">Dự án/Phương án</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document.project</field>
+            <field name="context">{'tree_view_ref': 'mvb_documents.mvb_project_tree_view', 'form_view_ref':
+                'mvb_documents.mvb_project_form_view'}
+            </field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+        <record id="mvb_project_phase" model="ir.actions.act_window">
+            <field name="name">Giai đoạn dự án</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document.project.phase</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="mvb_project_package" model="ir.actions.act_window">
+            <field name="name">Gói thầu</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document.bidding.package</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="menu_document_public_action" model="ir.actions.act_window">
+            <field name="name">Tài liệu dùng chung</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_state_document': 'public_state' ,'tree_view_ref':
+                'mvb_documents.mvb_document_tree_view_no_edit', 'form_view_ref':
+                'mvb_documents.mvb_document_form_view_no_edit'}
+            </field>
+            <field name="domain">[('state_document','!=','private_state')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+
+        <record id="menu_document_private_action" model="ir.actions.act_window">
+            <field name="name">Tài liệu cá nhân</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_state_document': 'private_state' ,'tree_view_ref':
+                'mvb_documents.mvb_document_tree_view', 'form_view_ref':
+                'mvb_documents.mvb_document_form_view'}
+            </field>
+            <field name="domain">[('state_document','!=','public_state')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <record id="ir_action_download_attachment" model="ir.actions.server">
+            <field name="name">Tải xuống tất cả file đính kèm</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_mvb_document"/>
+            <field name="state">code</field>
+            <field name="code">
+                if records:
+                action = records.action_download_attachment()
+            </field>
+            <field name="binding_model_id" ref="model_mvb_document"/>
+        </record>
+
+        <record id="ir_action_group_download_attachment" model="ir.actions.server">
+            <field name="name">Tải xuống file đính kèm</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_mvb_document_groups"/>
+            <field name="state">code</field>
+            <field name="code">
+                if records:
+                action = records.action_groups_download_attachment()
+            </field>
+            <field name="binding_model_id" ref="model_mvb_document_groups"/>
+        </record>
+
+        <record id="mvb_document_bidding_state_search" model="ir.ui.view">
+            <field name="name">mvb_document_bidding_state_search</field>
+            <field name="model">mvb.document.biddingstate</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <!--<field name="id_bidding_state" string="Mã gói thầu"-->
+                    <!--filter_domain="[('id_bidding_state.bidding_code','ilike',self)]"/>-->
+                    <field name="id_bidding_state" string="Tên gói thầu"
+                           filter_domain="[('id_bidding_state.name','ilike',self)]"/>
+                    <filter name="state_bidding" string="Giai đoạn: Chuẩn bị lựa chọn nhà thầu"
+                            domain="[('state_bidding','=','giaidoan_1')]"/>
+                    <filter name="state_bidding" string="Giai đoạn: Tổ chức lựa chọn nhà thầu"
+                            domain="[('state_bidding','=','giaidoan_2')]"/>
+                    <filter name="state_bidding" string="Giai đoạn: Đánh giá hồ sơ"
+                            domain="[('state_bidding','=','giaidoan_3')]"/>
+                    <filter name="state_bidding"
+                            string="Giai đoạn: Trình, thẩm định, phê duyệt và công khai kết quả"
+                            domain="[('state_bidding','=','giaidoan_4')]"/>
+                    <filter name="state_bidding" string="Giai đoạn: Đàm phán, hoàn thiện, ký kết hợp đồng"
+                            domain="[('state_bidding','=','giaidoan_5')]"/>
+                    <filter name="state_bidding" string="Giai đoạn: Thực hiện gói thầu"
+                            domain="[('state_bidding','=','giaidoan_6')]"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_id_project" string="Dự án" domain="[]"
+                                context="{'group_by':'project_name'}"/>
+                        <filter name="group_id_bidding_state" string="Gói thầu" domain="[]"
+                                context="{'group_by':'id_bidding_state'}"/>
+                        <filter name="group_state_bidding" string="Giai đoạn gói thầu" domain="[]"
+                                context="{'group_by':'state_bidding'}"/>
+                        <filter name="group_document_bidding" string="Mã tài liệu" domain="[]"
+                                context="{'group_by':'bidding_packages_list'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="menu_document_bidding_state_tree_view" model="ir.ui.view">
+            <field name="name">Tài liệu đầu tư</field>
+            <field name="model">mvb.document.biddingstate</field>
+            <field name="arch" type="xml">
+                <tree string="" create="false" edit="false" delete="false">
+                    <field name="project_name"/>
+                    <field name="id_bidding_state"/>
+                    <field name="state_bidding"/>
+                    <field name="bidding_packages_list"/>
+                    <field name="name_document_bidding"/>
+                    <field name="document_type"/>
+                    <field name="date_document"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="menu_document_bidding_state_form_view" model="ir.ui.view">
+            <field name="name">Tài liệu đầu tư</field>
+            <field name="model">mvb.document.biddingstate</field>
+            <field name="arch" type="xml">
+                <form string="" create="false" edit="false" delete="false">
+                    <sheet>
+                        <group>
+                            <field name="id_bidding_state" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="state_bidding"/>
+                            <field name="bidding_packages_list"/>
+                            <field name="name_document_bidding"/>
+                            <field name="project_name"/>
+                            <field name="document_type"/>
+                            <field name="date_document"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="menu_document_bidding_state_action" model="ir.actions.act_window">
+            <field name="name">Tài liệu đầu tư</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mvb.document.biddingstate</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'group_by': ['project_name','id_bidding_state','state_bidding']}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

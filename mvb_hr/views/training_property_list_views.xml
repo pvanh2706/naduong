@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="train_plan_sub_property_tree" model="ir.ui.view">
+        <field name="name">train.plan.sub.property.tree</field>
+        <field name="model">train.plan.sub.property</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+                <field name="level"/>
+                <field name="sequence"/>
+            </tree>
+        </field>
+    </record>
+
+
+   <record id="train_plan_property_form" model="ir.ui.view">
+        <field name="name">train.plan.property.form</field>
+        <field name="model">train.plan.property</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="......"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="company_id"/>
+                    </group>
+                    <separator string="Danh sách tiêu chí thành phần"/>
+                    <field name="property_ids">
+                        <tree>
+                            <field name="name"/>
+                            <field name="level"/>
+                            <field name="sequence"/>
+                            <field name="id"/>
+                        </tree>
+                        <form>
+                            <sheet>
+                                <group col="4">
+                                    <field name="name"/>
+                                    <field name="level"/>
+                                    <field name="sequence"/>
+                                    <field name="id"/>
+                                </group>
+                            </sheet>
+                        </form>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="train_plan_property_tree" model="ir.ui.view">
+        <field name="name">train.plan.property.tree</field>
+        <field name="model">train.plan.property</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+                <field name="sequence"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="training_property_search" model="ir.ui.view">
+        <field name="name">training.report.search</field>
+        <field name="model">train.report_line</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="property_id" string="Tiêu chí"
+                           filter_domain="[('property_id.name','ilike',self)]"/>
+                <group expand='0' string='Nhóm'>
+                    <filter string='Tên công ty' name="group3" context="{'group_by' : 'company_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="train_plan_property_action" model="ir.actions.act_window">
+        <field name="name">Nội dung đào tạo, bồi dưỡng</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">train.plan.property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_group3':1}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+            </p>
+            <p>
+                <!-- More details about what a user can do with this object will be OK -->
+            </p>
+        </field>
+    </record>
+</odoo>

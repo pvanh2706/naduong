@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mvb_range_date_view_form" model="ir.ui.view">
+            <field name="name">Range date form</field>
+            <field name="model">mvb.range.date</field>
+            <field name="arch" type="xml">
+                <form string="Tìm kiếm theo khoảng thời gian">
+                    <group>
+                        <group>
+                            <field name="start_date"/>
+                        </group>
+                        <group>
+                            <field name="end_date"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="filter_space_date" string="Tìm kiếm" type="object"
+                                class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="mvb_rage_date_wizards_action">
+            <field name="name">Tìm kiếm theo khoảng thời gian</field>
+            <field name="res_model">mvb.range.date</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="mvb_range_date_view_form"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

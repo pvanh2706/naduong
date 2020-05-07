@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_no_one_user" model="res.groups">
+            <field name="name">No one</field>
+        </record>
+
+<!--        <record id="base.user_admin" model="res.users">-->
+<!--            <field name="groups_id" eval="[(4,ref('mvb_hr.group_mvb_hr_employee_create')), (4,ref('mvb_hr.group_mvb_hr_employee_view')),-->
+<!--            (4,ref('mvb_hr.group_mvb_hr_employee_edit')), (4,ref('mvb_hr.group_mvb_hr_employee_delete')),-->
+<!--            (4,ref('mvb_hr.group_mvb_hr_employee_payroll_create')),(4,ref('mvb_hr.group_mvb_hr_employee_payroll_view')),-->
+<!--            (4,ref('mvb_hr.group_mvb_hr_employee_payroll_edit')),(4,ref('mvb_hr.group_mvb_hr_employee_payroll_delete')),-->
+<!--            (4,ref('mvb_hr.group_mvb_hr_employee_education_create')),(4,ref('mvb_hr.group_mvb_hr_employee_education_view')),-->
+<!--            (4,ref('mvb_hr.group_mvb_hr_employee_education_edit')),(4,ref('mvb_hr.group_mvb_hr_employee_education_delete')),-->
+<!--            (4,ref('mvb_hr.group_mvb_hr_employee_report_create')),(4,ref('mvb_hr.group_mvb_hr_employee_report_view')),-->
+<!--            (4,ref('mvb_hr.group_mvb_hr_employee_report_edit')),(4,ref('mvb_hr.group_mvb_hr_employee_report_delete')),-->
+<!--            (4,ref('mvb_report_statistic.group_mvb_report_statistic_htkh_create')),(4,ref('mvb_report_statistic.group_mvb_report_statistic_htkh_view')),-->
+<!--            (4,ref('mvb_report_statistic.group_mvb_report_statistic_htkh_edit')),(4,ref('mvb_report_statistic.group_mvb_report_statistic_htkh_delete')),-->
+<!--            (4,ref('mvb_report_statistic.group_mvb_report_statistic_kttc_create')),(4,ref('mvb_report_statistic.group_mvb_report_statistic_kttc_view')),-->
+<!--            (4,ref('mvb_report_statistic.group_mvb_report_statistic_kttc_edit')),(4,ref('mvb_report_statistic.group_mvb_report_statistic_kttc_delete')),-->
+<!--            (4,ref('mvb_report_statistic.group_mvb_report_statistic_at_create')),(4,ref('mvb_report_statistic.group_mvb_report_statistic_at_view')),-->
+<!--            (4,ref('mvb_report_statistic.group_mvb_report_statistic_at_edit')),(4,ref('mvb_report_statistic.group_mvb_report_statistic_at_delete')),-->
+<!--             (4,ref('mvb_documents.group_mvb_settings_document_access')),(4,ref('mvb_documents.group_mvb_document_access')),-->
+<!--             (4,ref('mvb_report_statistic.group_mvb_report_statistic_htkh_group_company')),(4,ref('mvb_report_statistic.group_mvb_report_statistic_kttc_group_company')),-->
+<!--             (4,ref('mvb_report_statistic.group_mvb_report_statistic_at_group_company')), (4,ref('mvb_hr.group_mvb_hr_employee_report_company')),(4,ref('mvb_hr.mvb_hr_employee_access_menu_salary_process')),-->
+<!--             (4,ref('mvb_hr.mvb_hr_employee_access_menu_salary_process')),(4,ref('mvb_hr.mvb_hr_employee_access_menu_salary_process'))-->
+<!--             ]"/>-->
+<!--        </record>-->
+    </data>
+
+</odoo>

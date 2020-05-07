@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="congvanden_id" model="mvb.document.type">
+            <field name="name">Công văn đến</field>
+        </record>
+        <record id="congvandi_id" model="mvb.document.type">
+            <field name="name">Công văn đi</field>
+        </record>
+        <record id="phieutrinh_id" model="mvb.document.type">
+            <field name="name">Phiếu trình</field>
+        </record>
+        <record id="hosoduthau_id" model="mvb.document.type">
+            <field name="name">Hồ sơ dự thầu</field>
+        </record>
+        <record id="hosomoithau_id" model="mvb.document.type">
+            <field name="name">Hồ sơ mời thầu</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <h> làm gì đó ở đây</h>
+<!--    <t t-name="LoginEmployeeDetails">-->
+<!--        <div class="row main-section">-->
+<!--            <div class="col-md-2 col-sm-2 dummy"></div>-->
+<!--            <div class="col-md-2 col-sm-2 employee-prof">-->
+<!--                <div class="oh-card">-->
+<!--                <div class="oh-media">-->
+<!--                <div class="employee-icon">-->
+<!--                <img class="align-self-center mr-3" alt=""-->
+<!--                    t-att-src="'data:image/png;base64,'+widget.login_employee['image']"/>-->
+<!--                </div>-->
+<!--                <div class="media-body employee-name">-->
+<!--                <h2 class="text-color display-6"><t t-esc="widget.login_employee['name']"/> </h2>-->
+
+<!--                <t t-if="widget.login_employee['job_id']">-->
+<!--                    <p class="text-light"><t t-esc="widget.login_employee['job_id'][1]"/></p>-->
+<!--                </t>-->
+<!--                    <t t-if="!widget.login_employee['job_id']">-->
+<!--                        <p class="text-light" style="color:#b6b6b6 !important">Add job title</p>-->
+<!--                    </t>-->
+<!--                </div>-->
+<!--                <div class="employee-details">-->
+<!--                    <div class="employee-gender">-->
+<!--                        <t t-if="widget.login_employee['gender'] == 'male'">-->
+<!--                            <p><i class="fa fa-mars"></i></p>-->
+<!--                            <p class="text-light">Male</p>-->
+<!--                        </t>-->
+<!--                        <t t-if="widget.login_employee['gender'] == 'female'">-->
+<!--                            <p><i class="fa fa-venus"></i></p>-->
+<!--                            <p class="text-light">Female</p>-->
+<!--                        </t>-->
+<!--                        <t t-if="widget.login_employee['gender'] == 'other'">-->
+<!--                            Other-->
+<!--                            <p class="text-light">Other</p>-->
+<!--                        </t>-->
+<!--                        <t t-if="!widget.login_employee['gender']">-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">Gender</p>-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">-&#45;&#45;</p>-->
+<!--                        </t>-->
+
+<!--                    </div>-->
+<!--                    <div class="employee-age">-->
+<!--                        <t t-if="widget.login_employee['age']">-->
+<!--                            <p class="text-light"><t t-esc="widget.login_employee['age']"/></p>-->
+<!--                            <p>Age</p>-->
+<!--                        </t>-->
+<!--                        <t t-if="!widget.login_employee['age']">-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">DOB</p>-->
+<!--                            <p style="color:#b6b6b6 !important">&#45;&#45;/&#45;&#45;/&#45;&#45;&#45;&#45;</p>-->
+<!--                        </t>-->
+<!--                    </div>-->
+<!--                    <div class="employee-experience">-->
+<!--                        <t t-if="widget.login_employee['experience']">-->
+<!--                            <p class="text-light">Joined </p>-->
+<!--                            <p><t t-esc="widget.login_employee['experience']"/></p>-->
+<!--                            <p>Ago</p>-->
+<!--                        </t>-->
+<!--                        <t t-if="!widget.login_employee['experience']">-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">Joined</p>-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">Date</p>-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">&#45;&#45;/&#45;&#45;/&#45;&#45;&#45;&#45;</p>-->
+<!--                        </t>-->
+<!--                    </div>-->
+<!--                    <div class="employee-country">-->
+<!--                        <t t-if="widget.login_employee['country_id']">-->
+<!--                            <p class="text-light"><t t-esc="widget.login_employee['country_id'][1]"/></p>-->
+<!--                            <p class="text-light">Nationality</p>-->
+<!--                        </t>-->
+<!--                        <t t-if="!widget.login_employee['country_id']">-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">Nationality</p>-->
+<!--                            <p style="color:#b6b6b6 !important">- - -</p>-->
+<!--                        </t>-->
+<!--                    </div>-->
+<!--                    <div class="employee-mobile">-->
+<!--                        <t t-if="widget.login_employee['personal_mobile']">-->
+<!--                            <p class="text-light"><t t-esc="widget.login_employee['personal_mobile']"/></p>-->
+<!--                            <p>Mobile</p>-->
+<!--                        </t>-->
+<!--                        <t t-if="!widget.login_employee['personal_mobile']">-->
+<!--                            <p class="text-light" style="color:#b6b6b6 !important">Mobile</p>-->
+<!--                            <p style="color:#b6b6b6 !important">- - -</p>-->
+<!--                        </t>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                </div></div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 col-sm-6 hr_payslip oh-payslip">-->
+<!--                <div class="oh-card">-->
+<!--                    <div class="oh-card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <div class="stat-icon"><i class="fa fa-money"/></div>-->
+<!--                            <div class="stat-content">-->
+<!--                                <div class="stat-text">Payslips</div>-->
+<!--                                <div class="stat-digit"><t t-esc="widget.login_employee['payslip_count']"/></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 col-sm-6 hr_timesheets oh-payslip oh-timesheets">-->
+<!--                <div class="oh-card">-->
+<!--                    <div class="oh-card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <div class="stat-icon"><i class="fa fa-clock-o"/></div>-->
+<!--                            <div class="stat-content">-->
+<!--                                <div class="stat-text">Timesheets</div>-->
+<!--                                <div class="stat-digit"><t t-esc="widget.login_employee['emp_timesheets']"/></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 col-sm-6 hr_contract oh-payslip oh-contracts">-->
+<!--                <div class="oh-card">-->
+<!--                    <div class="oh-card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <div class="stat-icon"><i class="fa fa-fw fa-book"/></div>-->
+<!--                            <div class="stat-content">-->
+<!--                                <div class="stat-text">Contracts</div>-->
+<!--                                <div class="stat-digit"><t t-esc="widget.login_employee['contracts_count']"/></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 col-sm-6 login_broad_factor oh-payslip oh-broad-factor">-->
+<!--                <div class="oh-card">-->
+<!--                    <div class="oh-card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <div class="stat-icon"><i class="fa fa-bar-chart"/></div>-->
+<!--                            <div class="stat-content">-->
+<!--                                <div class="stat-text">Broad Factor</div>-->
+<!--                                <div class="stat-digit"><t t-esc="widget.login_employee['broad_factor']"/></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 col-sm-2 hr_attendance_login">-->
+<!--                <div class="oh-card">-->
+<!--                    <div class="oh-card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <t t-if="widget.login_employee['attendance_state'] =='checked_out'">-->
+<!--                                <div class="stat-icon hr_attendance_btn">-->
+<!--                                    <i class="fa fa-sign-in o_hr_attendance_sign_in_out_icon"/>-->
+<!--                                </div>-->
+<!--                                <div class="stat-content">-->
+<!--                                    <div class="stat-text">Check In</div>-->
+<!--                                </div>-->
+<!--                            </t>-->
+<!--                            <t t-if="widget.login_employee['attendance_state'] =='checked_in'">-->
+<!--                                <div class="stat-icon hr_attendance_btn">-->
+<!--                                    <i class="fa fa-sign-out o_hr_attendance_sign_in_out_icon"/>-->
+<!--                                </div>-->
+<!--                                <div class="stat-content">-->
+<!--                                    <div class="stat-text">Check out</div>-->
+<!--                                </div>-->
+<!--                            </t>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                </div>-->
+<!--        </div>-->
+
+<!--    </t>-->
+
+</templates>

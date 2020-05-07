@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_country_state_district_full,access_res_country_state_district_full,model_res_country_state_district,hr.group_hr_user,1,1,1,1,1,1,1,1
+access_res_country_state_district_read,access_res_country_state_district_read,model_res_country_state_district,,1,0,0,0
+access_res_country_state_district_ward_full,access_res_country_state_district_ward_full,model_res_country_state_district_ward,hr.group_hr_user,1,1,1,1
+access_res_country_state_district_ward_read,access_res_country_state_district_ward_read,model_res_country_state_district_ward,,1,0,0,0

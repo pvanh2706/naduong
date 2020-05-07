@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="asset_frontend" inherit_id="website.assets_frontend" name="Theme Hub Frontend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/theme_company_custom/static/src/css/custom.css"/>
+            <script type="text/javascript" src="/theme_company_custom/static/src/js/blog.js"/>
+            <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"/>
+            <link rel="stylesheet" type="text/css"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+            <link rel="stylesheet" type="text/css"
+                  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <script type="text/javascript"
+                    src="/theme_company_custom/static/src/js/lightslider.js"/>
+            <link rel="stylesheet" type="text/css"
+                  href="/theme_company_custom/static/src/css/lightslider.css"/>
+        </xpath>
+    </template>
+    <template id="assets_editor" inherit_id="website.assets_editor" name="Theme Editor">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/theme_company_custom/static/src/js/s_multi_image_gallery.js"/>
+        </xpath>
+    </template>
+</odoo>

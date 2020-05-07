@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="mvb_text_incoming_for_me_tree_view" model="ir.ui.view">
+            <field name="name">mvb_text_incoming_for_me_tree_view</field>
+            <field name="model">mvb.people.processing.text</field>
+            <field name="arch" type="xml">
+                <tree string="" create="false" edit="false" delete="false">
+                    <!-- <field name="person_send_id"/> -->
+                    <field name="received_date"/>
+                    <field name="text_ids" string="Số hiệu văn bản"/>
+                    <field name="content_compendium"/>
+                    <field name="state"/>
+                    <field name="urgency"/>
+                    <field name="deadline"/>
+                    <field name="check_view" invisible="1"/>
+                    <field name="check_work" invisible="1"/>
+                    <button string="Xem chi tiết" name="open_mvb_incoming_text" class="oe_highlight"
+                            type="object"/>
+                </tree>
+            </field>
+        </record>
+<!--        <record  id="mvb_text_incoming_for_me_tree_view_2" model="ir.ui.view">-->
+<!--            <field name="name">mvb_text_incoming_for_me_tree_view</field>-->
+<!--            <field name="model">mvb.people.processing.text</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <tree string="" create="false" edit="false" delete="false"-->
+<!--                      decoration-warning="state=='chuaxuly'"-->
+<!--                      decoration-danger="state in ('daxuly')"-->
+<!--                      decoration-success="state=='theodoi'">-->
+<!--                    <field name="person_send_id"/>-->
+<!--                    <field name="text_ids"/>-->
+<!--                    <field name="state"/>-->
+<!--                    <field name="content_compendium"/>-->
+<!--                    <field name="urgency"/>-->
+<!--                    <field name="received_date"/>-->
+<!--                    <field name="deadline"/>-->
+<!--                    <field name="check_view" invisible="1"/>-->
+<!--                    <field name="check_work" invisible="1"/>-->
+<!--                    <button string="Xem chi tiết" name="open_mvb_incoming_text" class="oe_highlight"-->
+<!--                            type="object"/>-->
+<!--                </tree>-->
+<!--            </field>-->
+<!--        </record>-->
+        <record id="mvb_text_incoming_for_me_form_view" model="ir.ui.view">
+            <field name="name">mvb_text_incoming_for_me_from_view</field>
+            <field name="model">mvb.people.processing.text</field>
+            <field name="arch" type="xml">
+                <form string="Xử lý văn bản" create="false" edit="false" delete="false">
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="chuaxuly"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="open_mvb_incoming_text"
+                                    class="oe_stat_button"
+                                    icon="fa-pencil"
+                                    type="object">
+                                <field name="solution_doc" string='Xem chi tiết' widget="statinfo"
+                                />
+                            </button>
+                        </div>
+                        <group colspan="2" col="4">
+                            <field name="name" options="{'no_open': True}"/>
+                            <field name="urgency"/>
+                        </group>
+
+                        <group colspan="2" col="4">
+                            <field name="received_date"/>
+                            <field name="incoming_text_book_new"/>
+                        </group>
+                        <group>
+                            <field name="content_compendium"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

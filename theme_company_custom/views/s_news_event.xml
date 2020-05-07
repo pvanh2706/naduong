@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_blog_post_news_event_latest">
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="col-xl-12 media mt-3 s_latest_posts_post">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" style="width:100%">
+                            <t t-call="website_blog.blog_cover">
+                                <t t-set="cover_properties" t-value="properties"/>
+                                <t t-set="additionnal_classes" t-value="'loading_container thumb news_event_primary_block'"/>
+                            </t>
+                        </a>
+                    </div>
+                    <div class="col-xl-12">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" style="width:100%;">
+                            <h4 t-field="p.name" style="font-size: 1.8rem;font-weight: bold;padding-left: 15px;"/>
+                            <p t-field="p.subtitle" style="font-size:1.8.rem;padding-left: 15px;"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="s_blog_post_news_event" name="News Event One Column">
+        <section class="s_blog_post_news_event pt16 pb16">
+            <div class="container-fluid">
+                <div class="row s_col_no_bgcolor js_get_posts"
+                     data-loading="true"
+                     data-template="theme_company_custom.s_blog_post_news_event_latest"
+                     data-posts-limit="1"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_blog_post_vina_news_latest">
+        <t t-foreach="posts" t-as="p">
+            <!--            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>-->
+            <div class="col-xl-12 media mt-3 s_latest_posts_post">
+                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                    <h4 class="fast-news" t-field="p.name"/>
+                </a>
+            </div>
+        </t>
+    </template>
+
+    <template id="s_blog_post_vina_news" name="Vina News">
+        <section class="s_blog_post_vina_news pt16 pb16">
+            <div class="container-fluid">
+                <div class="row s_col_no_bgcolor js_get_posts"
+                     data-loading="true"
+                     data-template="theme_company_custom.s_blog_post_vina_news_latest"
+                     data-posts-limit="1"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_latest_posts_list_template">
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="col-12 media mt-3 s_latest_posts_post">
+                <div class="row">
+                    <div class="col-md-3 col-12">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" style="width:100%">
+                            <div class="col-12 pr-0 pl-0 pb-0">
+                                <div class="col-12">
+                                    <t t-call="website_blog.blog_cover">
+                                        <t t-set="cover_properties" t-value="properties"/>
+                                        <t t-set="additionnal_classes" t-value="'loading_container thumb small-post-custom'"/>
+                                    </t>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <div class="media-body ml-3 pb-2">
+                            <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" style="width:100%">
+                                <h4 t-field="p.name"/>
+                                <p t-field="p.subtitle" style="max-height:62px;overflow:hidden;"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </t>
+    </template>
+
+    <template id="s_latest_posts_list_template_inherit" inherit_id="website_blog.s_latest_posts_list_template" name="Remove read more">
+        <xpath expr="//a[hasclass('btn-secondary')]" position="replace"/>
+    </template>
+</odoo>

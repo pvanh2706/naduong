@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mvb_people_processing_view_search" model="ir.ui.view">
+        <field name="name">mvb.people.processing.view.search</field>
+        <field name="model">mvb.people.processing.textdraft</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <field name="name_send"/>
+                <field name="text_ids"/>
+                <field name="state"/>
+                <field name="notes"/>
+                <field name="date_received"/>
+                <field name="date_view"/>
+<!--                <filter string='Phòng ban' name="group_by_department" domain="[]"-->
+<!--                            context="{'group_by' : 'department_name_send'}"/>-->
+                <filter string='Người gửi' name="group_by_user_create" domain="[]"
+                            context="{'group_by' : 'name_send'}"/>
+            </search>
+        </field>
+    </record>
+        <record id="mvb_textdraft_go_tree_view" model="ir.ui.view">
+            <field name="name">mvb_textdraft_go_tree_view</field>
+            <field name="model">mvb.people.processing.textdraft</field>
+            <field name="arch" type="xml">
+                <tree string=""  create="false" edit="false" delete="false">
+                    <field name="name_send"/>
+<!--                    <field name="department_name_send"/>-->
+                    <field name="text_ids"/>
+                    <field name="state"/>
+                    <field name="notes"/>
+                    <field name="date_received"/>
+                    <field name="date_view"/>
+                    <button name="btn_textdraft" string="Xem chi tiết" type="object"
+                                    class="oe_stat_buttonn oe_highlight">
+                    </button>
+                </tree>
+            </field>
+        </record>
+
+        <record id="mvb_textdraft_go_form_view" model="ir.ui.view">
+            <field name="name">mvb_textdraft_go_form_view</field>
+            <field name="model">mvb.people.processing.textdraft</field>
+            <field name="arch" type="xml">
+                <form string=""  create="false" edit="false" delete="false">
+                    <sheet>
+                        <group colspan="2" col="4">
+                            <field name="name_send"/>
+                            <field name="date_received"/>
+                            <field name="state"/>
+                        </group>
+                        <group>
+                            <field name="notes"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+</odoo>
